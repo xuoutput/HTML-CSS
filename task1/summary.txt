@@ -1,0 +1,20 @@
+任务一九宫格就是一个大的div包9个小的div
+1.对于大的先居中，居中有margin和text-align，两者一个是对相邻元素居中，一个是对元素内的内容居中。
+
+2.关于width和height以及盒子的margin和padding
+若是固定，则可以设置width和height为固定，子元素的%width和height对应，height有用。
+若是自适应，则之用设置width %，而height没用，子元素的%都是按照width来的，不论宽高。盒子margin和padding也是。
+所以对于这个做自适应的九宫格，不能用height后就只能用width+padding或者不用width而直接都用padding。因为父元素没有设置高度，一浮动用height的话不对。这里用了浮动的话要防溢出加个overflow
+
+margin的重叠
+只有在不用float，正常文档流中两个盒子之间的margin会发生重叠，三种情况：全正或全负则取绝对值大者，有正负就差值。
+在float和absolute以及设置了inline-block则不会发生重叠。
+所以这里九宫格之间是不会有重叠的。
+
+所以可以算出每个元素各占多少%，计算准。当初我是偷懒就没铺满，所以就算用了margin 这个肯定不对，是对父元素，那么text-align这个也不对，因为float向左浮动了，没效果了。因为text-align:left是指文字的对齐是左对齐,是相对文字的.float:left指的是块的"浮动"属性，最初用来文字环绕的，所以文字在他右边。
+
+3.clear和overflow的区别，
+overflow是对父元素设置，若父设置了宽高，则子元素不能超出父，清除溢出，若父没有限制，则子元素是撑开父元素。
+float则是对父元素中的用了float的子元素设置清除浮动，加一条在父元素结束之前，你要清除浮动的所有元素之后，不用每个元素之后加那反而不对。
+
+4.背景色 圆角就照常设置
