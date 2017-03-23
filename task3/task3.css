@@ -1,44 +1,57 @@
 *{margin: 0;padding: 0}
-.wrap{
+html{
+	font-family: Microsoft YaHei, serif;	/*设置字体*/
+	font-size: 62.5%;	/*定义了一个基本字体大小为62.5%（也就是10px。设置这个值主要方便计算，如果没有设置，将是以“16px”为基准 ）*/		
+	line-height: 2rem;
+    color: #FFF;
 
+}						
+.wrap{
+	
 	background-color: rgb(104,205,214);
-	clear: both;
-	overflow: hidden;
+							/*不用clear: both;*/
+	overflow: hidden;		/*隐藏下面的flaot溢出*/
+	font-size: 2rem;		/*这是基于HTML设置的基本字体大小来的，按10倍算*/
 }
 
 .header{
-	padding-top: 5%; /*margin-top: 5%;不能用margin 这个会带动背景下来*/
+	padding-top: 5%; 		/*margin-top: 5%;不能用margin 这个会带动背景下来*/
 	padding-left: 5%;		/*margin-left: 5%;*/
+
 }
 
-.logo{
+.container {
+
+	
 	text-align: center;/*	margin 是指当前元素到相邻元素间的距离。text-align 指当前元素中内容的对其方式。*/
-	margin: 0 auto;
+						/*text-align: center;	*/			/*给文本设置一个盒子text，在这里是不能用text-align:center;文本进行居中的，如果设置了文本居中属性，就会出现,当一行字没有占满一行时，也会居中，这样就会显的不美观了，所以只能使用其他式进行居中，比如设置内边距padding值，给予上下左右四个内边距值为18%，如图十所示因为左右两边距离页面边界都为18%，所以自然而然的也就是居中了。*/
+	padding: 5%;
+	color: #FFF;
 }
 
 .container p{
-						/*text-align: center;	*/			/*给文本设置一个盒子text，在这里是不能用text-align:center;文本进行居中的，如果设置了文本居中属性，就会出现,当一行字没有占满一行时，也会居中，这样就会显的不美观了，所以只能使用其他式进行居中，比如设置内边距padding值，给予上下左右四个内边距值为18%，如图十所示因为左右两边距离页面边界都为18%，所以自然而然的也就是居中了。*/
-	padding: 10%;
-	
-	color: #FFF;
+	text-align: left;
+	padding: 10% 10%;
+
+}
+
+.footer{
+	width: 100%;		/*这好像没啥用*/
 }
 
 .footer_left{
 	float: left;
-	padding-top: 15%;
-	padding-left: 15%;
-	padding-bottom: 20%;
+	padding: 10% 10% 20%;
 }
 .footer_left p{
 	text-align: center;
 	color: #FFF;
 }
 
+
 .footer_right{
 	float: right;
-	padding-top: 15%;
-	padding-right: 15%;
-	padding-bottom: 20%;
+	padding: 10% 10% 20%; 
 }
 .footer_right p{
 	text-align: center;
