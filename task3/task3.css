@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0}
+.wrap{
+
+	background-color: rgb(104,205,214);
+	clear: both;
+	overflow: hidden;
+}
+
+.header{
+	padding-top: 5%; /*margin-top: 5%;不能用margin 这个会带动背景下来*/
+	padding-left: 5%;		/*margin-left: 5%;*/
+}
+
+.logo{
+	text-align: center;/*	margin 是指当前元素到相邻元素间的距离。text-align 指当前元素中内容的对其方式。*/
+	margin: 0 auto;
+}
+
+.container p{
+						/*text-align: center;	*/			/*给文本设置一个盒子text，在这里是不能用text-align:center;文本进行居中的，如果设置了文本居中属性，就会出现,当一行字没有占满一行时，也会居中，这样就会显的不美观了，所以只能使用其他式进行居中，比如设置内边距padding值，给予上下左右四个内边距值为18%，如图十所示因为左右两边距离页面边界都为18%，所以自然而然的也就是居中了。*/
+	padding: 10%;
+	
+	color: #FFF;
+}
+
+.footer_left{
+	float: left;
+	padding-top: 15%;
+	padding-left: 15%;
+	padding-bottom: 20%;
+}
+.footer_left p{
+	text-align: center;
+	color: #FFF;
+}
+
+.footer_right{
+	float: right;
+	padding-top: 15%;
+	padding-right: 15%;
+	padding-bottom: 20%;
+}
+.footer_right p{
+	text-align: center;
+	color: #FFF;
+}
