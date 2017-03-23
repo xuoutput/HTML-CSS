@@ -5,7 +5,8 @@ git status diff
 git remote add origin git@
 这里可以用git remote rm origin删了链接再重新添加。
 
-最后可以push，这里我老师SSH出问题，但用下面的webstorm管理github就没问题。所以还是建议用webstorm。
+最后可以push，这里我老是SSH出问题，但用下面的webstorm管理github就没问题。
+
 
 不过要是实在不会的可以直接在github官网上用，拖拉上去就行，哪个方便哪个来。也有用webstorm上传
 
