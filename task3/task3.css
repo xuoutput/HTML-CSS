@@ -5,12 +5,14 @@ html{
 	line-height: 2rem;
     color: #FFF;
 
+	margin: 0 auto;
+    /*max-width: 600px;*/
+
 }						
 .wrap{
 	
 	background-color: rgb(104,205,214);
 							/*不用clear: both;*/
-	overflow: hidden;		/*隐藏下面的flaot溢出*/
 	font-size: 2rem;		/*这是基于HTML设置的基本字体大小来的，按10倍算*/
 }
 
@@ -37,6 +39,7 @@ html{
 
 .footer{
 	width: 100%;		/*这好像没啥用*/
+	overflow: hidden;		/*隐藏下面的flaot溢出*/
 }
 
 .footer_left{
