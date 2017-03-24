@@ -6,7 +6,7 @@ html{
     color: #FFF;
 
 	margin: 0 auto;
-    /*max-width: 600px;*/
+    min-width: 320px;
 
 }						
 .wrap{
