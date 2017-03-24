@@ -1,0 +1,94 @@
+*{margin: 0;padding: 0;}
+
+html{
+	font-family: Microsoft YaHei, serif;	/*设置字体*/
+	font-size: 62.5%;	/*定义了一个基本字体大小为62.5%（也就是10px。设置这个值主要方便计算，如果没有设置，将是以“16px”为基准 ）*/		
+	line-height: 4rem;
+	height: 4rem;		/*高度固定上下居中*/
+    color: #FFF;
+
+	margin: 0 auto;
+/*    min-width: 320px;
+*/
+
+}
+
+header{
+	background-color: rgb(95,192,205);
+	font-size: 2rem;
+
+	overflow: hidden;
+
+}
+
+header .left{
+	float: left;
+	margin-left: 20px;
+	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
+	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
+}
+
+header p{
+	text-align: center;
+}
+
+header .right{
+	float: right;
+	margin-right: 20px;
+	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
+	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
+}
+
+.username{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.username img{
+	order: 0;
+	margin:0 5% 0 0;
+}
+
+.username input{
+	order: 1;
+	width: 100%;
+	border-left: 1px solid #ccc;  /*这是黑色一竖*/
+	font-size: 2rem;
+
+}
+
+.password{
+	margin: 20px ;
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+.password img{
+	order: 0;
+	margin-right: 5%;
+}
+
+.password input{
+	order: 1;
+	width: 100%;
+	border-left: 1px solid #ccc;
+	font-size: 2rem;
+}
+
+.container a{
+	display: block;
+	background-color: rgb(95,192,205);
+	font-size: 2rem;
+	text-align: center;
+	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
+	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
+}
+
+footer a{
+	float: right;
+	font-size: 2rem;
+}
