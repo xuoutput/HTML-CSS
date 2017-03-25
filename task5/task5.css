@@ -1,0 +1,65 @@
+*{margin: 0;padding: 0;}
+
+html{
+	font: 62.5%/6rem Microsoft YaHei, Arial, Helvetica, sans-serif;
+	height: 6rem;		/*高度固定上下居中*/
+    color: #FFF;
+
+	margin: 0 auto;
+    min-width: 320px;
+    max-height: 700px;
+    overflow: hidden;
+
+}
+
+header{
+	position: fixed;
+	margin: 0 auto;
+	background-color: rgb(95,192,205);
+	overflow: hidden;
+	width:100%;
+	height: 6rem;
+}
+
+header img{
+	float: left;
+	padding: 1rem 0 0 1rem;
+	vertical-align: middle;
+}
+
+header p{
+	text-align: center;
+	line-height: 6rem;
+	font-size: 4rem;
+}
+
+
+
+footer{
+	width:100%;
+	padding: 0 5%;
+	position: fixed;
+}
+
+
+footer button{
+	float: left;
+	border: 0;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 1px solid rgb(95,192,205);
+	background-color: #fff;
+	width:35%;
+	height: 6rem;
+	margin:0 5%;
+}
+.liu{
+	font: 4rem rgb(95,192,205) Microsoft YaHei, Arial, Helvetica, sans-serif;
+
+}
+
+.dian{
+	color: #fff Microsoft YaHei, Arial, Helvetica, sans-serif;
+	background-color: rgb(95,192,205)
+
+}
