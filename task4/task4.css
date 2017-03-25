@@ -43,6 +43,7 @@ header .right{
 	margin: 20px;
 	display: flex;
 	flex-direction: row;
+	padding: 10px 0;
 	
 }
 
@@ -54,8 +55,10 @@ header .right{
 .username input{
 	order: 1;
 	width: 100%;
-	border-left: 1px solid #ccc;  /*这是黑色一竖*/
+	border: 0;		/*去掉所有的边框*/
+	border-left: 1px solid rgb(234,237,238);  /*这是黑色一竖 /*再在左边加上边框*/
 	font-size: 2rem;
+	padding: 0 0 0 20px;	/*在左边空一点*/
 
 }
 
@@ -63,7 +66,7 @@ header .right{
 	margin: 20px ;
 	display: flex;
 	flex-direction: row;
-
+	padding: 10px 0;
 
 }
 
@@ -75,8 +78,10 @@ header .right{
 .password input{
 	order: 1;
 	width: 100%;
-	border-left: 1px solid #ccc;
+	border: 0;		/*去掉所有的边框*/
+	border-left: 1px solid rgb(234,237,238);	/*再在左边加上边框*/
 	font-size: 2rem;
+	padding: 0 0 0 20px;	/*在左边空一点*/
 }
 
 .container a{
@@ -91,4 +96,6 @@ header .right{
 footer a{
 	float: right;
 	font-size: 2rem;
+	
+	color: rgb(95,192,205);			
 }
