@@ -1,16 +1,16 @@
 *{margin: 0;padding: 0;}
 
 html{
-	font-family: Microsoft YaHei, serif;	/*设置字体*/
-	font-size: 62.5%;	/*定义了一个基本字体大小为62.5%（也就是10px。设置这个值主要方便计算，如果没有设置，将是以“16px”为基准 ）*/		
-	line-height: 4rem;
+/*	font-family: Microsoft YaHei, serif;	
+	font-size: 62.5%;	定义了一个基本字体大小为62.5%（也就是10px。设置这个值主要方便计算，如果没有设置，将是以“16px”为基准 ）		
+	line-height: 4rem;*/
+	font: 62.5%/4rem Microsoft YaHei, Arial, Helvetica, sans-serif;
 	height: 4rem;		/*高度固定上下居中*/
     color: #FFF;
-
+	
 	margin: 0 auto;
-/*    min-width: 320px;
-*/
-
+/*    min-width: 320px;*/
+	background-color: rgb(239,240,244);
 }
 
 header{
@@ -39,49 +39,51 @@ header .right{
 	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
 }
 
+
 .username{
-	margin: 20px;
+	margin: 20px 0;
 	display: flex;
 	flex-direction: row;
-	padding: 10px 0;
+	background-color: #fff;
 	
 }
 
 .username img{
 	order: 0;
-	margin:0 5% 0 0;
+	padding:20px;
 }
 
 .username input{
 	order: 1;
 	width: 100%;
 	border: 0;		/*去掉所有的边框*/
-	border-left: 1px solid rgb(234,237,238);  /*这是黑色一竖 /*再在左边加上边框*/
+	border-left: 2px solid rgb(234,237,238);  /*这是黑色一竖 /*再在左边加上边框*/
 	font-size: 2rem;
 	padding: 0 0 0 20px;	/*在左边空一点*/
+	margin: 20px 0;			/*这个是为了左边一条竖线，用border实现，*/
 
 }
 
 .password{
-	margin: 20px ;
+	margin: 20px 0;
 	display: flex;
 	flex-direction: row;
-	padding: 10px 0;
-
+	background-color: #fff;
 }
 
 .password img{
 	order: 0;
-	margin-right: 5%;
+	padding:20px;
 }
 
 .password input{
 	order: 1;
 	width: 100%;
 	border: 0;		/*去掉所有的边框*/
-	border-left: 1px solid rgb(234,237,238);	/*再在左边加上边框*/
+	border-left: 2px solid rgb(234,237,238);	/*再在左边加上边框*/
 	font-size: 2rem;
 	padding: 0 0 0 20px;	/*在左边空一点*/
+	margin: 20px 0;
 }
 
 .container a{
