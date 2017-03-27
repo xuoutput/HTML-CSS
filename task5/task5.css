@@ -2,164 +2,188 @@
 
 html{
 	font: 62.5%/4rem Microsoft YaHei, Arial, Helvetica, sans-serif;
-	height: 4rem;		/*高度固定上下居中*/
-    color: #FFF;
-
-	margin: 0 auto;
+    
     min-width: 320px;
-    /*max-height: 700px;*/
-    overflow: hidden;
+   	
+    
+  	text-align: center;
+  	height: auto;
+}
 
+body{
+	margin: 0 auto;		/*和html中的text-align配合用*/
 }
 
 
 header{
-	position: fixed;
-	top: 0;
 	margin: 0 auto;
-	background-color: rgb(95,192,205);
-	overflow: hidden;
-	width:100%;
-	height: 4rem;
-}
+	width: 100%;
 
-header img{
-	float: left;
-	padding: 1rem 0 0 1rem;
-	vertical-align: middle;
-}
-
-header p{
-	text-align: center;
+	position: fixed;
+	top: 0;left: 0;right: 0;
+	height: 4rem;		/*高度固定上下居中*/
 	line-height: 4rem;
-	font-size: 4rem;
+	
+	background-color: rgb(95,192,205);	/*背景色蓝 字体白色*/
 	color: #FFF;
+
+	overflow: hidden;
+	z-index: 100;		/*防止main和footer遮住header*/
 }
 
+header a{
+	float: left;
+	margin: 10px 0 10px 10px;
+}
 
+header h2{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+	
+}
 
 main{
-	/*overflow: auto;*/
 	font-size: 2rem;
-	color: #000;
-	position: absolute;
-	top: 4rem;
-	left: 0;
-
-	overflow-y: scroll;		/*要加这个滚动条我设置了个高度，不然没显示，拉不了*/
-	max-height:80%;
-
-	margin-bottom: 4rem;
-}
-
-.bcg{
-	width:100%;
-	height: 320px;
-	background-image: url(images/bcg.png);
-	position: relative;
-}
-
-.head{
-		float: left;
-		padding: 40px 40px 0 40px;
-}
-
-.location{
-
-	font-size: 2rem;
-	color: #fff;
-	padding: 60px 0 0 0;
-}
-
-
-
-.skill{
-	padding: 0 2rem;
-	border-bottom: 1px solid #ccc;
-
-	height: 4rem;
-
-	font-size: 2rem;
-	line-height: 4rem;
-	color: #000; 
-	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+	position: relative;		
+	/*top: 4rem;*/ left: 0;right: 0;		/*上下只能有一个*/
+	bottom: 4.3rem;			/*这里稍微抬高点 可以看到最后一行的下border*/
+	overflow-y: scroll;
+	text-align: left;		/*消除html中的居中*/
 
 }
 
+/*.main-top{				这里不知道什么错误就是和下面显示不一样
+	margin-top: 4rem;
+
+	width: 100%;
+	min-height: 2rem;
+	background-image: url(images/bcg.png) no-repeat center;
+	background-size: cover;
+
+}
+*/
+.main-top{
+	margin-top: 8rem;		/*为啥是8个rem不是4个*/
+	/*height: 24rem;*/		/*max-   这里就是图片不能拉长*position: relative; 图片显示不用这个只要background-zise不过为啥前面的背景显示不了*/
+	background: url(images/bcg.png) no-repeat center;
+	background-size: cover;		/*这个属性会保持图像本身的宽高比例,将图片缩放到正好完全覆盖定义背景的区域*/
+
+	
+}
 
 
+.main-top .usr-img{
+	display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
+	padding: 5% 0 4% 2%; 
+}
 
-.star{
-	padding: 0 1rem;
-	border-bottom: 1px solid #ccc;
+.main-top .usr-inf{
+	display: inline-block;
+	width: 50%;
+	color:#fff;
+	padding-left: 2rem;
+}
+
+.main-content{
+	color: #000;		/*内容字体设置为黑，靠左对齐*/
 	text-align: left;
 
 }
 
-.star1{
-	padding-right: 1rem;
-}
-
-.hang{
-	padding: 0 1rem;
-	/*margin-right: 5%;*/
+.main-content .title{
+	
 	border-bottom: 1px solid #ccc;
 }
 
-.hang-left{
-	padding-right: 1rem;
-	border-right: 1px solid #ccc;
-}
-.hang-right{
-	padding-left: 1rem;
+.main-content .title .skill{
+	margin-left: 2rem;
+	
+	padding:0.5rem 1rem;
+	border-left: 2px solid rgb(95,192,205);
+	
 }
 
-.price{
+td{
+	list-style: none;
+	
+	border-bottom: 1px solid #ccc;
+	
+}
+
+/*.main-content .title .list*/
+
+.list-left{
+	min-width: 7rem;
+	padding: 0.5rem 4rem;
+}
+
+
+
+.list-right{
+	padding: 0.5rem 4rem;
+	/*border-left: 1px solid #ccc;	*/	/*这里不能用左边框，因为这个是表格，高度不会变的*/
+	width: 100%;
+
+}
+
+.star{
+	border-left: 0px;
+}
+
+.color{
 	color: #f00;
 }
 
-.hang-bottom{
-	margin-bottom: 4rem; 
+
+.j{
+	border-left: 2px solid #ccc;
+	margin-left: -4rem;
+	padding-left: 4rem;
 }
 
-/*.resume2{
-	vertical-align: middle;
-}
-*/
+
+
+
+
+
+
+
 
 footer{
-	width:100%;
-	margin: 0 1%;		/*这里我用一个大的footer左右设置margin1%，然后里面小的2个div也设置margin1%，宽47%。这样左中右三条缝就一样大了。*/
-	position: fixed;
-	bottom: 0;
-}
-
-
-footer button{
-	float: left;
-	border: 0;
 	margin: 0 auto;
-	border-radius: 10px;
-	border: 2px solid rgb(95,192,205);
-	background-color: #fff;
-	width:47%;
-	height: 4rem;
-	margin:0 1%;
-	text-align: center;
+	width: 100%;
 
-}
-.liu{
-	font-size: 2rem;		/*字体大小*/
-	line-height: 4rem;		/*垂直居中和父元素height一样高*/
-	color: rgb(95,192,205);	/*颜色蓝的*/	
-	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
-}
-
-.dian{
-	font-size: 2rem;
+	position: fixed;
+	bottom: 0;left: 0;right: 0;
+	height: 4rem;		/*高度固定上下居中*/
 	line-height: 4rem;
-	color: #fff; 
-	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
-	background-color: rgb(95,192,205)
-
 }
+
+button{
+	border:none;
+	border:2px solid rgb(95,192,205);
+	border-radius: 2px;	
+
+	margin:0 2%;
+	width: 46%;
+	height: 4rem;
+
+	float: left;
+
+	font-size: 2rem;
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+.message{
+	color: rgb(95,192,205);
+	background-color: #fff;
+}
+
+.tel{
+	color: #fff;
+	background-color: rgb(95,192,205);
+}
+
+
+
