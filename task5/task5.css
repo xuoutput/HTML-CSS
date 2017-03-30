@@ -140,13 +140,15 @@ main{
 	height: 16rem;
 	border-radius: 50%;		/*圆*/
 	
+background-color: #fff;	
+	
 	padding: 0  ;	
 	margin-left: 3rem;
 	background: url(images/head.png) no-repeat center;
 	background-size: 80%;
 	vertical-align: middle;
 
-	background-color: #fff;		
+		
 
 	
 	
