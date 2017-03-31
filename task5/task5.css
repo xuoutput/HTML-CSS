@@ -2,6 +2,14 @@ html{
 	font-size: 62.5%;
 	font-family:  Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 720px)
+{
+	html{
+	font-size: 60%;
+	}
+}
+
 @media screen and (max-width: 540px)
 {
 	html{
@@ -13,9 +21,14 @@ html{
 	html{
 	font-size: 40%;
 	}
-	.footer{
-	font-size: 40%;
+}
+
+@media screen and (max-width: 320px)
+{
+	html{
+	font-size: 20%;
 	}
+
 }
 
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
@@ -55,39 +68,43 @@ header{
   	text-align: center;
 
 	overflow: hidden;
-	z-index: 100;		
+	z-index: 100;		/*防止main和footer遮住header*/
 }
 
-header a{						
-	display: inline-block;	
+header a{						/*画个border吧,就一个小于号的画不了，这里怎么会有上距离，但有不是margin和padding*/
+	display: inline-block;	/*当您把元素的 display 属性设置为 inline-block，元素相对于它周围的内容以内联形式呈现，但与内联不同的是，这种情况下我们可以设置宽度和高度。*/
 
 	height: 8.1rem;
 	line-height: 8.1rem;
 
-	
+	/*padding-left: 3%;	这个用不来的，还是居中的情况下*/	
 	
 	text-decoration: none;
 	
+/*	在header给我text-align:center;的情况下，不能用float的情况下，用absolute试下。定位到左边*/
 	
-	position: absolute;		
-	top:0;		
+	position: absolute;		/*但这里又怎么和个人主页对齐居中呢*/
+	top:0;		/*因为已经设了a的高度height满的   这里还解决了上面无缘无故多出来的空隙*/
 	left:3rem;
-
+/*	margin: 10% 0 10% 0;	不实用这个哦
+	padding-left: 10%;*/
 
 }
 
 header a img{
+	/*display: block;  这里不能用这个因为图片不是block的，img、input属于行内替换元素。height/width/padding/margin均可用。效果等于块元素。http://www.cnblogs.com/annie211/p/5933522.html*/
 	height: 3.5rem;
-	vertical-align: middle;			
+	vertical-align: middle;			/*这个使用在图片上的而不是用在a上的*/
 }
 
 header h2{
 	display: inline-block;
 
 	text-align: center;
+/*	vertical-align: middle;  不用这个因为用了下面的height和line-height*/
 
 	height: 8.1rem;
-	line-height: 8.1rem;		
+	line-height: 8.1rem;		/*这里比前面back高就行，这样back就上下居中了*/
 	
 	
 	font-size: 3.5rem;
@@ -95,6 +112,7 @@ header h2{
 }
 
 
+/*问题：这里怎么老是会有往下面一点，*/
 
 
 
@@ -102,8 +120,8 @@ header h2{
 
 
 main{
-	margin-top: 8.1rem;		
-	margin-bottom: 10rem;	
+	margin-top: 8.1rem;		/*在main-top 和main-content中都放一个防止覆盖*/
+	margin-bottom: 10rem;	/*9+边框厚度么？ 拉上来有部分挡住 部分没挡住*/
 
 	margin: 0 auto;		
 	min-width: 320px;
@@ -113,15 +131,31 @@ main{
 
  	color: rgb(51,51,51);
 	
-	
-	text-align: left;		
+	/*position: relative;			不用相对定位，也不用上margin-top,fixed
+	left: 0;right: 0;		/*上下只能有一个*/
+	/*bottom: 4.3rem;	*/		/*这里稍微抬高点 可以看到最后一行的下border*/
+
+	/*overflow-y: scroll;	*/	/*加了这条反而右边不对齐了。会多一个调滚动条，但又没用。*/
+/*	width: 100%;
+	max-height: 50rem
+	height: auto;*/
+	text-align: left;		/*消除html中的居中*/
+
 }
 
-
+/*.main-top{				这里不知道什么错误就是和下面显示不一样
+	margin-top: 4rem;
+	width: 100%;
+	min-height: 2rem;
+	background-image: url(images/bcg.png) no-repeat center;
+	background-size: cover;
+}
+*/
 .main-top{			
 	margin-top: 8.1rem;	
+						/*height: 24rem;*/		/*max-   这里就是图片不能拉长*position: relative; 图片显示不用这个只要background-zise不过为啥前面的背景显示不了*/
 	background: url(images/bcg.png) no-repeat center;
-	background-size: cover;		
+	background-size: cover;		/*这个属性会保持图像本身的宽高比例,将图片缩放到正好完全覆盖定义背景的区域*/
 	
 		
 	min-width: 320px;
@@ -135,21 +169,21 @@ main{
 
 
 .usr-img{
-	display: inline-block;		
-	width: 16rem;
-	height: 16rem;
+	display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
+	width: 10rem;
+	height: 10rem;
+	
+
 	border-radius: 50%;		/*圆*/
 	
-background-color: #fff;	
-	
-	padding: 0  ;	
+	padding: 0  ;	/*不能用padding不然圆形变了*/
 	margin-left: 3rem;
 	background: url(images/head.png) no-repeat center;
 	background-size: 80%;
 	vertical-align: middle;
 
-		
-
+	background-color: #fff;		/*这个背景色和背景图前后位置要放对，不能放前*/
+/*	z-index: 10;*/
 	
 	
 
@@ -157,7 +191,7 @@ background-color: #fff;
 
 .main-top .usr-inf{
 	display: inline-block;
-	width: 30%;
+	width: 35%;
 	padding-left: 5%;
 	color:#fff;
 	vertical-align: middle;
@@ -190,7 +224,7 @@ background-color: #fff;
 
 
 .main-content{
-	color: rgb(51,51,51);		
+	color: rgb(51,51,51);		/*内容字体设置为黑，靠左对齐*/
 	text-align: left;
 	margin-bottom: 10rem;
 }
@@ -200,8 +234,9 @@ ul,li{
 }
 
 li{
+	/*display: inline-block;*/
 
-	height: 10rem;
+	min-height: 10rem;
 	line-height:10rem;
 	border-bottom: 1px solid rgb(225,229,231);
 
@@ -242,7 +277,7 @@ li{
 .self-intro{
 	display: inline-block;
 	font-size: 2rem;
-	/*height: 2rem;*/
+	min-height: 2rem;
 	line-height: 2rem;
 	
 	/*width: 40rem;*/
@@ -253,6 +288,16 @@ li{
 }
 
 
+/*.self-intro{
+	display: inline-block;
+	min-height: 10rem;
+	width: 50%
+	
+	line-height:3rem;
+	vertical-align: middle;
+}
+
+*/
 
 
 
