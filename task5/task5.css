@@ -23,13 +23,13 @@ html{
 	}
 }
 
-@media screen and (max-width: 320px)
+/*@media screen and (max-width: 320px)
 {
 	html{
-	font-size: 20%;
+	font-size: 30%;
 	}
 
-}
+}*/
 
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -42,156 +42,114 @@ ul,li{
 
 /*以上初始化*/
 
-body{
-	margin: 0 auto;		
-	min-width: 320px;
- 	/*max-width: 720px;*/
- 	width: 100%;
- 	background-color: #fff;
-}
-
-
-
 
 header{
 	position: fixed;
 	top: 0;
-
-	margin: 0 auto;
-	min-width: 320px;
-	/*max-width: 720px;*/
+	
+	height: 4rem;
+	min-width: 320px;			
   	width: 100%;
 
-  	height: 8.1rem;		/*这是量PS中的出来的*/
   	background-color: rgb(95,192,205);
 
   	text-align: center;
+  	padding: 1rem 1rem;
 
 	overflow: hidden;
 	z-index: 100;		/*防止main和footer遮住header*/
+
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+	
 }
 
-header a{						/*画个border吧,就一个小于号的画不了，这里怎么会有上距离，但有不是margin和padding*/
-	display: inline-block;	/*当您把元素的 display 属性设置为 inline-block，元素相对于它周围的内容以内联形式呈现，但与内联不同的是，这种情况下我们可以设置宽度和高度。*/
-
-	height: 8.1rem;
-	line-height: 8.1rem;
-
-	/*padding-left: 3%;	这个用不来的，还是居中的情况下*/	
+header a{						
+	display: inline-block;	
 	
 	text-decoration: none;
-	
-/*	在header给我text-align:center;的情况下，不能用float的情况下，用absolute试下。定位到左边*/
-	
-	position: absolute;		/*但这里又怎么和个人主页对齐居中呢*/
-	top:0;		/*因为已经设了a的高度height满的   这里还解决了上面无缘无故多出来的空隙*/
-	left:3rem;
-/*	margin: 10% 0 10% 0;	不实用这个哦
-	padding-left: 10%;*/
+	text-align: left;
 
 }
 
 header a img{
-	/*display: block;  这里不能用这个因为图片不是block的，img、input属于行内替换元素。height/width/padding/margin均可用。效果等于块元素。http://www.cnblogs.com/annie211/p/5933522.html*/
-	height: 3.5rem;
-	vertical-align: middle;			/*这个使用在图片上的而不是用在a上的*/
+	width: 1rem;
+	height: 2rem;
+/*	vertical-align: middle;	*/		
 }
 
 header h2{
 	display: inline-block;
 
 	text-align: center;
-/*	vertical-align: middle;  不用这个因为用了下面的height和line-height*/
 
-	height: 8.1rem;
-	line-height: 8.1rem;		/*这里比前面back高就行，这样back就上下居中了*/
 	
-	
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	color: #fff;
 }
 
-
-/*问题：这里怎么老是会有往下面一点，*/
-
-
+header div{
+	width: 1rem;
+	height: 2rem;
+}
 
 
 
 
 main{
-	margin-top: 8.1rem;		/*在main-top 和main-content中都放一个防止覆盖*/
+	margin-top: 6rem;		/*在main-top 和main-content中都放一个防止覆盖*/
 	margin-bottom: 10rem;	/*9+边框厚度么？ 拉上来有部分挡住 部分没挡住*/
 
 	margin: 0 auto;		
 	min-width: 320px;
- 	/*max-width: 720px;*/
  	width: 100%;
  	background-color: #fff;	
 
  	color: rgb(51,51,51);
 	
-	/*position: relative;			不用相对定位，也不用上margin-top,fixed
-	left: 0;right: 0;		/*上下只能有一个*/
-	/*bottom: 4.3rem;	*/		/*这里稍微抬高点 可以看到最后一行的下border*/
-
-	/*overflow-y: scroll;	*/	/*加了这条反而右边不对齐了。会多一个调滚动条，但又没用。*/
-/*	width: 100%;
-	max-height: 50rem
-	height: auto;*/
 	text-align: left;		/*消除html中的居中*/
 
 }
 
-/*.main-top{				这里不知道什么错误就是和下面显示不一样
-	margin-top: 4rem;
-	width: 100%;
-	min-height: 2rem;
-	background-image: url(images/bcg.png) no-repeat center;
-	background-size: cover;
-}
-*/
+
 .main-top{			
-	margin-top: 8.1rem;	
+	margin-top: 6rem;	
 						/*height: 24rem;*/		/*max-   这里就是图片不能拉长*position: relative; 图片显示不用这个只要background-zise不过为啥前面的背景显示不了*/
 	background: url(images/bcg.png) no-repeat center;
 	background-size: cover;		/*这个属性会保持图像本身的宽高比例,将图片缩放到正好完全覆盖定义背景的区域*/
 	
-		
-	min-width: 320px;
- 	/*max-width: 720px;*/
- 	width: 100%;	
 
-
-	padding: 8rem 0 8rem 3rem;
+	padding: 3rem 0 3rem 2rem;
 	
 }
 
 
 .usr-img{
 	display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
-	width: 10rem;
-	height: 10rem;
+	width: 8rem;
+	height: 8rem;
 	
 
 	border-radius: 50%;		/*圆*/
 	
 	padding: 0  ;	/*不能用padding不然圆形变了*/
-	margin-left: 3rem;
 	background: url(images/head.png) no-repeat center;
 	background-size: 80%;
 	vertical-align: middle;
 
 	background-color: #fff;		/*这个背景色和背景图前后位置要放对，不能放前*/
-/*	z-index: 10;*/
-	
-	
+
 
 }
 
 .main-top .usr-inf{
 	display: inline-block;
-	width: 35%;
 	padding-left: 5%;
 	color:#fff;
 	vertical-align: middle;
@@ -200,7 +158,7 @@ main{
 .main-top .usr-inf .usr-name{
 	display: inline-block;
   	font-size: 3.2rem;
-  	
+  	line-height: 3.2rem;
 }
 
 .main-top .usr-inf .usr-age{
@@ -215,9 +173,10 @@ main{
 
 .usr-inf img{
 	display: inline-block;
-	height: 2.2rem;
+	height: 1.5rem;
 	vertical-align: middle;
 }
+
 
 
 
@@ -234,37 +193,44 @@ ul,li{
 }
 
 li{
-	/*display: inline-block;*/
-
-	min-height: 10rem;
-	line-height:10rem;
 	border-bottom: 1px solid rgb(225,229,231);
-
+	padding:2rem 0; 
+	
 	font-size: 3rem;
 
 }
 
 .skill{
-	margin-left: 3rem;
-	padding-left: 3rem;
+	margin-left: 2rem;
+	padding-left: 2rem;
 	border-left: 3px solid rgb(95,192,205);
 }
 
 
 .list-left{
-	margin: 3rem 0 3rem 6rem;
-	padding-right: 2.5rem;
+	margin: 0rem 0 0rem 2rem;
+	padding-right: 2rem;
 	border-right: 1px solid rgb(225,229,231);
+	
+	display: inline-block;			/*主要是这里还有width*/
+	
+	box-sizing: border-box;
+/*	vertical-align: middle;*/
 
-	/*max-width: 40%;*/
 }
 
 .list-right{
-	margin-left: 3rem;
+	margin-left: 2rem;
 }
 
 .star{
-	border-right:  0;	
+	border-right:  0;
+	/*font-size: 3rem;*/
+}
+
+.star img{
+	width: 1.5rem;height: 1.5rem;
+	vertical-align: middle;
 }
 
 .wage{
@@ -276,28 +242,16 @@ li{
 
 .self-intro{
 	display: inline-block;
+	width: 50%;
 	font-size: 2rem;
-	min-height: 2rem;
+/*	min-height: 2rem;
 	line-height: 2rem;
 	
-	/*width: 40rem;*/
-	width: 40%;
-
-	
-	vertical-align: middle;
+	vertical-align: middle;*/
 }
 
 
-/*.self-intro{
-	display: inline-block;
-	min-height: 10rem;
-	width: 50%
-	
-	line-height:3rem;
-	vertical-align: middle;
-}
 
-*/
 
 
 
@@ -309,10 +263,8 @@ footer{
 	margin: 0 auto ;
 	
 	min-width: 320px;
-	/*max-width: 720px;*/
 	width: 100%;
 	
-	height: 9rem;
 	background-color: #fff;
 	text-align: center;
 
@@ -325,8 +277,8 @@ button{
 	display: inline-block;
 	
 	width: 45%;
-	height: 7rem;
-	line-height: 7rem;
+	height: 5rem;
+	line-height: 5rem;
 	margin:0.5rem;
 
 	border:none;
