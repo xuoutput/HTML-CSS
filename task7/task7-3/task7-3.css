@@ -1,0 +1,209 @@
+html{
+	font-size: 62.5%;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 720px)
+{
+	html{
+	font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 540px)
+{
+	html{
+	font-size: 50%;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	html{
+	font-size: 40%;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	html{
+	font-size: 30%;
+	}
+
+}
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+
+/*以上初始化*/
+
+
+header{
+	min-width: 320px;
+	width: 100%;
+
+	margin: 0 auto;
+	background-color: #29bde0;
+	padding: 2rem 0;			/*不能在这里设置padding的left和right来调整两边距离，而是在home和help中设置margin来调整，不然就是右边的而距离有问题*/
+
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	text-align: center;
+	border-bottom: 1px solid #74d4eb;
+
+
+}
+
+.home{
+	background-image: url(images/img.png);
+	height:42px;width:51px;
+	background-position:0 -40px;
+
+	margin-left: 1rem;
+
+}
+
+.jieguo{
+	font-size: 3.5rem;
+	color: #ffffff;
+	
+}
+
+.help{
+	background-image: url(images/img.png);
+	height:40px;width:40px;
+	background-position:0 0;	
+
+	margin-right: 1rem;
+}
+
+main{
+	margin-bottom: 10rem;
+}
+
+.main-top{
+	background-color: #29bde0;	
+}
+	
+.main-top-header{
+							/*这里不会用雪碧图自适应*/
+
+	padding: 1rem ;
+
+	text-align: center;
+}
+
+.main-top-header img{
+	height: 10rem;
+}
+
+.main-top-main{
+	font-size: 3rem;
+	color: #ffc865;
+
+	padding: 1rem 3rem;
+}
+
+.main-top-footer{
+	font-size: 2.5rem;
+	color: #fff;
+	padding: 0 3rem;
+}
+
+.main-top-footer pre{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.main-content{
+	
+}
+
+li{
+
+	padding: 0.5rem 0 2rem 3rem;
+	border-bottom: 1px solid #000;
+
+	display: flex;
+	display: -webkit-flex
+
+	justify-content:space-between;
+	align-items: center;
+}
+
+li h3{
+	font-size: 3.5rem;
+	line-height: 3.5rem;
+	color: #515151;
+}
+
+li p{
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	color: #a6a6a6;
+}
+
+.time{
+	font-size: 1rem;
+	color: #a6a6a6;
+
+	align-self: flex-start;
+}
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto;
+
+	min-width: 320px;
+	
+	width: 100%;
+	padding:1rem 0;
+	background-color: rgba(153,223,240,0.5);		/*rgba()做一个透明度*/
+
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+footer button{
+	margin: 0 auto;
+	border:0;
+
+	width: 48%;
+
+	border:none;
+	border-radius: 7px;
+
+	padding: 1rem;
+	margin: 0 1rem;
+	
+	font-size: 3.2rem;
+	color: #fff;
+	text-align: center;
+
+}
+
+.again{
+	background-color: #f66f6f;
+}
+
+.share{
+	background-color: #fbb435;
+}
