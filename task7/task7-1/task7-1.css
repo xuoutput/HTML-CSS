@@ -79,10 +79,14 @@ main{
 	margin-bottom: 1.5rem;
 	background-color: #ffffff;
 
-	position: relative;
-
 	font-size: 4rem;
 
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .arrow{
