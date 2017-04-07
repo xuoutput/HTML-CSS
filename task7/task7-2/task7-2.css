@@ -42,67 +42,72 @@ body{
 }
 
 
-.header{
+header{
 	background-color: #29bde0;
 	padding: 1rem 0;
+	margin: 0 1rem;
+
+	display: flex;
+	display: -webkit-flex;
+
+	flex: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.header-left{
-	text-align: left;
-	vertical-align: middle;
+header img{
+	height: 2rem;
 }
 
-.header-middle{
+header p{
 	font-size: 2.5rem;
 	color: #fff;
-
 	text-align: center;
 }
 
-.header-middle p{
-	margin-bottom: 0;
-}
 
-.header-right{
-	text-align: right;
-	vertical-align: middle;
-}
+
+
+
 
 .main-top{
 	background-color: #b9e9f5;
+
+	padding: 1rem 1rem 1rem 2rem;
+
+	display: flex;
+	display: -webkit-flex;
+
+	flex: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.main-top-left{
-	font-size: 1.4rem;
-	color: #464646;
-
-	text-align: left;
-	padding: 1rem ;
-}
-
-.main-top-left>p{
-	margin-bottom: 0;
-	padding-left: 1rem;
-}
-
-.main-top-right{
-	text-align: right;
-	vertical-align: middle;
-
-	padding: 0.5rem 0;
-}
-
-.main-top-right img{
-	height: 3.5rem;
+.main-top p{
+	font-size: 2rem;
+	color: #464646;	
 }
 
 
+.main-top img{
+	height: 2.5rem;
+}
+
+audio{
+	display: none;
+}
+
+
+
+
+
+
+ 
 .title{
 	background-color: #29bde0;
-	padding: 2rem 0;
-	margin-bottom: 0;
+	padding: 1.5rem 1.5rem 1.5rem 3rem;
 
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #fff;
 
 	position: relative;
@@ -110,8 +115,8 @@ body{
 
 .t3{
 	position: absolute;
-	top: -2rem;
-	left: 2rem;
+	top: 0rem;
+	left: 2.5rem;
 	
 
 	width: 0;height: 0;
@@ -125,80 +130,82 @@ body{
 
 
 
-.main-content{
-	background-color: #29bde0;
 
+
+.main-content{
+	width: 80%
+
+	background-color: #29bde0;
+		
+	margin: 1rem 2rem 1rem 2rem;
+
+}
+
+.row{
+	overflow: hidden;
+	text-align: center;
 	margin-bottom: 9rem;
 }
 
-
-.main-content img{
-	width: 70%;
-	position: absolute;
-	top: 10rem;
-	left: 15%;
-
-	opacity: 0;
-}
-
-.main-content-left,.main-content-middle,.main-content-right{
-   /* overflow: hidden;*/
-    padding-bottom: 10%;
-
-    width:100%;
-
-    margin-top: 1rem;
-}
-
-.main-content-left,.main-content-middle,.main-content-right a{
-	text-decoration: none;
-}
-
 .box{
-    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+    margin: 5% 0 0 5%;
+    width: 26%;
     text-align: center;
 
-    position: relative;
 }
-.box-top{
-    box-sizing: border-box;
-    border:4px solid #fff;			/*这里我用了嵌套的话padding的bottom就不对，跑1号下面去了，而不是上面*/
-    border-bottom: 0;		
+
+.name {
+    padding: 25% 0;
+    font-size: 2rem;
+    color: #565656;
     background-color: #f5c97b;
 
-    padding:2rem 0;
-    font-size: 2rem;
-    color:#565656;
+    border: 4px solid #fff;
+    border-bottom: none;
 }
-.box-number{
-    color:#fff;
+
+.number {
+ /*   margin: 0;*/
+    padding: 2%;
+    color: #fff;
     background-color: #83b09a;
-
-    border:4px solid #fff;
-	border-top: 0;
+    border: 4px solid #fff;
+    border-top: none;
 }
 
-.box:hover .kkk{			/*这里是用opacity来实现下面图表随鼠标动作的有隐藏到出现*/
+
+.box-bottom img{ 
+    margin-top: 10%;
+    width: 100%;
+
+    opacity: 0;
+}
+
+.box:hover img{
 	opacity: 1;
 }
 
 
-
-.footer{
+footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	z-index: 2;
-	box-sizing: inherit;
+
 	background-color: #29bde0;
 	padding: 2rem 0;	
+	
+
 	text-align: center;
 
 	margin: 0 auto;
+
 }
 
-.footer button{
-	width: 100%;
+footer button{
+	width: 70%;
 	border:0;
 	background-color: #fbb435;
 	padding: 1rem 0;
