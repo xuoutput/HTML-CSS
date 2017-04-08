@@ -1,0 +1,426 @@
+html{
+	font-size: 62.5%;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 720px)
+{
+	html{
+	font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 540px)
+{
+	html{
+	font-size: 50%;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	html{
+	font-size: 40%;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	html{
+	font-size: 30%;
+	}
+
+}
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+/*以上初始化*/
+
+.header-top{
+	background-color: #fff;
+	font-size: 1rem;
+	color: #29b078;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 1rem 0;
+}
+
+.tel{
+	text-align: left;
+}
+
+.login{
+	text-align: right;
+}
+
+.header-nav{
+	background-color: #29b078;
+
+	display: flex;
+    /*justify-content: flex-end;*/
+    align-items: center;
+}
+
+.jnshu{
+	text-align: left;
+}
+
+
+.header-nav-right ul{
+	text-align: right;
+
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	
+	margin-bottom: 0;
+	height: 5rem;
+	
+}
+
+.nav-li{
+	list-style-type: none;
+	float: left;
+
+	width: 5rem;
+	height: 5rem;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /*border-bottom: 5px solid transparent;*/
+}
+
+.nav-li a{
+	height: 5rem;
+
+	font-size: 2rem;
+	color: #fff;	
+
+	padding: 1rem 0;
+
+
+}
+
+.nav-li a:hover{
+	text-decoration: none;
+	color: #fff;
+
+	border-bottom: 3px solid #fff;
+}
+
+/*--------------------------main 首页-------------------*/
+
+.main-top{
+	padding: 1rem 0;
+
+	border-bottom:1px solid #b2b2b2;
+}
+
+.main-top-left{
+	font-size: 1.5rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.main-top-right{
+	font-size: 1.5rem;
+	color: #29b078;
+	text-decoration: none;	
+}
+
+.main-top a:hover{
+	text-decoration: none;
+	color: #ff8b4a;
+}
+
+/*--------------------------main 职业方向-------------------*/
+
+.main-major{
+	padding: 1rem 0;
+	
+	font-size: 2rem;
+	border-bottom:1px solid #b2b2b2;
+}
+
+.major-bcg{
+	display: inline-block;			/*a标签加宽度要block 或 inline-block*/
+	width: 7rem;
+	text-align: center;
+
+	text-decoration: none;
+	color: #000;
+
+}
+
+.one{
+	color: #b2b2b2;
+}
+
+.major-bcg:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #29b078;
+}
+
+/*.major-bcg:visited{
+	text-decoration: none;
+	color: #000;
+	background-color: #29b078;	
+}*/
+
+/*--------------------------main 前端方向-------------------*/
+
+.row5 {			/*这里有padding是main-title的*/
+	font-size: 3rem;
+	color: #000;
+	padding: 1.5rem 0;
+	text-align: left;
+
+	border-bottom: 1px solid #b2b2b2;
+	margin-bottom: 0;
+}
+
+
+.main-title a,.main-title a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+/*--------------------------每个人-------------------*/
+
+.row6{
+	padding: 1rem;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+/*------------.main-person-row1 Web前端工程师 ---------------*/
+
+.main-person{
+	margin-bottom: 1rem;
+}
+
+
+.kong{		/*用来调整444之间间隙 不能直接对main-person*/
+	border: 1px solid #b2b2b2;
+	
+	position: relative;  /*定位那个IOS透明色的*/
+}
+
+.main-person-row1{
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.main-person-row1-left img{
+	width: 100%;
+}
+
+.main-person-row1-right-top{
+	font-size: 2rem;
+	color: #000;
+}
+
+.main-person-row1-right-content{
+	font-size: 1.5rem;
+	color: #000;
+}
+
+
+/*------------.main-person-row2 门槛  难易程度---------------*/
+
+.main-person-row2{
+
+	font-size: 1rem;
+	color: #b2b2b2;
+
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.main-person-row2-right{
+	border-left: 1px solid #b2b2b2;
+}
+
+.main-person-row2-left,.main-person-row2-right{
+	padding: 1rem 0;
+}
+
+
+
+
+
+.star {
+    width: 0;
+    height: 0;
+    border-top: 5px solid red;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+   
+    position: relative;
+    top: 9px;
+    left: 10px;
+   
+}
+.star:before,.star:after {
+    width: 0;
+  	height: 0;
+    border-top: 5px solid red;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  
+    content: '';
+    display: block;
+ 
+    position: absolute;
+    top: -5px;left: -10px;
+  
+}
+.star:before {
+    transform: rotate(70deg);
+}
+.star:after {
+    transform: rotate(-78deg);
+}
+
+
+
+
+/*------------.main-person-row3 成长周期---------------*/
+
+.main-person-row3{
+
+	font-size: 1rem;
+	color: #b2b2b2;
+
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.main-person-row3-right{
+	border-left: 1px solid #b2b2b2;
+}
+
+.main-person-row3-left,.main-person-row3-right{
+	padding: 1rem 0;
+}
+
+.red{
+	color: red;
+}
+/*------------.main-person-row4 薪资待遇---------------*/
+
+.main-person-row4{
+	/*padding: 1rem 0;*/
+
+	font-size: 1rem;
+	color: #000;
+
+	border-bottom: 1px solid #b2b2b2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.main-person-row4-left{
+	text-align: center;
+
+	margin-bottom: 0;
+}
+
+
+.main-person-row4-right{
+	padding: 0 0 !important;
+
+	border-left: 1px solid #b2b2b2;
+
+}
+
+.main-person-row4-right p{
+	margin-bottom: 0;
+	padding: 0.5rem 1rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+	align-items: center;	
+
+}
+
+.salary-year1,.salary-year2{
+	border-bottom: 1px solid #b2b2b2;
+}
+
+
+/*------------.main-person-row5 有286人正在学---------------*/
+
+.main-person-row5{
+	padding: 1rem 0;
+
+	font-size: 1.5rem;
+	color: #000;
+
+	border-bottom: 1px solid #b2b2b2;
+}
+
+
+
+/*------------.main-person-row6 提示：在你学习之前---------------*/
+
+.main-person-row6{
+	padding: 1rem 0;
+
+	font-size: 1rem;
+	color: #b2b2b2;
+
+}
+
+
+
+/*------------.showIOS 隐藏---------------*/
+
+.showIOS{
+	font-size: 1.8rem;
+	color: #fff;
+	padding: 0 1.5rem;
+
+}
+
+.showIOS-top{
+	font-size: 2rem;
+
+	text-align: center;
+	margin-top: 4rem;
+}
+.showIOS-content{
+	margin-top: 3rem;
+	padding: 0 1.5rem;
+}
+
+
+.showIOS{
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	opacity: 0;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.showIOS:hover{
+	opacity: 1;
+}
