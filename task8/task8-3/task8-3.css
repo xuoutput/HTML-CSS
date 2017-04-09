@@ -8,28 +8,41 @@ html{
 	html{
 	font-size: 60%;
 	}
+
+	.header-nav-right ul li a{
+	font-size: 60%;	
+	}
 }
 
-@media screen and (max-width: 540px)
+/*@media screen and (max-width: 540px)
 {
 	html{
 	font-size: 50%;
+	}
+	.header-nav-right ul li a{
+	font-size: 50%;	
 	}
 }
 @media screen and (max-width: 480px)
 {
 	html{
-	font-size: 40%;
+	font-size: 50%;
+	}
+	.header-nav-right ul li a{
+	font-size: 50%;	
 	}
 }
 
 @media screen and (max-width: 320px)
 {
 	html{
-	font-size: 30%;
+	font-size: 50%;
+	}
+	.header-nav-right ul li a{
+	font-size: 50%;	
 	}
 
-}
+}*/
 
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -112,6 +125,10 @@ a{
 
 	padding: 1rem 0;
 
+	display: flex;
+	flex-flow: column nowrap
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -154,12 +171,15 @@ a{
 }
 
 
-
+/*------------------------公司列表 土豆------------------------*/
 
 .row3{
 	margin-bottom: 4rem;
 }
 
+.main-content-left,.main-content-right{
+	margin-top: 15px;
+}
 
 .main-content-left{
 	border:1px solid #b2b2b2;

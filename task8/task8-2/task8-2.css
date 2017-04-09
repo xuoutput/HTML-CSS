@@ -8,8 +8,11 @@ html{
 	html{
 	font-size: 60%;
 	}
+	.header-nav-right ul li a{
+	font-size: 60%;	
+	}
 }
-
+/*
 @media screen and (max-width: 540px)
 {
 	html{
@@ -30,7 +33,7 @@ html{
 	}
 
 }
-
+*/
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -112,6 +115,10 @@ a{
 
 	padding: 1rem 0;
 
+	display: flex;
+	flex-flow: column nowrap
+    justify-content: center;
+    align-items: center;
 
 }
 
