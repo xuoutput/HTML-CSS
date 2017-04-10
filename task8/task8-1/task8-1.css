@@ -9,8 +9,29 @@ html{
 	font-size: 60%;
 	}
 	.header-nav-right ul li a{
-	font-size: 60%;	
+	font-size: 60%;
+
 	}
+
+	.header-nav-right ul{
+	
+		height: 4rem !important;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.nav-li,.nav-li a{
+		height: 4rem !important;
+	}
+
+	.header-nav{
+		padding: 1rem 0;
+	}
+	
+	
+	
 }
 /*
 @media screen and (max-width: 540px)
@@ -71,24 +92,43 @@ a{
 	background-color: #29b078;
 
 	display: flex;
-    /*justify-content: flex-end;*/
+	flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
+
+
+
+
 .jnshu{
-	text-align: left;
+	/*text-align: left;*/
+	padding-left: 15px;
 }
+
+
+/*下拉菜单↓*/
+.navbar-toggle{
+	border:1px solid #fff !important;
+}
+
+
+.icon-bar{
+	background-color: #fff!important;
+}
+
+
+/*下拉菜单↑*/
 
 
 .header-nav-right ul{
-	text-align: right;
 
 	display: flex;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     align-items: center;
 	
 	margin-bottom: 0;
-	height: 5rem;
+	height: 9rem;
 	
 }
 
@@ -108,7 +148,7 @@ a{
 }
 
 .nav-li a{
-	height: 5rem;
+	height: 9rem;
 
 	font-size: 2rem;
 	color: #fff;	
@@ -133,16 +173,19 @@ a{
 /*--------------------------main 首页-------------------*/
 
 
-.header-bcg{
-	/*background-color: #f1a750;*/
-}
 
-.header-bcg img{
-	width: 100%;
-	height: auto;
 
-}
+		/*--------------------------轮播图-------------------*/
 
+/*div.item img{					这里可以不用
+    width:100%;
+ }
+div#carousel-example-generic{
+    width:100%;
+    margin:0 auto;
+}*/
+
+/*---------------------------------------------*/
 
 
 	/* main-top */
@@ -268,8 +311,9 @@ h3{
     justify-content: flex-start;
     align-items: center;	
 
-    border: 1px solid #b2b2b2;
-
+    /*border: 1px solid #b2b2b2;*/
+	box-shadow: 0px 0px 3px #aaa;
+	
     padding: 1rem;
     margin:15px;
 }
@@ -312,7 +356,7 @@ h3{
 
 
 .circus:hover{
-	background-color: #69d1e9 !important;
+	background-color: #29b078 !important;
 	cursor: pointer;
 }
 
@@ -334,31 +378,33 @@ h3{
 
 .company{
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;	
 
-/*    box-shadow: 2px 2px 3px #aaa;*/
-
-    padding: 1rem 0;
+   /* padding: 1rem 0;*/
 }
 
-/*.company-border{
-	width: 7rem;
-	height: 7rem;
-vertical-align: middle;
-}*/
 
-.company-border img{
-	height: 3rem;
+.company-border{
+	width: 15rem;
+	height: 15rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 	
 }
 
-
-.huanxin{
-	/*box-shadow: 2px 2px 3px #aaa;*/
+.company-border img{
+	height: 3.5rem;
+	
 }
 
+.company-border:hover{
+	box-shadow: 0px 0px 3px #aaa;
+}
 
 
 

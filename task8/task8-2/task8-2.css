@@ -11,6 +11,23 @@ html{
 	.header-nav-right ul li a{
 	font-size: 60%;	
 	}
+
+	.header-nav-right ul{
+		
+		height: 4rem !important;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.nav-li,.nav-li a{
+		height: 4rem !important;
+	}
+
+	.header-nav{
+		padding: 1rem 0;
+	}
 }
 /*
 @media screen and (max-width: 540px)
@@ -71,24 +88,38 @@ a{
 	background-color: #29b078;
 
 	display: flex;
-    /*justify-content: flex-end;*/
+	flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 .jnshu{
-	text-align: left;
+	padding-left: 15px;
+}
+
+/*下拉菜单↓*/
+.navbar-toggle{
+	border:1px solid #fff !important;
 }
 
 
+.icon-bar{
+	background-color: #fff!important;
+}
+
+
+/*下拉菜单↑*/
+
+
 .header-nav-right ul{
-	text-align: right;
+	/*text-align: right;*/
 
 	display: flex;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     align-items: center;
 	
 	margin-bottom: 0;
-	height: 5rem;
+	height: 9rem;
 	
 }
 
@@ -108,7 +139,7 @@ a{
 }
 
 .nav-li a{
-	height: 5rem;
+	height: 9rem;
 
 	font-size: 2rem;
 	color: #fff;	
@@ -116,7 +147,8 @@ a{
 	padding: 1rem 0;
 
 	display: flex;
-	flex-flow: column nowrap
+	display: -webkit-flex;
+	flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
