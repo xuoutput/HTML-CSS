@@ -1,0 +1,31 @@
+可以下koala来编译less的，也可以用sublime，我建议用sublime来玩。
+
+
+关于sublime安装less高亮
+http://blog.csdn.net/raindeweixiao/article/details/47356139
+
+这里我就安装了less语法高亮，没用less2css，用的是koala编译
+
+less2css，顾名思义，就是讲less文件转化为css文件。
+
+如果你使用sublime编辑器，如果你想使用less，那么我们就需要安装插件啦！
+
+插件一：less
+
+插件二：less2css。
+
+第一个插件less可以使less文件代码高亮，很是友好哦。
+
+第二个插件less2css可以在你保存less文件的同时在相同目录下生成同名的css文件。
+
+安装步骤来啦！
+
+ ctrl +shift +p  或   preferences->package control
+
+在文本框中输入install后再输入less按回车 ， 此时注意sublime左下角的信息安装提示，一般都会成功的。成功之后只需要重启sublime就可以看到less文件的代码高亮显示啦！大笑
+
+同样的步骤安装less2css。但是less2css安装完成后还不可以，less2css插件依赖lessc这个工具，https://github.com/fengdi/lessc下载这个压缩包，然后解压后放到Sublime Text\Data\Packages\lessc文件夹里，重启sublime，编辑less文件之后保存，css文件一并就生成啦！
+
+整个安装过程中，刚开始下载了less.js-windows文件，还要设置环境变量，但sublime下一保存less文件就会出现错误，解决了一个问题还是会出现其他的错误，最终放弃了。希望大家可以不走弯路，快乐的使用sublime吧！
+
+接着，如果你在保存less文件中，如果出现了以下问题：

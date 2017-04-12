@@ -1,0 +1,158 @@
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 720px)
+{
+	html{
+	font-size: 50%;
+	}
+	
+
+		
+}
+
+/*以上初始化*/
+
+/*变量*/
+@hui:#eff0f4;
+@bai:#fff;
+@lan:#5fc0cd;
+
+@base-size:2rem;
+@denglu-size:2.5rem;
+
+.container-fluid{
+	background-color: @hui;		/*白色有点灰*/
+}
+
+
+/*-------------头部↓------------*/
+.header{
+	background-color: @lan;	/*蓝色*/
+	padding: 1rem 0;
+
+	font-size: @base-size;
+	color: @bai;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;	
+	
+	.left,.right{
+	text-decoration:none;	
+	color: @bai;
+	}
+	
+	p{
+	font-size: @denglu-size;
+	margin: 0;
+	}
+
+}
+
+
+
+
+/*-------------头部↑------------*/
+
+/*---------------用户名密码↓------------*/
+
+.container{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+
+.username,.password{
+	background-color: @bai;
+	padding: 1rem ;
+	margin: 0.5rem 0 0 0;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	img{
+	width: 2rem;
+	}
+
+	input{
+		margin-left: 2rem;
+		padding-left:2rem;
+
+		border:0;
+		width: 100%;
+		border-left: 2px solid @hui;
+
+		font-size: @base-size;
+	}
+
+}
+
+
+
+/*---------------用户名密码↑------------*/
+.login{
+	background-color: @lan;	/*蓝色*/
+	padding: 1rem 0;
+	margin-top: 3rem;
+
+	font-size: @denglu-size;
+	color: @bai;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	a{
+		text-decoration:none;
+		color: @bai;	
+	}
+
+	&:hover{
+		text-decoration:none;
+		color: @bai;
+		cursor: pointer;	
+	}
+
+}
+
+
+
+/*---------------footer  ↓------------*/
+.footer a{
+	background-color: @hui;
+	padding: 1rem 0;
+	font-size: @base-size;
+	color: @lan;
+		
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+
+	&:hover{
+		text-decoration:none;
+		color: @lan;
+		cursor: pointer;	
+	}
+
+}
+
