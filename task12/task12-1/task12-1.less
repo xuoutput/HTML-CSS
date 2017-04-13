@@ -1,0 +1,277 @@
+html{
+	font-size: 62.5%;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 720px)
+{
+	html{
+	font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 540px)
+{
+	html{
+	font-size: 50%;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	html{
+	font-size: 40%;
+	}
+}
+
+/*@media screen and (max-width: 320px)
+{
+	html{
+	font-size: 30%;
+	}
+
+}*/
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+
+/*以上初始化*/
+
+
+header{
+	position: fixed;
+	top: 0;
+	
+	min-width: 320px;			
+  	width: 100%;
+
+  	background-color: rgb(95,192,205);
+
+  	padding: 1rem 1rem;
+
+	// overflow: hidden;
+	z-index: 2;		/*防止main和footer遮住header*/
+
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	a{						
+		display: inline-block;	
+		
+		text-decoration: none;
+		text-align: left;
+
+		img{
+			height: 2rem;		
+		}
+	
+	}
+
+	h2{
+		display: inline-block;
+		text-align: center;
+
+		font-size: 2.5rem;
+		color: #fff;
+	}
+
+	div{
+		// width: 1rem;
+		height: 2rem;
+	}
+
+}
+
+
+/*--------------中间-----------------*/
+
+
+main{
+	margin: 0 auto;		
+	min-width: 320px;
+ 	width: 100%;
+ 	background-color: #fff;	
+
+ 	color: rgb(51,51,51);
+	text-align: left;		/*消除html中的居中*/
+
+	.main-top{			
+		margin-top: 4rem;							
+		background: url(images/bcg.png) no-repeat center;
+		background-size: cover;		
+		
+		padding: 3rem 0 3rem 2rem;
+	
+		.usr-img{
+			display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
+			width: 8rem;
+			height: 8rem;
+			
+			border-radius: 50%;		/*圆*/
+			
+			padding: 0  ;	/*不能用padding不然圆形变了*/
+			background: url(images/head.png) no-repeat center;
+			background-size: 80%;
+			vertical-align: middle;
+
+			background-color: #fff;		/*这个背景色和背景图前后位置要放对，不能放前*/
+		}
+
+		.usr-inf{
+			display: inline-block;
+			padding-left: 5%;
+			color:#fff;
+			vertical-align: middle;
+
+			.usr-name{
+				display: inline-block;
+			  	font-size: 3.2rem;
+			  	line-height: 3.2rem;
+
+				.usr-age{
+					display: inline-block;
+				  	font-size: 3.2rem;	
+				}
+
+			}
+
+			.usr-location {
+			  	font-size: 2.4rem;
+
+				img{
+					display: inline-block;
+					height: 1.5rem;
+					vertical-align: middle;
+				}			  	
+			}
+
+		}
+		
+	}
+
+	.main-content{
+		color: rgb(51,51,51);		/*内容字体设置为黑，靠左对齐*/
+		text-align: left;
+		margin-bottom: 10rem;
+
+		ul{
+			list-style-type: none;
+
+			li{
+				list-style-type: none;
+				border-bottom: 1px solid rgb(225,229,231);
+				padding:1.5rem 0; 
+				
+				font-size: 3rem;
+
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+
+
+				.skill{
+					margin-left: 2rem;
+					padding-left: 2rem;
+					border-left: 3px solid rgb(95,192,205);
+				}
+
+				.list-left{
+					margin: 0rem 0rem 0rem 2rem;
+					padding-right: 2rem;
+					border-right: 1px solid rgb(225,229,231);
+					
+					display: inline-block;			/*主要是这里还有width*/
+					
+					// box-sizing: border-box;
+
+				}
+
+				.list-right{
+					margin-left: 2rem;
+				}
+
+				.star{
+					border-right:  0;
+
+					img{
+						width: 1.8rem;
+						// height: 1.5rem;
+					}
+				}
+
+				.wage{
+					color: rgb(228,106,108);
+				}
+
+				.self-intro{
+					display: inline-block;
+					width: 50%;
+					font-size: 2rem;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+/*----------------footer------------------*/
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto ;
+	
+	min-width: 320px;
+	width: 100%;
+	
+	background-color: #fff;
+	text-align: center;
+
+	z-index: 2;
+
+	// padding: 0.5rem;
+
+	button{
+		display: inline-block;
+		
+		width: 45%;
+		padding: 1rem 0;
+		margin:0 0.5rem;
+
+		border:none;
+		border:2px solid rgb(95,192,205);
+		border-radius: 7px;
+
+		font-size: 3rem;
+		font-family:  Arial, Helvetica, sans-serif;
+
+		text-align: center;
+	}
+
+	.message{
+		color: rgb(95,192,205);
+		background-color: #fff;
+	}
+
+	.tel{
+		color: #fff;
+		background-color: rgb(95,192,205);
+	}
+	
+}
+
