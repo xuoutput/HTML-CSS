@@ -114,6 +114,10 @@ main{
 	color: rgb(153,153,153);
 }
 
+.main-content-left{
+	padding-right: 0!important;
+}
+
 .black{
 	
 	color: rgb(51,51,51);
@@ -141,14 +145,13 @@ main{
 .main-content-right{
 	display: flex;
 	display: -webkit-flex;
-
-	
 	flex-flow: row nowrap;        
-
-	justify-content: space-between;		
+	justify-content: flex-end;		
 	align-items: center;        
 	
 	color: rgb(230,59,14);
+
+	padding-left: 0!important;
 }
 
 
