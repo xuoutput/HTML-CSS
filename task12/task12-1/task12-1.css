@@ -117,12 +117,12 @@ main .main-top .usr-inf {
 }
 main .main-top .usr-inf .usr-name {
   display: inline-block;
-  font-size: 3.2rem;
-  line-height: 3.2rem;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
 }
 main .main-top .usr-inf .usr-name .usr-age {
   display: inline-block;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 main .main-top .usr-inf .usr-location {
   font-size: 2.4rem;
@@ -130,7 +130,6 @@ main .main-top .usr-inf .usr-location {
 main .main-top .usr-inf .usr-location img {
   display: inline-block;
   height: 1.5rem;
-  vertical-align: middle;
 }
 main .main-content {
   color: #333333;
@@ -145,7 +144,7 @@ main .main-content ul li {
   list-style-type: none;
   border-bottom: 1px solid #e1e5e7;
   padding: 1.5rem 0;
-  font-size: 3rem;
+  font-size: 2.8rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -159,14 +158,18 @@ main .main-content ul li .list-left {
   margin: 0rem 0rem 0rem 2rem;
   padding-right: 2rem;
   border-right: 1px solid #e1e5e7;
-  display: inline-block;
-  /*主要是这里还有width*/
+  color: #999;
+}
+main .main-content ul li .list-left span {
+  white-space: nowrap;
+  /* 规定段落中的文本不进行换行 */
 }
 main .main-content ul li .list-right {
   margin-left: 2rem;
 }
 main .main-content ul li .star {
   border-right: 0;
+  color: #000;
 }
 main .main-content ul li .star img {
   width: 1.8rem;
@@ -176,7 +179,6 @@ main .main-content ul li .wage {
 }
 main .main-content ul li .self-intro {
   display: inline-block;
-  width: 50%;
   font-size: 2rem;
 }
 /*----------------footer------------------*/

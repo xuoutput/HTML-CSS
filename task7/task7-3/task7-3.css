@@ -45,32 +45,23 @@ ul,li{
 
 header{
 	min-width: 320px;
-	width: 100%;
 
-	margin: 0 auto;
 	background-color: #29bde0;
-	padding: 2rem 0;			/*不能在这里设置padding的left和right来调整两边距离，而是在home和help中设置margin来调整，不然就是右边的而距离有问题*/
+	padding: 2rem 0rem;			/*不能在这里设置padding的left和right来调整两边距离，而是在home和help中设置margin来调整，不然就是右边的而距离有问题*/
 
 	display: flex;
-	display: -webkit-flex;
-
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
 	
-	text-align: center;
 	border-bottom: 1px solid #74d4eb;
-
 
 }
 
-.home{
-	background-image: url(images/img.png);
-	height:42px;width:51px;
-	background-position:0 -40px;
+.home img{
 
 	margin-left: 1rem;
-
+	width: 3.2rem;
 }
 
 .jieguo{
@@ -79,13 +70,13 @@ header{
 	
 }
 
-.help{
-	background-image: url(images/img.png);
-	height:40px;width:40px;
-	background-position:0 0;	
+.help img{
 
 	margin-right: 1rem;
+	width: 3.2rem;
 }
+
+
 
 main{
 	margin-bottom: 10rem;
@@ -97,14 +88,18 @@ main{
 	
 .main-top-header{
 							/*这里不会用雪碧图自适应*/
-
+	width: 50%;
 	padding: 1rem ;
 
-	text-align: center;
+	margin: 0 auto;
+/*	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;*/
 }
 
 .main-top-header img{
-	height: 10rem;
+	width: 100%;
 }
 
 .main-top-main{
@@ -117,7 +112,7 @@ main{
 .main-top-footer{
 	font-size: 2.5rem;
 	color: #fff;
-	padding: 0 3rem;
+	padding: 1.5rem 2rem 0 3rem;
 }
 
 .main-top-footer pre{
@@ -136,7 +131,7 @@ li{
 	border-bottom: 1px solid #000;
 
 	display: flex;
-	display: -webkit-flex
+	display: -webkit-flex;
 
 	justify-content:space-between;
 	align-items: center;
@@ -154,11 +149,19 @@ li p{
 	color: #a6a6a6;
 }
 
+.date{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .time{
 	font-size: 1rem;
 	color: #a6a6a6;
+	/*margin-right: 2rem;*/
 
-	align-self: flex-start;
+	/*align-self: flex-start;*/
 }
 
 

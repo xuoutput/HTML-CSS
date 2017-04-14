@@ -42,6 +42,7 @@ ul,li{
 
 /*以上初始化*/
 
+/*--------------------header------------------*/
 
 header{
 	position: fixed;
@@ -51,22 +52,19 @@ header{
 	min-width: 320px;			
   	width: 100%;
 
-  	background-color: rgb(95,192,205);
+  	background-color: #5fc0cd;
 
   	text-align: center;
   	padding: 1rem 1rem;
 
 	overflow: hidden;
-	z-index: 100;		/*防止main和footer遮住header*/
+	z-index: 2;		/*防止main和footer遮住header*/
 
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-
-
-
 	
 }
 
@@ -81,7 +79,7 @@ header a{
 header a img{
 	width: 1rem;
 	height: 2rem;
-/*	vertical-align: middle;	*/		
+		
 }
 
 header h2{
@@ -100,7 +98,7 @@ header div{
 }
 
 
-
+/*--------------------main------------------*/
 
 main{
 	margin-top: 6rem;		/*在main-top 和main-content中都放一个防止覆盖*/
@@ -120,7 +118,7 @@ main{
 
 .main-top{			
 	margin-top: 6rem;	
-						/*height: 24rem;*/		/*max-   这里就是图片不能拉长*position: relative; 图片显示不用这个只要background-zise不过为啥前面的背景显示不了*/
+						
 	background: url(images/bcg.png) no-repeat center;
 	background-size: cover;		/*这个属性会保持图像本身的宽高比例,将图片缩放到正好完全覆盖定义背景的区域*/
 	
@@ -198,12 +196,18 @@ li{
 	
 	font-size: 3rem;
 
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+
 }
 
 .skill{
 	margin-left: 2rem;
 	padding-left: 2rem;
-	border-left: 3px solid rgb(95,192,205);
+	border-left: 3px solid #5fc0cd;
+
+	color: #000;
 }
 
 
@@ -213,9 +217,10 @@ li{
 	border-right: 1px solid rgb(225,229,231);
 	
 	display: inline-block;			/*主要是这里还有width*/
-	
-	box-sizing: border-box;
-/*	vertical-align: middle;*/
+	color: #999;
+
+	white-space: nowrap;
+
 
 }
 
@@ -225,12 +230,13 @@ li{
 
 .star{
 	border-right:  0;
-	/*font-size: 3rem;*/
+	
 }
 
 .star img{
-	width: 1.5rem;height: 1.5rem;
-	vertical-align: middle;
+	width: 1.8rem;
+	/*height: 1.5rem;*/
+	/*vertical-align: middle;*/
 }
 
 .wage{
@@ -242,12 +248,9 @@ li{
 
 .self-intro{
 	display: inline-block;
-	width: 50%;
+	/*width: 50%;*/
 	font-size: 2rem;
-/*	min-height: 2rem;
-	line-height: 2rem;
-	
-	vertical-align: middle;*/
+
 }
 
 
@@ -255,7 +258,7 @@ li{
 
 
 
-
+/*-----------------footer--------------------*/
 
 footer{
 	position: fixed;
@@ -282,7 +285,7 @@ button{
 	margin:0.5rem;
 
 	border:none;
-	border:2px solid rgb(95,192,205);
+	border:2px solid #5fc0cd;
 	border-radius: 7px;
 
 	font-size: 3.2rem;
@@ -292,11 +295,11 @@ button{
 }
 
 .message{
-	color: rgb(95,192,205);
+	color: #5fc0cd;
 	background-color: #fff;
 }
 
 .tel{
 	color: #fff;
-	background-color: rgb(95,192,205);
+	background-color: #5fc0cd;
 }

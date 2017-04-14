@@ -133,12 +133,12 @@ main{
 
 			.usr-name{
 				display: inline-block;
-			  	font-size: 3.2rem;
-			  	line-height: 3.2rem;
+			  	font-size: 2.8rem;
+			  	line-height: 2.8rem;
 
 				.usr-age{
 					display: inline-block;
-				  	font-size: 3.2rem;	
+				  	font-size: 2.8rem;	
 				}
 
 			}
@@ -149,7 +149,7 @@ main{
 				img{
 					display: inline-block;
 					height: 1.5rem;
-					vertical-align: middle;
+					// vertical-align: middle;
 				}			  	
 			}
 
@@ -170,7 +170,7 @@ main{
 				border-bottom: 1px solid rgb(225,229,231);
 				padding:1.5rem 0; 
 				
-				font-size: 3rem;
+				font-size: 2.8rem;
 
 				display: flex;
 				flex-flow: row nowrap;
@@ -188,9 +188,13 @@ main{
 					padding-right: 2rem;
 					border-right: 1px solid rgb(225,229,231);
 					
-					display: inline-block;			/*主要是这里还有width*/
+					// display: inline-block;			/*主要是这里还有width*/
+					color: #999;
 					
-					// box-sizing: border-box;
+					span{
+						// word-break:keep-all;           /* 在恰当的断字点进行换行 */
+						white-space:nowrap;          /* 规定段落中的文本不进行换行 */
+					}
 
 				}
 
@@ -200,6 +204,7 @@ main{
 
 				.star{
 					border-right:  0;
+					color: #000;
 
 					img{
 						width: 1.8rem;
@@ -213,7 +218,7 @@ main{
 
 				.self-intro{
 					display: inline-block;
-					width: 50%;
+					// width: 50%;
 					font-size: 2rem;
 
 				}

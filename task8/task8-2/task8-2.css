@@ -84,6 +84,28 @@ a{
 	text-align: right;
 }
 
+
+/*---------屏幕缩小时候 hidden visible登录 注册↓-----------*/
+
+.log{
+	text-align: right;
+	padding: 1rem 0;
+}
+
+.log a{
+	color: #000;
+}
+
+.log-in{
+	margin-right: 5px;
+	padding-right: 10px;
+	border-right: 1px solid #29b078;
+}
+
+/*---------屏幕缩小时候 hidden visible登录 注册↑-----------*/
+
+
+
 .header-nav{
 	background-color: #29b078;
 
