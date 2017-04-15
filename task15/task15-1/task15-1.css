@@ -1,0 +1,706 @@
+html{
+	font-size: 62.5%;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+/*以上初始化*/
+
+.header-top{
+	background-color: #fff;
+	font-size: 1rem;
+	color: #29b078;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1rem 0;
+	margin: 0 15px;
+}
+
+
+
+
+/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
+
+.log{
+	display: none;
+}
+
+
+/*---------导航栏----------*/
+
+.header-middle{
+	height: 6rem;
+    padding: 0rem 15px;
+    background-color:#29b078;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-middle-logo{
+    display: flex;
+    align-items: center;    
+}
+
+
+.header-middle ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-middle li{
+    padding:0 1rem;
+    margin: 0 1rem;
+    font-size:2rem;
+    line-height: 5.7rem;
+    border-bottom:4px solid #29b078;		/*这里先是绿的，hover过去才是白色，防止突然变高*/
+}
+.header-middle ul li a{
+	text-decoration: none;
+    color:#fff;
+}
+.header-middle li:hover{
+    border-bottom-color:#fff;
+}
+.header-middle span{
+    display:none;
+}
+
+@media screen and (max-width:720px){
+    .header-middle ul{
+        display:none;
+    }
+
+    .header-middle span{
+        display:inline-block;
+        padding:0.8rem;
+
+        border:1px solid #fff;
+        border-radius: 5px;
+    }
+	
+	.header-middle span i{
+		display: block;
+		margin:0.3rem;
+		width: 1.5rem;
+		border-bottom:2px solid #fff;
+	}
+
+
+}
+	.header-bottom{
+	    display:none;
+	    background-color:#29b078;
+	    border-top:1px solid grey;
+	}
+	.header-bottom ul{
+		display: flex;
+		flex-flow: column nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    
+	}
+	.header-bottom li{
+	    /*display:block;*/
+	    width:100%;
+	    font-size:2rem;
+	    color:#fff;
+
+	    padding: 1rem 0;
+
+	    border-bottom:3px solid #29b078; 
+
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.header-bottom ul li a{
+		text-decoration: none;
+		color:#fff;
+	}
+	.header-bottom li:hover{
+    border-bottom-color:#fff;
+}
+
+
+/*--------------------------main 首页-------------------*/
+
+
+	/*--------------------------轮播图-------------------*/
+
+
+.shuffling{
+    position:relative;
+    width:100%;
+    height:30vw;
+    overflow:hidden;
+}
+.shuffling img{
+    width:100%;
+}
+@-webkit-keyframes pic_00{				/*这是轮播图动画的地方*/
+    0%{ margin-left:0 }
+    13%{ margin-left:0 }
+    25%{ margin-left:-100% }
+    38%{ margin-left:-100% }
+    50%{ margin-left:-200% }
+    63%{ margin-left:-200% }
+    75%{ margin-left:-300% }
+    88%{ margin-left:-300% }
+    100%{ margin-left:0 }
+}
+@-webkit-keyframes pic_01{
+    0%{ margin-left:100% }
+    13%{ margin-left:100% }
+    25%{ margin-left:0 }
+    38%{ margin-left:0 }
+    50%{ margin-left:-100% }
+    63%{ margin-left:-100% }
+    75%{ margin-left:-200% }
+    88%{ margin-left:-200% }
+    100%{ margin-left:100% }
+}
+@-webkit-keyframes pic_02{
+    0%{ margin-left:200% }
+    13%{ margin-left:200% }
+    25%{ margin-left:100% }
+    38%{ margin-left:100% }
+    50%{ margin-left:0 }
+    63%{ margin-left:0 }
+    75%{ margin-left:-100% }
+    88%{ margin-left:-100% }
+    100%{ margin-left:200% }
+}
+@-webkit-keyframes pic_03{
+    0%{ margin-left:300% }
+    13%{ margin-left:300% }
+    25%{ margin-left:200% }
+    38%{ margin-left:200% }
+    50%{ margin-left:100% }
+    63%{ margin-left:100% }
+    75%{ margin-left:0 }
+    88%{ margin-left:0 }
+    100%{ margin-left:300% }
+}
+
+
+.banner-0{
+    position:absolute;							/*定个位，大小设置下*/
+    top:0;
+    left:0;
+    width:100%;
+    -webkit-animation:pic_00 15s infinite;		/*轮播图行为名字 循环时间 重播不*/
+}
+.banner-1{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    -webkit-animation:pic_01 15s infinite;
+}
+.banner-2{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    -webkit-animation:pic_02 15s infinite;
+}
+.banner-3{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    -webkit-animation:pic_03 15s infinite;
+}
+
+
+
+/*---------------------------------------------*/
+
+
+	/* main-top */
+
+.row4{
+	padding-top: 3rem ;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-top{
+	width: 22%;
+	padding: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.main-top img{
+	height: 5rem;
+}
+
+h3{
+	font-size: 2rem;
+	color: #000;
+
+	padding: 0.5rem 0;
+}
+
+.main-top p{
+	font-size: 1.5rem;
+	color: #999;
+
+	padding: 0.5rem 0;
+
+}
+
+
+/*-----------main-top-right----------------*/
+
+.main-top-right{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-top-right img{
+	height: 1.5rem;
+}
+
+.main-top-right p{
+	margin:0;
+}
+
+
+
+
+
+
+	/* 如何学习  */
+
+.howstudy h3{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+
+.row6,.row7{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+}
+
+
+.study-box{
+		width: 23%;
+		padding: 1rem 0;
+}
+
+.study{
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*margin:0.5rem;	*/
+}
+
+.study h3{
+	font-size: 1.5rem;
+	color: #29b078;
+
+	margin:0;
+	
+	
+	padding: 1rem 1.3rem;
+	/*border: 1px solid #999;*/
+	border-radius: 50%;
+	box-shadow: 0 0 5px #999;
+}
+
+.study p{
+	font-size: 1rem;
+	color: #999;
+
+	margin:0;
+	padding: 1rem;
+
+}
+
+.study img{
+	height: 1.5rem;
+
+}
+
+
+
+
+	/* 优秀学员展示 */
+.row9{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+}
+
+
+.stu-box{
+	width: 25%;
+	/*padding:1rem 0;*/
+}
+
+.stu-title{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.stu{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+	box-shadow: 0px 0px 3px #aaa;
+	
+    padding: 1rem;
+    margin:15px;
+}
+
+.stu img{
+	height: 6rem;
+
+}
+
+.stu h3{
+	font-size: 1.5rem;
+	color: #000;
+
+	/*margin:0;*/
+}
+
+.stu p{
+	font-size: 1rem;
+	color: #999;
+
+}
+
+
+
+		/*四个点*/
+.dot{
+	text-align: center;
+
+	padding: 2rem 0;
+}
+
+.circus{
+	display: inline-block;
+	width: 1.5rem;height: 1.5rem;
+	border-radius: 50%;
+
+	box-shadow: 2px 2px 3px #aaa;
+	/*background-color: #f0f0f0;*/
+}
+
+
+.circus:hover{
+	background-color: #29b078 !important;
+	cursor: pointer;
+}
+
+
+	/* 战略合作企业 */
+
+.row12{
+	box-shadow: 2px 2px 3px #aaa;
+}
+
+.company-title{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.company{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+
+   /* padding: 1rem 0;*/
+}
+
+
+.company-border{
+	width: 15rem;
+	height: 15rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.company-border img{
+	height: 3.5rem;
+	
+}
+
+.company-border:hover{
+	box-shadow: 0px 0px 3px #aaa;
+}
+
+
+
+
+	/* 友情链接 */
+
+
+.link-title{
+	font-size: 2rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.links ul{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+    padding: 0 2rem ;
+	
+}
+
+.link li{
+	list-style-type:disc !important;
+	color: #999;
+	
+	
+	margin: auto 0.5rem;
+	margin-top: 1rem;
+	width: 6rem;
+}
+
+.link li a{
+
+	text-decoration: none;
+
+	font-size: 1.5rem;
+	color: #999;
+
+}
+
+.link li a:hover{
+	text-decoration: none;
+
+	font-size: 1.5rem;
+	color: #999;
+
+	border-bottom: 1px solid #29b078;
+}
+
+
+	/* footer */
+.row15{
+	background-color: #29b078;
+	margin-top: 2rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row15 p,.row15 a{
+	display: inline-block;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+	/*------footer-left----*/
+.footer-left{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left-row1,.footer-left-row2{
+	padding: 1.5rem;
+}
+
+.I{
+	border-right: 2px solid #fff;
+}
+
+.footer-left-row2 a{
+	padding-right: 0.5rem;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+
+.footer-left-row2 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom: 1px solid #fff;
+}
+
+	/*------footer-middle----*/
+.footer-middle{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-middle-row1{
+	padding: 1.5rem;
+}
+
+.footer-middle-row2,.footer-middle-row3{
+	padding: 1rem;
+}
+
+.footer-middle-row2 a:hover,.footer-middle-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom: 1px solid #fff;
+}
+
+	/*------footer-right----*/
+.footer-right{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right-row1{
+	padding: 1.5rem;
+}
+
+
+
+
+/*--------- copyright------------ */
+.row16{
+	background-color: #29b078;
+	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+
+}
+
+.row16 p{
+	margin-bottom: 0;
+	padding: 0.5rem 0;
+}
+
+
+
+
+
+@media screen and (max-width: 780px)
+{
+	html{
+	font-size: 60%;
+	}
+	
+	.main-top,.study-box,.stu-box{
+		width: 45%;
+	}
+	
+}
+
+@media screen and (max-width: 720px){
+
+	.header-top{		/*这就是tel和login*/
+		display: none;
+	}
+
+	.log{
+		display: block;
+		visibility: visible;
+		text-align: right;
+		padding: 1rem 0;
+
+		font-size: 2rem;
+	}
+
+	.log a{
+		color: #000;
+	}
+
+	.log-in{
+		margin-right: 5px;
+		padding-right: 10px;
+		border-right: 1px solid #29b078;
+	}
+
+	.sign-up{
+		margin-right: 15px;
+	}
+	
+
+}
+
+
+@media screen and (max-width: 420px)
+{
+	html{
+	font-size: 40%;
+	}
+
+	.main-top,.study-box,.stu-box{
+		width: 90%;
+	}
+
+	.row15{
+
+		display: flex;
+		flex-flow: column nowrap;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+}
