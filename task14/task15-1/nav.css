@@ -1,0 +1,99 @@
+
+/*---------导航栏----------*/
+
+.header-middle{
+	height: 6rem;
+    padding: 0rem 15px;
+    background-color:#29b078;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-middle-logo{
+    display: flex;
+    align-items: center;    
+}
+
+
+.header-middle ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-middle li{
+    padding:0 1rem;
+    margin: 0 1rem;
+    font-size:2rem;
+    line-height: 5.7rem;
+    border-bottom:4px solid #29b078;		/*这里先是绿的，hover过去才是白色，防止突然变高*/
+}
+.header-middle ul li a{
+	text-decoration: none;
+    color:#fff;
+}
+.header-middle li:hover{
+    border-bottom-color:#fff;
+}
+.header-middle span{
+    display:none;
+}
+
+@media screen and (max-width:720px){
+    .header-middle ul{
+        display:none;
+    }
+
+    .header-middle span{
+        display:inline-block;
+        padding:0.8rem;
+
+        border:1px solid #fff;
+        border-radius: 5px;
+    }
+	
+	.header-middle span i{
+		display: block;
+		margin:0.3rem;
+		width: 1.5rem;
+		border-bottom:2px solid #fff;
+	}
+
+
+}
+	.header-bottom{
+	    display:none;
+	    background-color:#29b078;
+	    border-top:1px solid grey;
+	}
+	.header-bottom ul{
+		display: flex;
+		flex-flow: column nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    
+	}
+	.header-bottom li{
+	    /*display:block;*/
+	    width:100%;
+	    font-size:2rem;
+	    color:#fff;
+
+	    padding: 1rem 0;
+
+	    border-bottom:3px solid #29b078; 
+
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.header-bottom ul li a{
+		text-decoration: none;
+		color:#fff;
+	}
+	.header-bottom li:hover{
+    border-bottom-color:#fff;
+}

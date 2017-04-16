@@ -1,0 +1,55 @@
+
+.header-top{
+	background-color: #fff;
+	font-size: 1rem;
+	color: #29b078;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1rem 0;
+	margin: 0 15px;
+}
+
+
+
+/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
+
+.log{
+	display: none;
+}
+
+
+@media screen and (max-width: 720px){
+
+	.header-top{		/*这就是tel和login*/
+		display: none;
+	}
+
+	.log{
+		display: block;
+		visibility: visible;
+		text-align: right;
+		padding: 1rem 0;
+
+		font-size: 2rem;
+	}
+
+	.log a{
+		color: #000;
+	}
+
+	.log-in{
+		margin-right: 5px;
+		padding-right: 10px;
+		border-right: 1px solid #29b078;
+	}
+
+	.sign-up{
+		margin-right: 15px;
+	}
+	
+
+}
+

@@ -1,0 +1,344 @@
+
+
+
+/*--------------------------main 首页-------------------*/
+
+
+
+
+
+/*---------------------------------------------*/
+
+
+	/* main-top */
+
+.row4{
+	padding-top: 3rem ;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-top{
+	width: 22%;
+	padding: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.main-top img{
+	height: 5rem;
+}
+
+h3{
+	font-size: 2rem;
+	color: #000;
+
+	padding: 0.5rem 0;
+}
+
+.main-top p{
+	font-size: 1.5rem;
+	color: #999;
+
+	padding: 0.5rem 0;
+
+}
+
+
+/*-----------main-top-right----------------*/
+
+.main-top-right{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-top-right img{
+	height: 1.5rem;
+}
+
+.main-top-right p{
+	margin:0;
+}
+
+
+
+
+
+
+	/* 如何学习  */
+
+.howstudy h3{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+
+.row6,.row7{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+}
+
+
+.study-box{
+		width: 23%;
+		padding: 1rem 0;
+}
+
+.study{
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*margin:0.5rem;	*/
+}
+
+.study h3{
+	font-size: 1.5rem;
+	color: #29b078;
+
+	margin:0;
+	
+	
+	padding: 1rem 1.3rem;
+	/*border: 1px solid #999;*/
+	border-radius: 50%;
+	box-shadow: 0 0 5px #999;
+}
+
+.study p{
+	font-size: 1rem;
+	color: #999;
+
+	margin:0;
+	padding: 1rem;
+
+}
+
+.study img{
+	height: 1.5rem;
+
+}
+
+
+
+
+	/* 优秀学员展示 */
+.row9{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+}
+
+
+.stu-box{
+	width: 25%;
+	/*padding:1rem 0;*/
+}
+
+.stu-title{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.stu{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+	box-shadow: 0px 0px 3px #aaa;
+	
+    padding: 1rem;
+    margin:15px;
+}
+
+.stu img{
+	height: 6rem;
+
+}
+
+.stu h3{
+	font-size: 1.5rem;
+	color: #000;
+
+	/*margin:0;*/
+}
+
+.stu p{
+	font-size: 1rem;
+	color: #999;
+
+}
+
+
+
+		/*四个点*/
+.dot{
+	text-align: center;
+
+	padding: 2rem 0;
+}
+
+.circus{
+	display: inline-block;
+	width: 1.5rem;height: 1.5rem;
+	border-radius: 50%;
+
+	box-shadow: 2px 2px 3px #aaa;
+	/*background-color: #f0f0f0;*/
+}
+
+
+.circus:hover{
+	background-color: #29b078 !important;
+	cursor: pointer;
+}
+
+
+	/* 战略合作企业 */
+
+.row12{
+	box-shadow: 2px 2px 3px #aaa;
+}
+
+.company-title{
+	font-size: 2.5rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.company{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;	
+
+   /* padding: 1rem 0;*/
+}
+
+
+.company-border{
+	width: 15rem;
+	height: 15rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.company-border img{
+	height: 3.5rem;
+	
+}
+
+.company-border:hover{
+	box-shadow: 0px 0px 3px #aaa;
+}
+
+
+
+
+	/* 友情链接 */
+
+
+.link-title{
+	font-size: 2rem;
+	color: #000;
+
+	text-align: center;
+
+	padding: 2rem;
+}
+
+.links ul{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+    padding: 0 2rem ;
+	
+}
+
+.link li{
+	list-style-type:disc !important;
+	color: #999;
+	
+	
+	margin: auto 0.5rem;
+	margin-top: 1rem;
+	width: 6rem;
+}
+
+.link li a{
+
+	text-decoration: none;
+
+	font-size: 1.5rem;
+	color: #999;
+
+}
+
+.link li a:hover{
+	text-decoration: none;
+
+	font-size: 1.5rem;
+	color: #999;
+
+	border-bottom: 1px solid #29b078;
+}
+
+
+
+
+@media screen and (max-width: 780px)
+{
+	html{
+	font-size: 60%;
+	}
+	
+	.main-top,.study-box,.stu-box{
+		width: 45%;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 420px)
+{
+	html{
+	font-size: 40%;
+	}
+
+	.main-top,.study-box,.stu-box{
+		width: 90%;
+	}
+
+
+}
