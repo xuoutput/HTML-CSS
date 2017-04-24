@@ -12,37 +12,35 @@
 	<title>task10定制箱</title>
 </head>
 <body>
-<div class="container-fluid header">
+<header>
 	<!-- 客服登录注册 -->
-	<div class="row row1">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-top">
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 tel">
-				<span>客服热线010-594-78643</span>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 login">
-				<a href="#" ><span>登录</span></a>
-				<a href="#" ><span>注册</span></a>			
-			</div>
+	<div class="container header-top">
+		<div class="tel">
+			<span>客服热线010-594-78643</span>
+		</div>
+		<div class="login">
+			<span class="login-left">登录</span>
+			<span class="login-right">注册</span>			
 		</div>
 	</div>	
+</header>
 
 
+<main>
 	<!-- 导航栏 -->
-	<div class="row row2">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-nav">		
+	<div class="container">
+		<div class=" header-nav">		
 			<a href="#"><span>首页</span></a>	
 			<a href="#"><span>在线定制</span></a>
 			<a href="#"><span>标准箱</span></a>
 			<a href="#"><span>品质保障</span></a>
 		</div>
 	</div>	
-</div>
+
 
 	<!-- 步骤4步 -->
-
-	<div class="row ">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 buzhou">
-				
+	<div class="container ">
+		<div class=" buzhou">				
 			<div class="line-box">
 				<div class="line line1">
 					<div class="circus circus1">
@@ -53,7 +51,6 @@
 					<span>1.定制纸箱</span>	
 				</div>	
 			</div>	
-
 
 			<div class="line-box">
 				<div class="line">
@@ -94,278 +91,302 @@
 	</div>	
 
 
-
-
 	<!-- 具体选择纸箱 -->
-	<div class="row box">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-title">
-			<p>请您按照以下步骤来定制您的纸箱</p>
-		</div>
-	
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-type-title">
-			<div class="img-size">
-				<img src="images/type.png">
-			</div>	
-			<span>选择箱型</span>
-		</div>
-	
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-type">
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 box-type-left">
-
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-					<form class="form-left">
-						
-						<label for="duikouxiang" class="cha-label">
-							<input type="radio" name="type" id="duikouxiang" class="regular-radio" checked="checked">
-							<span class="demo-radioInput"></span>对口箱
-						</label>
-						
-						<label for="feijihe" class="cha-label">
-							<input type="radio" name="type" id="feijihe" class="regular-radio">
-							<span class="demo-radioInput"></span>飞机盒
-						</label>				
-						
-						<label for="tiandigai" class="cha-label">
-							<input type="radio" name="type" id="tiandigai" class="regular-radio">
-							<span class="demo-radioInput"></span>天地盖
-						</label>					
-					</form>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 box-type-right">
-				<form class="form-right" >
-					<label>
-						<select class="form-control">
-							<option>查看详情</option>
-							<option>长度分类</option>
-							<option>参照标准</option>
-						</select>
-						<span class="cha-arrow">
-							<span class="downarrow"></span>
-						</span>
-					</label>
-				</form>
+	<div class="container">
+		<div class="row box">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-title">
+				<span class="box-title-border"></span>
+				<p>请您按照以下步骤来定制您的纸箱</p>
 			</div>
 		
-		</div>
-	
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-size-title">
-			<div class="img-size">
-				<img src="images/size.png">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-type-title">
+				<div class="img-size">
+					<img src="images/type.png">
+				</div>	
+				<span>选择箱型</span>
 			</div>
-			<span>选择尺寸</span>		
-		</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-type">
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 box-type-left">
 
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-size">
-
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 box-size-left">
-				<form class="form-left">
-				
-
-
-					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-						<label for="neijing" class="cha-label">
-							<input type="radio" name="type" id="neijing" class="regular-radio" checked="checked">
-							<span class="demo-radioInput"></span>内径
-						</label>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+						<form class="form-left">
+							
+							<label for="duikouxiang" class="cha-label">
+								<input type="radio" name="type" id="duikouxiang" class="regular-radio" checked="checked">
+								<span class="demo-radioInput"></span><p>对口箱</p>
+							</label>
+							
+							<label for="feijihe" class="cha-label">
+								<input type="radio" name="type" id="feijihe" class="regular-radio">
+								<span class="demo-radioInput"></span><p>飞机盒</p>
+							</label>				
+							
+							<label for="tiandigai" class="cha-label">
+								<input type="radio" name="type" id="tiandigai" class="regular-radio">
+								<span class="demo-radioInput"></span><p>天地盖</p>
+							</label>					
+						</form>
 					</div>
+				</div>
 
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							长<input type="text" name="neijing" class="input-text">mm
-						</label>
+				<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 box-type-right">
+					<div class="form-right dropdown">
+					 	<button type="button" class="btn dropdown-toggle xiala " id="dropdownMenu1"  data-toggle="dropdown">
+					 		<p>查看详情</p>
+					 		<div class="four4"><span class="caret third3"></span></div>  
+					 		
+					 	</button>
+
+					 	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情1</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情2</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情3</a>
+						    </li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情4</a>
+						    </li>
+					 	</ul>
 					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							宽<input type="text" name="neijing" class="input-text">mm
-						</label>
-					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							高<input type="text" name="neijing" class="input-text">mm
-						</label>
-					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label for="waijinig" class="cha-label">
-							<input type="radio" name="type" id="waijinig" class="regular-radio">
-							<span class="demo-radioInput"></span>外径
-						</label>				
-					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							长<input type="text" name="neijing" class="input-text">mm
-						</label>
-					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							宽<input type="text" name="neijing" class="input-text">mm
-						</label>
-					</div>
-
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-						<label class="cha-label">
-							高<input type="text" name="neijing" class="input-text">mm
-						</label>
-					</div>
-
-
-				</form>
+				</div>
+			
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-size-title">
+				<div class="img-size">
+					<img src="images/size.png">
+				</div>
+				<span>选择尺寸</span>		
 			</div>
 
-			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 box-size-right">
-				<form class="form-right" >
-					<label>
-						<select class="form-control">
-							<option>查看详情</option>
-							<option>长度分类</option>
-							<option>参照标准</option>
-						</select>
-						<span class="cha-arrow">
-							<span class="downarrow"></span>
-						</span>
-					</label>
-				</form>
-			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-size">
 
-		</div>
-
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-material-title">
-			<div class="img-size">
-				<img src="images/material.png">
-			</div>
-			<span>选择材质</span>		
-		</div>
-
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-material">
-
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 box-material-left">
-
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 box-size-left">
 					<form class="form-left">
-						
-						<label for="sancengA" class="cha-label">
-							<input type="radio" name="type" id="sancengA" class="regular-radio" checked="checked">
-							<span class="demo-radioInput"></span>三层A瓦优质
-						</label>
-						
-						<label for="sancengB" class="cha-label">
-							<input type="radio" name="type" id="sancengB" class="regular-radio">
-							<span class="demo-radioInput"></span>三层B瓦优质
-						</label>				
-						
-						<label for="sancengC" class="cha-label">
-							<input type="radio" name="type" id="sancengC" class="regular-radio">
-							<span class="demo-radioInput"></span>三层C瓦优质
-						</label>	
 
-						<label for="sancengD" class="cha-label">
-							<input type="radio" name="type" id="sancengD" class="regular-radio">
-							<span class="demo-radioInput"></span>三层D瓦优质
-						</label>				
-						
-						<label for="sancengE" class="cha-label">
-							<input type="radio" name="type" id="sancengE" class="regular-radio">
-							<span class="demo-radioInput"></span>三层E瓦优质
-						</label>
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label for="neijing" class="cha-label">
+								<input type="radio" name="type" id="neijing" class="regular-radio" checked="checked">
+								<span class="demo-radioInput"></span><p>内径</p>
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								长<input type="text" name="neijing" class="input-text">mm
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								宽<input type="text" name="neijing" class="input-text">mm
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								高<input type="text" name="neijing" class="input-text">mm
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label for="waijing" class="cha-label">
+								<input type="radio" name="type" id="waijing" class="regular-radio">
+								<span class="demo-radioInput"></span><p>外径</p>
+							</label>				
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								长<input type="text" name="waiijing" class="input-text">mm
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								宽<input type="text" name="waiijing" class="input-text">mm
+							</label>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+							<label class="cha-label">
+								高<input type="text" name="neijing" class="input-text">mm
+							</label>
+						</div>
+
+
 					</form>
 				</div>
+
+				<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 box-size-right">
+					<div class="form-right dropdown">
+					 	<button type="button" class="btn dropdown-toggle xiala " id="dropdownMenu1"  data-toggle="dropdown">
+					 		<p>查看详情</p>
+					 		<div class="four4"><span class="caret third3"></span></div>  
+					 		
+					 	</button>
+
+					 	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情1</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情2</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情3</a>
+						    </li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情4</a>
+						    </li>
+					 	</ul>
+					</div>
+				</div>
+
 			</div>
 
-			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 box-material-right">
-				<form class="form-right" >
-					<label>
-						<select class="form-control">
-							<option>查看详情</option>
-							<option>长度分类</option>
-							<option>参照标准</option>
-						</select>
-						<span class="cha-arrow">
-							<span class="downarrow"></span>
-						</span>
-					</label>
-				</form>
-			</div>			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-material-title">
+				<div class="img-size">
+					<img src="images/material.png">
+				</div>
+				<span>选择材质</span>		
+			</div>
 
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-material">
 
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 box-material-left">
 
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+						<form class="form-left">
+							
+							<label for="sancengA" class="cha-label">
+								<input type="radio" name="type" id="sancengA" class="regular-radio" checked="checked">
+								<span class="demo-radioInput"></span><p>三层A瓦优质</p>
+							</label>
+							
+							<label for="sancengB" class="cha-label">
+								<input type="radio" name="type" id="sancengB" class="regular-radio">
+								<span class="demo-radioInput"></span><p>三层B瓦优质</p>
+							</label>				
+							
+							<label for="sancengC" class="cha-label">
+								<input type="radio" name="type" id="sancengC" class="regular-radio">
+								<span class="demo-radioInput"></span><p>三层C瓦优质</p>
+							</label>	
 
+							<label for="sancengD" class="cha-label">
+								<input type="radio" name="type" id="sancengD" class="regular-radio">
+								<span class="demo-radioInput"></span><p>三层D瓦优质</p>
+							</label>				
+							
+							<label for="sancengE" class="cha-label">
+								<input type="radio" name="type" id="sancengE" class="regular-radio">
+								<span class="demo-radioInput"></span><p>三层E瓦优质</p>
+							</label>
+						</form>
+					</div>
+				</div>
 
+				<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 box-material-right">
+					<div class="form-right dropdown">
+					 	<button type="button" class="btn dropdown-toggle xiala " id="dropdownMenu1"  data-toggle="dropdown">
+					 		<p>查看详情</p>
+					 		<div class="four4"><span class="caret third3"></span></div>  
+					 		
+					 	</button>
 
+					 	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情1</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情2</a>
+						    </li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情3</a>
+						    </li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation">
+						       <a role="menuitem" tabindex="-1" href="#">详情4</a>
+						    </li>
+					 	</ul>
+					</div>
+				</div>		
+
+			</div>
 		</div>
 	</div>
 
-
-
-
-
-
-
 	<!-- 大红按钮下一步 -->
-	<div class="row ">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btn">
+	<div class="container btn-next">
+		<div class=" ">
 			<button>下一步</button>
 		</div>
 	</div>
 
+</main>
+
+
 	<!-- footer -->
-	<div class="row row15">
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-left">
-			<div class="footer-left-row1">
-				<p>51包装网——纸箱包装首选服务平台</p>
-			</div>
-			<div class="footer-left-row2">
+	<div class="container ">
+		<div class="row row15">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-left">
+				<div class="footer-left-row1">
+					<p>51包装网——纸箱包装首选服务平台</p>
+				</div>
+				<div class="footer-left-row2">
 
-			</div>
-		</div>
-	
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-middle">
-			<!-- <div class="footer-middle-row1">
-				
-			</div> -->
-			<div class="footer-middle-row2">
-				<a href="#">关于我们</a>
-				<a href="#">配送流程</a>
-				<a href="#">联系我们</a>
-			</div>
-			<div class="footer-middle-row3">
-				<a href="#">下单指南</a>
-				<a href="#">媒体介绍</a>
-			</div>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-right">
-			<div class="footer-right-row1">
-				<p>TEL:400-0000-000</p>
-				<p>企业QQ：123456789</p>
-				<p>微信号：XXXXXX</p>
-			</div>
-			<div class="footer-right-row2">
-				<img src="images/qr-code.png" alt="">
+				</div>
 			</div>
 
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-middle">
+				<!-- <div class="footer-middle-row1">
+					
+				</div> -->
+				<div class="footer-middle-row2">
+					<a href="#"><p>关于我们</p></a>
+					<a href="#"><p>配送流程</p></a>
+					<a href="#"><p>联系我们</p></a>
+				</div>
+
+				<div class="footer-middle-row3">
+					<a href="#"><p>下单指南</p></a>
+					<a href="#"><p>媒体介绍</p></a>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-right">
+				<div class="footer-right-row1">
+					<p>TEL:400-0000-000</p>
+					<p>企业QQ：123456789</p>
+					<p>微信号：XXXXXX</p>
+				</div>
+				<div class="footer-right-row2">
+					<img src="images/qr-code.png" alt="">
+				</div>
+
+			</div>
 		</div>
 	</div>
-	
+
+<footer>	
 	<!-- copyright -->
-	<div class="row row16">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+	<div class="copyright">
+		<div class=" ">
 			<span>北京五一包装科技有限公司Copyright©2015</span>
 			<span>51baozhuang.com015</span>
 			<span>All rights reserved.</span>
 			<span>京icp备9999999-1</span>
 		</div>
 	</div>
-
-
-</div>
-
-
+</footer>
 
 </body>
 </html>

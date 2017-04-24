@@ -1,35 +1,43 @@
 html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 625%;	/*这里不用62.5%是因为chrome最小是12px而不会变成10px*/
+	font-family: 黑体, Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 611px)			
 {
 	html{
-	font-size: 60%;
+	font-size: 550%;
 	}
 }
 
-@media screen and (max-width: 540px)
+@media screen and (max-width: 540px)			
 {
 	html{
-	font-size: 50%;
+	font-size: 500%;
 	}
 }
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
+
+}
+
 @media screen and (max-width: 480px)
 {
 	html{
-	font-size: 40%;
+	font-size: 420%;
 	}
 }
 
-/*@media screen and (max-width: 320px)
+@media screen and (max-width: 380px)
 {
 	html{
-	font-size: 30%;
+	font-size: 400%;
 	}
 
-}*/
+}
 
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -43,21 +51,24 @@ ul,li{
 /*以上初始化*/
 
 /*--------------------header------------------*/
+body{
+	max-width: 720px;
+	margin: 0 auto;
+}
 
 header{
 	position: fixed;
 	top: 0;
 	
-	height: 4rem;
-	min-width: 320px;			
+	min-width: 320px;
+	max-width: 720px;			
   	width: 100%;
 
   	background-color: #5fc0cd;
 
-  	text-align: center;
-  	padding: 1rem 1rem;
+  	padding: .2rem 0;
 
-	overflow: hidden;
+/*	overflow: hidden;*/
 	z-index: 2;		/*防止main和footer遮住header*/
 
 	display: flex;
@@ -68,41 +79,31 @@ header{
 	
 }
 
-header a{						
-	display: inline-block;	
-	
-	text-decoration: none;
-	text-align: left;
 
-}
-
-header a img{
-	width: 1rem;
-	height: 2rem;
+header img{
+	width: .23rem;
+	margin-left: .3rem;
 		
 }
 
 header h2{
 	display: inline-block;
-
-	text-align: center;
-
 	
-	font-size: 2.5rem;
+	font-size: .36rem;
 	color: #fff;
 }
 
 header div{
-	width: 1rem;
-	height: 2rem;
+	width: .1rem;
+	height: .1rem;
 }
 
 
 /*--------------------main------------------*/
 
 main{
-	margin-top: 6rem;		/*在main-top 和main-content中都放一个防止覆盖*/
-	margin-bottom: 10rem;	/*9+边框厚度么？ 拉上来有部分挡住 部分没挡住*/
+	/*margin-top: 1rem;		在main-top 和main-content中都放一个防止覆盖*/
+	/*margin-bottom: 1rem;	9+边框厚度么？ 拉上来有部分挡住 部分没挡住*/
 
 	margin: 0 auto;		
 	min-width: 320px;
@@ -117,61 +118,88 @@ main{
 
 
 .main-top{			
-	margin-top: 6rem;	
+	margin-top: .8rem;	
 						
 	background: url(images/bcg.png) no-repeat center;
 	background-size: cover;		/*这个属性会保持图像本身的宽高比例,将图片缩放到正好完全覆盖定义背景的区域*/
 	
+	padding: .8rem 0 .8rem .3rem;
 
-	padding: 3rem 0 3rem 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 	
 }
 
 
 .usr-img{
 	display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
-	width: 8rem;
-	height: 8rem;
+	width: 1.7rem;
+	height: 1.7rem;
 	
-
 	border-radius: 50%;		/*圆*/
 	
 	padding: 0  ;	/*不能用padding不然圆形变了*/
-	background: url(images/head.png) no-repeat center;
-	background-size: 80%;
-	vertical-align: middle;
+	/*background: url(images/head.png) no-repeat center;
+	background-size: 80%;*/
+	/*vertical-align: text-bottom;*/
 
 	background-color: #fff;		/*这个背景色和背景图前后位置要放对，不能放前*/
-
-
+	
+/*	z-index: 1;	
+	text-align: center;*/
+	overflow: hidden;		/*这里不用什么z-index或者对img设置圆弧，只要设置隐藏溢出就行*/
 }
 
-.main-top .usr-inf{
+.usr-img img{
+	display: block;
+	padding: .18rem .28rem 0 .28rem;
+	width: 1.14rem;
+
+	margin: 0;
+/*	border-bottom-right-radius: ;
+	border-bottom-left-radius: ;*/
+}
+
+
+.usr-inf{
 	display: inline-block;
-	padding-left: 5%;
+	padding-left: .4rem;
 	color:#fff;
 	vertical-align: middle;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;	
 }
 
-.main-top .usr-inf .usr-name{
+.usr-name{
 	display: inline-block;
-  	font-size: 3.2rem;
-  	line-height: 3.2rem;
+  	font-size: .36rem;
+  	/*line-height: .32rem;*/
+  	margin-bottom: .24rem;
 }
 
-.main-top .usr-inf .usr-age{
+.usr-age{
 	display: inline-block;
-  	font-size: 3.2rem;
+  	font-size: .28rem;
+  	vertical-align: text-bottom;
   	
 }
 
-.main-top .usr-inf .usr-location {
-  	font-size: 2.4rem;
+.usr-location {
+  	font-size: .24rem;
 }
 
+.main-top .usr-inf .usr-location img{
+  	vertical-align: text-bottom;
+}
 .usr-inf img{
 	display: inline-block;
-	height: 1.5rem;
+	width: .18rem;
+	/*height: .15rem;*/
 	vertical-align: middle;
 }
 
@@ -183,7 +211,7 @@ main{
 .main-content{
 	color: rgb(51,51,51);		/*内容字体设置为黑，靠左对齐*/
 	text-align: left;
-	margin-bottom: 10rem;
+	margin-bottom: 1.2rem;
 }
 
 ul,li{
@@ -192,9 +220,9 @@ ul,li{
 
 li{
 	border-bottom: 1px solid rgb(225,229,231);
-	padding:2rem 0; 
-	
-	font-size: 3rem;
+	padding:.3rem 0 ; 
+	margin-left: .3rem;
+	font-size: .32rem;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -202,18 +230,17 @@ li{
 
 }
 
-.skill{
-	margin-left: 2rem;
-	padding-left: 2rem;
+.skill{	
+	padding-left: .3rem;
 	border-left: 3px solid #5fc0cd;
 
-	color: #000;
+	color: #333;
 }
 
 
 .list-left{
-	margin: 0rem 0 0rem 2rem;
-	padding-right: 2rem;
+	margin-left: .3rem;
+	padding-right: .28rem;
 	border-right: 1px solid rgb(225,229,231);
 	
 	display: inline-block;			/*主要是这里还有width*/
@@ -225,22 +252,22 @@ li{
 }
 
 .list-right{
-	margin-left: 2rem;
+	margin-left: .28rem;
 }
 
 .star{
-	border-right:  0;
-	
+	color: #333;
+	margin-left: .24rem;
 }
 
 .star img{
-	width: 1.8rem;
+	width: .24rem;
 	/*height: 1.5rem;*/
 	/*vertical-align: middle;*/
 }
 
 .wage{
-	color: rgb(228,106,108);
+	color: rgb(226,97,99);
 }
 
 
@@ -249,7 +276,10 @@ li{
 .self-intro{
 	display: inline-block;
 	/*width: 50%;*/
-	font-size: 2rem;
+	font-size: .24rem;
+	font-weight: bold;
+
+	padding-right: .89rem;
 
 }
 
@@ -264,34 +294,36 @@ footer{
 	position: fixed;
 	bottom: 0;
 	margin: 0 auto ;
-	
+		
 	min-width: 320px;
+	max-width: 720px;
 	width: 100%;
 	
 	background-color: #fff;
-	text-align: center;
-
 	z-index: 2;
 
-	padding: 0.5rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-self: center;
+
 }
 
 button{
 	display: inline-block;
 	
-	width: 45%;
-	height: 5rem;
-	line-height: 5rem;
-	margin:0.5rem;
+	width: 46%;
+/*	height: 5rem;
+	line-height: 5rem;*/
+	padding:.2rem 0;
+	margin: .13rem;
 
 	border:none;
 	border:2px solid #5fc0cd;
 	border-radius: 7px;
 
-	font-size: 3.2rem;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-size: .34rem;
 
-	text-align: center;
 }
 
 .message{

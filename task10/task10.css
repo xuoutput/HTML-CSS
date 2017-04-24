@@ -1,3 +1,8 @@
+html{
+	font-size: 625% !important;
+	font-family: "Microsoft Yahei" ,Arial, Helvetica, sans-serif;
+}
+
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -10,56 +15,6 @@ a{
 	text-decoration: none;
 }
 
-html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 720px)
-{
-	html{
-	/*font-size: 50%;*/
-	}
-
-	.box-type{
-		display: flex;
-		flex-flow: column nowrap;
-
-		align-items: center;	
-	}
-		
-}
-
-@media screen and (max-width: 480px)
-{
-
-	/*单选↓*/
-	.form-left{
-		padding-left: 0rem /*!important*/;
-
-		display: flex /*!important*/;
-		flex-flow: column wrap /*!important*/;
-		justify-content: center /*!important*/;
-		align-items: center /*!important*/;
-	}
-
-	.cha-label{
-		padding: 1rem 0 /*!important*/;
-	}
-	/*单选↑*/
-
-	/*-------步骤4个↓------*/
-	.buzhou{
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-	/*-------步骤4个↑------*/
-
-}
 
 
 /*以上初始化*/
@@ -67,22 +22,32 @@ html{
 
 
 /*---------------------电话 登录 注册-------------------------*/
+header{
+	background-color: #1d7ad9;
+	/*margin: 0 auto;	*/
+}
+
 .header-top{
 	background-color: #1d7ad9;
-	font-size: 1rem;
-	color: #fff;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/*	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;*/
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 
 }
 
 .tel{
-	text-align: left;
+	float: left;
+	font-size: .14rem;
+	color: #fff;
+	padding: .12rem 0 .14rem 0;
 }
 
 .login {
+	float: right;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
@@ -90,65 +55,85 @@ html{
 
 }
 
-.login span{
-	font-size: 2rem;
+.login-left,.login-right{
+	font-size: .16rem;
 	color: #fff;
-
-	padding: 1rem 0;
+	padding: .12rem .11rem;
+	border-left: 1px solid #fff;
 }
 
-
-.login a{
-	display: inline-block;
-	width: 5rem;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.login a:hover{
+.login-left:hover,.login-right:hover{
 	background-color: #fff;
-	text-decoration: none;
-	color: #000;
+	font-size: .16rem;
+	color: #333;
+	padding: .12rem .36rem;	
+
+	cursor: pointer;
 }
 
-.login a:hover span{
-	text-decoration: none;
-	color: #000;
-}
+
+
 
 /*-----------------导航------------------*/
 .header-nav{
-	background-color: #fff;
+	background-color: #f9f9f9;
 
 	display: flex;
 	flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
+
+    padding: .28rem 0;
+
 }
 
 .header-nav a{
-	display: inline-block;
-	width: 7rem;
+	display: block;
 	text-decoration: none;
-	font-size: 2rem;
-	color: #000;
+}
 
-	padding: 1rem 0;
-	margin:1rem;
+.header-nav a span{
+	/*width: .7rem;*/
+
+	font-size: .16rem;
+	color: #333;
+
+	padding: .15rem .17rem;
+	margin-left: .6rem;
 	text-align: center;
+	
+	border-radius: 4px;
+	border-right: 1px solid #e6e6e6;	
+	border-bottom: 1px solid #e6e6e6;
+}
 
-	box-shadow: 0 0 3px #ccc;
+.header-nav a span:hover{
+	background-color: #1d7ad9;
+	color: #fff;
+	/*border-radius: px;*/
 }
 
 .header-nav a:hover{
-	background-color: #1d7ad9;
 	text-decoration: none;
-	color: #fff;
-	border-radius: 6px;
+}
+
+
+@media screen and (max-width:768px) {
+	.header-nav{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center; 
+	}
+	.header-nav a{
+		width: 50%;
+		text-align: center;
+		margin: .2rem 0;
+	}
+	.header-nav a span{
+		margin-left: 0;
+	}
+
 }
 
 
@@ -156,29 +141,33 @@ html{
 /*------------- 步骤4步 -----------*/
 
 .buzhou{
+	background-color: #fff;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	align-items: center;
 
-	padding-top: 3rem;
+	padding-top: .48rem;
+
 }
 
 .line{
 	background-color: #ccc;
-	width: 10rem;
-	height: 0.5rem;
+	width: 1.6rem;
+	height: 0.05rem;
+	border-radius: 2px;
 
 	position: relative;
 }
 
 .circus{
-	font-size: 0.8rem;
-	color: #fff;
-	width: 2rem;
-	height: 2rem;
+	font-size: 0.08rem;
+	font-family: "黑体";
+	color: #f6f6f6;
+	width: .24rem;
+	height: .24rem;
 
-	border:1px solid #ccc;
+	border:1px solid transparent;
 	border-radius: 50%;
 	background-color: #ccc;
 
@@ -188,16 +177,17 @@ html{
 	align-items: center;
 
 	position: absolute;
-	top: -0.75rem;
-	left: 4rem;
+	top: -0.09rem;
+	left: .7rem;
 
 }
 
 .num{
-	font-size: 1.5rem;
+	font-size: .18rem;
+	font-family: "黑体";
 	color: #ccc;
 
-	margin: 1rem 0;
+	padding: .34rem 0;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -206,31 +196,89 @@ html{
 }
 
 .line1{
-	background-color: #ff7f02 !important;
+	background-color: #ff7f02 ;
+	cursor: pointer;
 }
 
 .circus1{
-	background-color: #ff7f02 !important;
-	border-color: #ff7f02 !important;
+	background-color: #ff7f02 ;
+	border-color: #ff7f02 ;
+	cursor: pointer;
 }
 
 .num1{
-	color: #ff7f02 !important;
+	color: #ff7f02 ;
+	cursor: pointer;
 }
 
+
+/*.line-box:hover .line{
+	background-color: #ff7f02 ;
+	cursor: pointer;
+}
+
+.line-box:hover .circus{
+	background-color: #ff7f02 ;
+	border-color: #ff7f02 ;
+	cursor: pointer;
+}
+
+.line-box:hover .num{
+	color: #ff7f02 ;
+	cursor: pointer;
+}*/
+
+@media screen and (max-width:768px) {
+	.buzhou{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center; 
+	}
+	.line-box{
+		/*width: 50%;*/
+		text-align: center;
+		/*margin: .2rem 0;*/
+	}
+	.line-box .line{
+		margin-right: 0;
+	}
+
+}
 
 
 
 /*------------- 具体选择纸箱 ---------*/
 .box-title{
-	font-size: 2rem;
-	color: #000;
-	border-left: 2px solid #1d7ad9;
-	margin-left: 20px;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.box-title span{
+    display: inline-block;
+    /*margin: 0;*/
+    width: 4px;
+    height: 22px;
+    background-color: #1d7ad9;
+    border-radius: 2px;
+    /*vertical-align: bottom;*/
 }
 
 .box-title p{
-	margin-bottom: 0;
+	font-size: .22rem;
+	color: #333;
+
+	padding-left: .06rem;
+/*	border-left: 4px solid #1d7ad9;
+	border-top-left-radius: 9px;  那根竖条得单独一个div搞*/
+	
+	margin: .16rem 0;	
+	/*margin-bottom: 0;*/
 }
 
 
@@ -238,20 +286,20 @@ html{
 
 .box-type-title,.box-size-title,.box-material-title{
 	background-color: #f2f2f2;
-	padding: 1rem 0 1rem 0;
-	
-	font-size: 2rem;
-	color: #1d7ad9;
 
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: center;
+
 }
 
-.img-size{
-	width: 2rem;height: 2rem;
-	margin: 0 1rem 0 2rem;
+
+.box-type-title .img-size img{
+	display: inline-block;
+	width: .19rem;/*height: .2rem;*/
+	/*margin-left: .16rem;*/
+	margin-right: .09rem;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -259,62 +307,102 @@ html{
 	align-items: center;
 }
 
-
-/*---------------label  input 单选↓---------------------------*/
-
-.regular-radio {
-display: none;
-}
-.demo-radioInput {
-display: inline-block;
-vertical-align: middle;
-margin-right:1.5rem;
-width:1.8rem;
-height:1.8rem;
-border:1px solid #d6d6d6;
-border-radius:50%;
-background: #f8f9fb;
-}
-.regular-radio:checked + .demo-radioInput:after {
-display: inline-block;
-height:1.8rem;
-width:1.8rem;
-background-color:#f8f9fb;
-border:0.7rem solid #1d7ad9;
-border-radius:50%;
-content: "";
-}
-
-
-
-
-
-/*-------------这里微调-↓-----------*/
-
-
-
-.cha-label{
-	padding: 1rem;
-	margin: 0;
+.box-size-title .img-size img{
+	display: inline-block;
+	width: .22rem;/*height: .2rem;*/
+	/*margin-left: .16rem;*/
+	margin-right: .07rem;
 
 	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
 	align-items: center;
+}
+
+.box-material-title .img-size img{
+	display: inline-block;
+	width: .15rem;/*height: .2rem;*/
+	/*margin-left: .22rem;*/
+	margin-right: .1rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-type-title span,.box-size-title span,.box-material-title span{
+	padding: .15rem 0 .15rem 0;
+	
+	font-size: .18rem;
+	color: #1d7ad9;
 
 }
+
+/*---------------label  input 单选↓  圆球---------------------------*/
+
+
+.regular-radio {
+	display: none;
+}
+.demo-radioInput {			/*白球*/
+	display: inline-block;
+	/*vertical-align: middle;*/
+	/*margin-right:.15rem;*/
+	width:.18rem;
+	height:.18rem;
+	border:1px solid #d7d7d7;
+	border-radius:50%;
+	background: #f8f9fb;
+
+	position: relative;
+}
+.regular-radio:checked + .demo-radioInput:after {	/*蓝球*/
+	display: inline-block;
+	height:.18rem;
+	width:.18rem;
+	background-color:#fff;
+	border:7px solid #1d7ad9;		/*不是套两个，而是加个border大的蓝的小白球，就一个*/
+	border-radius:50%;
+	content: "";
+
+	position: absolute;	/*调整位置*/
+	top: -1px;
+	left: -1px;
+}
+
+
+
 
 
 /*--------------总布局---------------*/
-.box-type-left,.box-type-right,.box-size-left,.box-size-right,.box-material-left,.box-material-right{
-	font-size: 1.5rem;
-	color: #989898;
-	padding: 2rem 0 ;
+.box-type,.box-size,.box-material{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;	
+	align-items: center;
+	border: 1px solid #e7e7e7;	
 }
 
-.box-type{
-	display: flex;	
-	align-items: center;	
+
+.cha-label,.cha-label,.cha-label{
+	font-size: .18rem;
+	color: #666;
+	padding: .36rem .6rem .33rem 0;
+
+	margin-bottom: 0;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
+.cha-label p,.cha-label p,.cha-label p{
+	padding-left: .17rem;
+
+	margin-bottom: 0;
+}
 
 .form-left{
 	/*padding-left: 3rem;*/
@@ -325,6 +413,9 @@ content: "";
 	align-items: center;
 }
 
+.box-size-right,.box-material-right,.box-material-right{
+	/*padding-right: 3px !important;*/
+}
 
 .form-right{
 	display: flex;
@@ -333,43 +424,92 @@ content: "";
 	align-items: center;
 }
 
+
+@media screen and (max-width:768px) {
+	.box-type-right,.box-size-right,.box-material-right{
+		margin-bottom: .2rem;
+		margin-left: .45rem;
+	}	
+	.box-type-right .form-right,.box-size-right .form-right,.box-material-right .form-right{
+		float: right;
+	}	
+}
+
 /*---------------label  input 单选↑---------------------------*/
+
+
+
+
+
+.btn{
+	/*padding: .06rem .12rem !important;*/
+	
+}
+
+.btn p{
+	/*width: 1.3rem;*/
+	/*float: right;*/
+	font-size: .14rem;
+	line-height: .14rem;
+	color: #999;
+	padding: .12rem 0rem .13rem .18rem;
+	margin-bottom: 0;
+
+	border: 1px solid #e8e8e8;
+
+	/*text-align: left;*/
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.xiala{
+	width: 1.3rem;
+	/*width: 100%;*/
+	background-color: #fff;
+	font-size: .14rem;
+	color: #999;
+
+	padding: 0 !important;
+	
+	position: relative;
+}
+
+.four4{
+	width: .24rem;
+	height: .28rem;
+	background-color: #1d7ad9;
+	border-radius: 1px;
+	margin-right: 0;
+
+	position: absolute;
+	top: .05rem;
+	right: .05rem;
+
+	/*position: relative;*/
+}
+.third3{
+	border-top: .06rem solid #fff !important;
+	border-right: .06rem solid transparent !important;
+	border-left: .06rem solid transparent !important;
+	color: #fff;
+	position: absolute;
+	top: .11rem;
+	left: .06rem;
+}
+
+.dropdown-menu{
+	min-width: 80% !important;
+	left:15px !important;
+}
+
+
+
 
 
 /*---------------select 多选↓---------------------------*/
 
-select.form-control {
-height:3.8rem;
-font-size:1.4rem;
-padding:0.6rem 5.4rem 0.6rem 1.8rem;
-color: #999;
-border:1px solid #e8e8e8;
-border-radius: 0;
--webkit-appearance: none;
--moz-appearance: none;
-}
-select.form-control::-ms-expand {
-display: none;
-}
-.cha-arrow {
-display: inline-block;
-position: relative;
-top:-3.3rem;
-left:9.2rem;
-width:2.4rem;
-height:2.8rem;
-background: #1d7ad9;
-border-radius:0.5rem;
-}
-.downarrow {
-display: inline-block;
-margin:45% 26%;
-width:0;
-height:0;
-border-left:0.6rem solid transparent;
-border-right:0.6rem solid transparent;
-border-top:0.85rem solid white;
-}
 
 
 
@@ -380,9 +520,10 @@ border-top:0.85rem solid white;
 /*---------------尺寸 text↓---------------------------*/
 
 .input-text{
-	margin:0 1rem;
-	width: 4rem;
-	height: 2rem;
+	margin:0 .03rem 0 .09rem;
+	width: .7rem;
+	height: .3rem;
+	border: 1px solid #e8e8e8;	/*这个用来设置输入框不会再变小的时候显示不全*/
 }
 
 
@@ -392,32 +533,41 @@ border-top:0.85rem solid white;
 
 
 /*------------- 大红按钮下一步↓ -------*/
+.btn-next{
+	width: 100%;
+	border-bottom: 1px solid #e8e8e8 !important;
+	border-left: 1px solid #e8e8e8 !important;
+	border-right: 1px solid #e8e8e8 !important;
+	text-align: center;
+}
 
-
-.btn button{
+.btn-next button{
+	width: 15%;
 	background-color: #e15053;
-	padding: 1rem 3rem;
-	margin:5rem 0;
+	padding: .12rem 0;
+	margin: 1.42rem 0 .98rem 0;
 	border:0;
 	border-radius: 4px;
 	text-align: center;
-	font-size: 2rem;
+	font-size: .24rem;
 	color: #fff;
 }
 
+@media screen and (max-width:768px){
+	.btn-next button{
+		width: 40%;	
+	}
+}
 
 
 	/* footer */
 .row15{
 	background-color: #fff;
-	margin-top: 2rem;
+	margin-top: 1.24rem;
+	margin-bottom: .64rem;
 }
 
-.row15 p,.row15 a{
-	display: inline-block;
-	font-size: 1.5rem;
-	color: #ccc;
-}
+
 
 	/*------footer-left----*/
 .footer-left{
@@ -427,27 +577,19 @@ border-top:0.85rem solid white;
     align-items: flex-start;
 }
 
-.footer-left-row1,.footer-left-row2{
-	padding: 1rem;
+.footer-left-row1 p{
+	font-size: .18rem;
+	color: #999;
+	margin-bottom: 0;
+	padding: .1rem 0;
 }
 
-
-.footer-left-row2 a{
-	padding-right: 0.5rem;
-	margin: 0.5rem 0 0.5rem 0;
-}
-
-
-.footer-left-row2 a:hover{
-	color: #1d7ad9;
-	text-decoration:none;
-}
 
 	/*------footer-middle----*/
 .footer-middle{
 	display: flex;
-	flex-flow: column nowrap;
-    justify-content: space-around;
+	flex-flow: column wrap;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -455,48 +597,89 @@ border-top:0.85rem solid white;
 	padding: 1.5rem;
 }
 */
+
 .footer-middle-row2,.footer-middle-row3{
-	padding: 1rem;
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-middle-row2 a,.footer-middle-row3 a{
+	text-decoration: none;
+}
+
+.footer-middle-row2 a p,.footer-middle-row3 a p{
+	font-size: .14rem;
+	color: #999;
+	padding: .1rem .2rem;	
+	margin-bottom: 0;
+}
+
+.footer-middle-row2 a p:hover,.footer-middle-row3 a p:hover{
+	color: #1d7ad9;
 }
 
 .footer-middle-row2 a:hover,.footer-middle-row3 a:hover{
-	color: #1d7ad9;
 	text-decoration:none;
-
 }
 
 	/*------footer-right----*/
 .footer-right{
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
 }
 
-.footer-right-row1{
-	padding: 1rem;
-
-	width: 12rem;
+.footer-right p{
+	font-size: .14rem;
+	color: #999;
+	line-height: .25rem;
+	margin-bottom: 0;
+	white-space: nowrap;
 }
 
+.footer-right-row2 img{
+	display: block;
+	width: .8rem;
+	height: .8rem;
+}
 
-
+@media screen and (max-width:768px) {
+	.footer-middle-row2 a p,.footer-middle-row3 a p{
+		padding: .1rem .4rem .1rem 0;	
+		margin-bottom: 0;
+	}	
+}
 
 /*--------- copyright------------ */
-.row16{
+
+footer{
+	background-color: #1d7ad9;	
+}
+
+.copyright{
 	background-color: #1d7ad9;
 	text-align: center;
-	font-size: 1rem;
-	color: #fff;
 
 }
 
-.row16 span{
+.copyright span{
 	margin-bottom: 0;
-	padding: 0.5rem;
+	margin: 0 0.05rem;
+	/*padding: 0.05rem;*/
+	font-size: .12rem;
+	line-height: .33rem;
+	color: #fff;	
 }
 
-
+/*@media screen and (max-width:768px) {
+	.copyright span{
+		width: 100%;
+		text-align: center;
+	}
+}*/
 
 
 
