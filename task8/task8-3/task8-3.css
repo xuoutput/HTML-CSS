@@ -1,9 +1,10 @@
 html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 625% !important;
+	font-family: "Microsoft YaHei","Helvetica Neue" ,Arial, Helvetica, sans-serif !important;
 }
 
-@media screen and (max-width: 720px)
+
+/*@media screen and (max-width: 720px)
 {
 	html{
 	font-size: 60%;
@@ -36,7 +37,7 @@ html{
 	}
 
 }
-
+*/
 /*@media screen and (max-width: 540px)
 {
 	html{
@@ -80,126 +81,237 @@ a{
 }
 /*以上初始化*/
 
-.header-top{
+.bcg-white{
 	background-color: #fff;
-	font-size: 1rem;
-	color: #29b078;
+}
 
+.header-top{
+	/*max-width: 1200px;*/
+	background-color: #fff;
+	/*margin: 0 auto;		对header-top居中*/
+
+	display: flex;		/*对里面的两端对齐*/
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.tel p{
+	font-size: .14rem;
+	color: #29b078;
+	/*line-height: .39rem;*/
+	margin: .12rem 0 .12rem 0;
+}
+
+.login {
+	display: block;
+	font-size: 0;		/*清除图片之间的空隙*/
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login a img{
+	display: block;
+	width: .25rem;
+	margin: 0 .04rem;
+	/*height: .24rem;*/
+}
+
+/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
+
+.log{
+	display: none;
+}
+
+@media screen and (max-width: 720px){
+
+	.tel,.login{		/*这就是tel和login*/
+		display: none;
+	}
+
+	.header-top{
+			/*是在这里设置，不是在log中设置float: right;还是别用，会对下面导航栏出问题。*/
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.log{
+		display: block;
+		visibility: visible;
+		/*float: right;*/
+
+		font-size: .14rem;
+		color: #000;
+		margin: .12rem 0;
+	}
+
+	.log a{
+		color: #000;
+	}
+
+	.log a:hover{
+		text-decoration: none;
+		color: #000;
+	}
+
+	.log-in{
+		margin-right: 5px;
+		padding-right: 10px;
+		border-right: 1px solid #29b078;
+	}
+
+	.sign-up{
+		margin-right: 15px;
+	}
+	
+
+}
+
+
+/*---------导航栏----------*/
+
+
+.bcg-green{
+	background-color: #29b078;
+}
+
+.header-middle {
+	/*max-width: 1200px;*/
+	background-color: #29b078;	
+	/*margin: 0 auto;*/
+
+	height: 1rem;		/*总高度*/
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-middle-logo img{
+	display: block;
+	width: 1.07rem;
+	margin: .27rem 0 .24rem 0;
+}
+
+
+.header-middle ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 0;
+}
+.header-middle ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: .16rem;
+	color: #fff;
+
+	padding: 0 .31rem;
+	/*margin: 0 .1rem;*/
+	line-height: .96rem;
+	border-bottom: 4px solid transparent;
+	/*vertical-align: text-bottom;*/
+	/*这里先是透明的，hover过去才是白色，防止突然变高*/
+}
+/*.header-middle ul li a {
+
+}*/
+.header-middle ul li a:hover {
+	border-bottom-color: #fff;
+}
+
+
+
+.header-middle span {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {
+	.header-middle{
+		height: .54rem;
+	}
+
+	.header-middle-logo img{
+		display: block;
+		width: .53rem;
+		/*margin: .27rem 0 .24rem 0;*/
+	}
+
+
+	.header-middle ul {
+		display: none;
+	}
+	.header-middle span {
+		display: inline-block;
+		padding: 0.08rem;
+		/*border: 1px solid #fff;*/
+		border-radius: 5px;
+		margin: .1rem;
+	}
+	.header-middle span i {
+		display: block;
+		margin: 0.05rem 0;
+		width: .2rem;
+		border-bottom: 3px solid #1e7953;
+	}
+}
+
+
+.header-bottom {
+	display: none;
+	background-color: #29b078;
+	border-top: 1px solid grey;
+}
+.header-bottom ul {
+	display: none;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.header-bottom ul li {
+	/*display:block;*/
+	width: 100%;
+	font-size: .2rem;
+	color: #fff;
+	padding: .1rem 0;
+	border-bottom: 3px solid #29b078;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	padding: 1rem 0;
 }
-
-.tel{
-	text-align: left;
-}
-
-.login{
-	text-align: right;
-}
-
-
-/*---------屏幕缩小时候 hidden visible登录 注册↓-----------*/
-
-.log{
-	text-align: right;
-	padding: 1rem 0;
-}
-
-.log a{
-	color: #000;
-}
-
-.log-in{
-	margin-right: 5px;
-	padding-right: 10px;
-	border-right: 1px solid #29b078;
-}
-
-/*---------屏幕缩小时候 hidden visible登录 注册↑-----------*/
-
-
-
-
-.header-nav{
-	background-color: #29b078;
-
-	display: flex;
-	flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.jnshu{
-	padding-left: 15px;
-}
-
-
-/*下拉菜单↓*/
-.navbar-toggle{
-	border:1px solid #fff !important;
-}
-
-
-.icon-bar{
-	background-color: #fff!important;
-}
-
-
-/*下拉菜单↑*/
-
-.header-nav-right ul{
-	text-align: right;
-
-	display: flex;
-   /* justify-content: flex-end;*/
-    align-items: center;
-	
-	margin-bottom: 0;
-	height: 9rem;
-	
-}
-
-.nav-li{
-	list-style-type: none;
-	float: left;
-
-	width: 5rem;
-	height: 5rem;
-
-	display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    /*border-bottom: 5px solid transparent;*/
-}
-
-.nav-li a{
-	height: 9rem;
-
-	font-size: 2rem;
-	color: #fff;	
-
-	padding: 1rem 0;
-
-	display: flex;
-	flex-flow: column nowrap
-    justify-content: center;
-    align-items: center;
-
-}
-
-.nav-li a:hover{
+.header-bottom ul li a {
 	text-decoration: none;
 	color: #fff;
-
-	border-bottom: 3px solid #fff;
+}
+.header-bottom ul li:hover {
+	border-bottom-color: #fff;
 }
 
-.header-bcg{
+@media screen and (min-width: 721px) {
+	.header-bottom {
+		display: none!important;
+	}
+}
+
+/*-------------------------------------------------------------*/
+
+.bcg-img{
+	background-color: #f1a750;
+}
+
+.bcg-img div img{
+	width: 100%;
+}
+
+/*.header-bcg{
 	background-color: #f1a750;
 }
 
@@ -207,20 +319,25 @@ a{
 	width: 100%;
 	height: auto;
 
-}
+}*/
 
+
+
+/*--------------------------main -------------------*/
 .main-top{
-	padding: 1rem 0;
+	padding: .34rem 0 .13rem 0;
+	font-size: .16rem;
+	color: #333;
 }
 
 .main-top-left{
-	font-size: 1.5rem;
-	color: #000;
+	font-size: .16rem;
+	color: #333;
 	text-decoration: none;
 }
 
 .main-top-right{
-	font-size: 1.5rem;
+	font-size: .16rem;
 	color: #29b078;
 	text-decoration: none;	
 }
@@ -234,7 +351,7 @@ a{
 /*------------------------公司列表 土豆------------------------*/
 
 .row5{
-	margin-bottom: 4rem;
+	margin-bottom: .4rem;
 }
 
 .main-content-left,.main-content-right{
@@ -242,7 +359,7 @@ a{
 }
 
 .main-content-left{
-	border:1px solid #b2b2b2;
+	border:1px solid #ededed;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -251,44 +368,68 @@ a{
 }
 
 .main-content-left p{
-	font-size: 2rem;
-	color: #000;
-	padding: 2rem 0;
+	font-size: .16rem;
+	color: #333;
+	padding: .21rem 0 .24rem 0;
 
 	width: 100%;
-	border-bottom:1px solid #b2b2b2;
+	border-bottom:1px solid #e6e6e6;
 	text-align: center;
 }
 
-.main-content-left ul li{
+.main-content-left ul a{
+	text-align: center;
+}
+
+.main-content-left ul a li{
 	text-decoration: none;
 	color: #29b078;
-	padding: 1rem 0;
+	padding-top: .35rem;
+	
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: center;
 }
+
 
 .yuan{
-	font-size: 2.5rem;
-	color: #f9a372;
+	display: inline-block;
+	width: .1rem;height: .1rem;
+	border-radius: 50%;
+	border: 1px solid #ff640c;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+
 }
 
-.main-content-left ul li:hover,.main-content-left ul a{
-	
-	color: #f9a372;
+.main-content-left ul a:hover{
 	text-decoration: none;
+}
+
+.main-content-left ul a:hover span{	
+	color: #f9a372;	
+}
+
+.main-content-left ul a:hover .yuan{
+	background-color: #ff640c;
 }
 
 
 
 
 .main-content-right{
-	border:1px solid #b2b2b2;
-	font-size: 2rem;
-	line-height: 2.5rem;
-	color: #000;
+	border:1px solid #e6e6e6;
+	font-size: .14rem;
+	line-height: .28rem;
+	color: #999;
 
 
 
-	text-indent: 2.5rem;
+	text-indent: .25rem;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -297,8 +438,8 @@ a{
 }
 
 .main-content-right-top{
-	border-bottom: 1px solid #b2b2b2;
-	padding: 1rem 3rem;
+	border-bottom: 1px solid #e6e6e6;
+	/*padding: .1rem .3rem;*/
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -307,9 +448,167 @@ a{
 
 }
 
+
+.main-content-right-top img{
+	width: 1.2rem;
+	margin: .58rem .37rem .66rem .86rem;
+}
+
+.main-content-right-top p{
+	font-size: .14rem;
+	color: #999;
+	margin: .26rem .65rem 0 0rem;
+}
+
 .main-content-right-bottom p{
-	padding: 2rem 3rem 0 3rem;
+	font-size: .14rem;
+	color: #999;
+	margin: .35rem .75rem 0 .69rem;
+}
+
+/*-------------------------footer------------------*/
+footer{
+	background-color: #29b078;
+	padding: .39rem 0 .19rem 0;
+	border-top: 1px solid #32c086;
 }
 
 
+/*.row15{
+	background-color: #29b078;
+	
+}
 
+.row15 p,.row15 a{
+	display: inline-block;
+	font-size: .15rem;
+	color: #fff;
+}*/
+
+	/*------footer-left----*/
+.footer-left{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left-row1 p{
+	font-size: .16rem;
+	color: #fff;
+	/*padding: .15rem;*/
+	
+}
+
+/*.I{	这竖线不用自己做边框
+	border-right: 2px solid #fff;
+}*/
+.footer-left-row2 p{
+	font-size: .14rem;
+	color: #fff;
+	/*margin: .1rem 0;*/
+}
+
+.footer-left-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}
+
+.footer-left-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+.footer-left-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+.footer-left-row3 a p{
+	/*margin: .1rem 0;*/
+}
+	/*------footer-middle----*/
+.footer-middle{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-middle-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+/*.footer-middle-row2,.footer-middle-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}*/
+
+.footer-middle-row2 a,.footer-middle-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+
+	/*display:inline-block; 		这里没用a中放p所以border-bottom会有点距离问题要设置下,但对p又要取消margin-bottom,其实效果又不对，还是这样吧不用padding-bottom*/
+	/*padding-bottom: .1rem;*/
+	border-bottom: 1px solid transparent;
+}
+
+.footer-middle-row2 a:hover,.footer-middle-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+
+.footer-middle-row2 p,.footer-middle-row3 p{
+	/*margin-bottom:  0;*/
+}
+	/*------footer-right----*/
+.footer-right{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-right-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+.footer-right-row2 img{
+	width: .92rem;
+}
+
+
+/*--------- copyright------------ */
+
+.copyright-bcg{
+	background-color: #29b078;	
+}
+
+.copyright{
+/*	max-width: 1200px;
+	margin: 0 auto;*/
+
+	background-color: #29b078;
+	/*max-width: 1200px;*/
+	margin: 0 auto;
+	text-align: center;
+	font-size: .12rem;
+	color: #fff;
+	border-top: 0.01rem solid #32c086
+
+}
+
+.copyright p{
+	margin-bottom: 0;
+	padding: .1rem 0;
+}

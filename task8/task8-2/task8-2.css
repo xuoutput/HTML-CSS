@@ -1,9 +1,9 @@
 html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 625% !important;
+	font-family: "Microsoft YaHei" !important,"Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 720px)
+/*@media screen and (max-width: 720px)
 {
 	html{
 	font-size: 60%;
@@ -28,29 +28,8 @@ html{
 	.header-nav{
 		padding: 1rem 0;
 	}
-}
-/*
-@media screen and (max-width: 540px)
-{
-	html{
-	font-size: 50%;
-	}
-}
-@media screen and (max-width: 480px)
-{
-	html{
-	font-size: 40%;
-	}
-}
+}*/
 
-@media screen and (max-width: 320px)
-{
-	html{
-	font-size: 30%;
-	}
-
-}
-*/
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -63,142 +42,249 @@ a{
 	text-decoration: none;
 }
 /*以上初始化*/
+.bcg-white{
+	background-color: #fff;
+}
 
 .header-top{
+	/*max-width: 1200px;*/
 	background-color: #fff;
-	font-size: 1rem;
-	color: #29b078;
+	/*margin: 0 auto;		对header-top居中*/
 
+	display: flex;		/*对里面的两端对齐*/
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.tel p{
+	font-size: .14rem;
+	color: #29b078;
+	/*line-height: .39rem;*/
+	margin: .12rem 0 .12rem 0;
+}
+
+.login {
+	display: block;
+	font-size: 0;		/*清除图片之间的空隙*/
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login a img{
+	display: block;
+	width: .25rem;
+	margin: 0 .04rem;
+	/*height: .24rem;*/
+}
+
+/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
+
+.log{
+	display: none;
+}
+
+@media screen and (max-width: 720px){
+
+	.tel,.login{		/*这就是tel和login*/
+		display: none;
+	}
+
+	.header-top{
+			/*是在这里设置，不是在log中设置float: right;还是别用，会对下面导航栏出问题。*/
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.log{
+		display: block;
+		visibility: visible;
+		/*float: right;*/
+
+		font-size: .14rem;
+		color: #000;
+		margin: .12rem 0;
+	}
+
+	.log a{
+		color: #000;
+	}
+
+	.log a:hover{
+		text-decoration: none;
+		color: #000;
+	}
+
+	.log-in{
+		margin-right: 5px;
+		padding-right: 10px;
+		border-right: 1px solid #29b078;
+	}
+
+	.sign-up{
+		margin-right: 15px;
+	}
+	
+
+}
+
+
+/*---------导航栏----------*/
+
+
+.bcg-green{
+	background-color: #29b078;
+}
+
+.header-middle {
+	max-width: 1200px;
+	background-color: #29b078;	
+	margin: 0 auto;
+
+	height: 1rem;		/*总高度*/
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-middle-logo img{
+	display: block;
+	width: 1.07rem;
+	margin: .27rem 0 .24rem 0;
+}
+
+
+.header-middle ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 0;
+}
+.header-middle ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: .16rem;
+	color: #fff;
+
+	padding: 0 .31rem;
+	/*margin: 0 .1rem;*/
+	line-height: .96rem;
+	border-bottom: 4px solid transparent;
+	/*vertical-align: text-bottom;*/
+	/*这里先是透明的，hover过去才是白色，防止突然变高*/
+}
+/*.header-middle ul li a {
+
+}*/
+.header-middle ul li a:hover {
+	border-bottom-color: #fff;
+}
+
+
+
+.header-middle span {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {
+.header-middle{
+	height: .54rem;
+}
+
+.header-middle-logo img{
+	display: block;
+	width: .53rem;
+	/*margin: .27rem 0 .24rem 0;*/
+}
+
+.header-middle ul {
+	display: none;
+}
+.header-middle span {
+	display: inline-block;
+	padding: 0.08rem;
+	/*border: 1px solid #fff;*/
+	border-radius: 5px;
+	margin: .1rem;
+}
+.header-middle span i {
+	display: block;
+	margin: 0.05rem 0;
+	width: .2rem;
+	border-bottom: 3px solid #1e7953;
+}
+}
+.header-bottom {
+	display: none;
+	background-color: #29b078;
+	border-top: 1px solid grey;
+}
+.header-bottom ul {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.header-bottom ul li {
+	/*display:block;*/
+	width: 100%;
+	font-size: .2rem;
+	color: #fff;
+	padding: .1rem 0;
+	border-bottom: 3px solid #29b078;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	padding: 1rem 0;
 }
-
-.tel{
-	text-align: left;
-}
-
-.login{
-	text-align: right;
-}
-
-
-/*---------屏幕缩小时候 hidden visible登录 注册↓-----------*/
-
-.log{
-	text-align: right;
-	padding: 1rem 0;
-}
-
-.log a{
-	color: #000;
-}
-
-.log-in{
-	margin-right: 5px;
-	padding-right: 10px;
-	border-right: 1px solid #29b078;
-}
-
-/*---------屏幕缩小时候 hidden visible登录 注册↑-----------*/
-
-
-
-.header-nav{
-	background-color: #29b078;
-
-	display: flex;
-	flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.jnshu{
-	padding-left: 15px;
-}
-
-/*下拉菜单↓*/
-.navbar-toggle{
-	border:1px solid #fff !important;
-}
-
-
-.icon-bar{
-	background-color: #fff!important;
-}
-
-
-/*下拉菜单↑*/
-
-
-.header-nav-right ul{
-	/*text-align: right;*/
-
-	display: flex;
-    /*justify-content: flex-end;*/
-    align-items: center;
-	
-	margin-bottom: 0;
-	height: 9rem;
-	
-}
-
-.nav-li{
-	list-style-type: none;
-	float: left;
-
-	width: 5rem;
-	height: 5rem;
-
-	display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    /*border-bottom: 5px solid transparent;*/
-}
-
-.nav-li a{
-	height: 9rem;
-
-	font-size: 2rem;
-	color: #fff;	
-
-	padding: 1rem 0;
-
-	display: flex;
-	display: -webkit-flex;
-	flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.nav-li a:hover{
+.header-bottom ul li a {
 	text-decoration: none;
 	color: #fff;
+}
+.header-bottom ul li:hover {
+	border-bottom-color: #fff;
+}
 
-	border-bottom: 3px solid #fff;
+
+@media screen and (min-width: 721px) {
+	.header-bottom {
+		display: none!important;
+	}
 }
 
 /*--------------------------main 首页-------------------*/
 
-.main-top{
-	padding: 1rem 0;
+main{
+	margin-bottom:2.3rem; 
+}
 
-	border-bottom:1px solid #b2b2b2;
+.main-top{
+	max-width: 1200px;
+	margin: 0 auto;
+
+	padding: .31rem 0;
+	border-bottom:1px solid #d0d6d9;
+
+	font-size: .16rem;
+	color: #333;
+	text-decoration: none;
 }
 
 .main-top-left{
-	font-size: 1.5rem;
-	color: #000;
+	/*font-size: .16rem;*/
+	color: #333;
 	text-decoration: none;
 }
 
 .main-top-right{
-	font-size: 1.5rem;
+	/*font-size: .15rem;*/
 	color: #29b078;
 	text-decoration: none;	
 }
@@ -211,25 +297,31 @@ a{
 /*--------------------------main 职业方向-------------------*/
 
 .main-major{
-	padding: 1rem 0;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	padding: .21rem 0;
 	
-	font-size: 2rem;
-	border-bottom:1px solid #b2b2b2;
+	font-size: .14rem;
+	border-bottom:1px solid #edf1f2;
+}
+
+.one{
+	color: #999;
 }
 
 .major-bcg{
 	display: inline-block;			/*a标签加宽度要block 或 inline-block*/
-	width: 7rem;
+	/*width: .7rem;*/
 	text-align: center;
 
 	text-decoration: none;
-	color: #000;
+	color: #333;
+	margin-right: .28rem;
 
 }
 
-.one{
-	color: #b2b2b2;
-}
+
 
 .major-bcg:hover{
 	text-decoration: none;
@@ -245,13 +337,14 @@ a{
 
 /*--------------------------main 前端方向-------------------*/
 
-.row5 {			/*这里有padding是main-title的*/
-	font-size: 3rem;
-	color: #000;
-	padding: 1.5rem 0;
+.main-title {			/*这里有padding是main-title的*/
+	font-size: .16rem;
+	color: #333;
+	font-weight: bold;
+	padding: .32rem 0;
 	text-align: left;
 
-	border-bottom: 1px solid #b2b2b2;
+	border-bottom: 1px solid #d0d6d9;
 	margin-bottom: 0;
 }
 
@@ -264,95 +357,103 @@ a{
 /*--------------------------每个人-------------------*/
 
 .row6{
-	padding: 1rem;
-	border-bottom: 1px solid #b2b2b2;
+	/*margin: .46rem;*/
+
 }
 
 /*------------.main-person-row1 Web前端工程师 ---------------*/
 
 .main-person{
-	margin-bottom: 1rem;
+	margin-top: .46rem;
 }
 
 
 .kong{		/*用来调整444之间间隙 不能直接对main-person*/
-	border: 1px solid #b2b2b2;
+	border: 1px solid #e2e2e2;
+	max-width: 3.84rem;
 	
 	position: relative;  /*定位那个IOS透明色的*/
 }
 
 .main-person-row1{
-	border-bottom: 1px solid #b2b2b2;
+	border-bottom: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
+
 
 .main-person-row1-left img{
-	width: 100%;
+	width: 1.39rem;
+	margin: .21rem .1rem .16rem .11rem;
 }
 
+.main-person-row1-right{
+	margin-right: .11rem;
+}
 .main-person-row1-right-top{
-	font-size: 2rem;
-	color: #000;
+	font-size: .16rem;
+	color: #333;
+	font-weight: bold;
 }
 
 .main-person-row1-right-content{
-	font-size: 1.5rem;
-	color: #000;
+	font-size: .14rem;
+	color: #333;
 }
 
 
 /*------------.main-person-row2 门槛  难易程度---------------*/
 
 .main-person-row2{
+	border-bottom: 1px solid #edf1f2;
 
-	font-size: 1rem;
-	color: #b2b2b2;
-
-	border-bottom: 1px solid #b2b2b2;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
+
+.main-person-row2-left{
+	width: 48%;
+
+	padding: .15rem 0 .15rem .11rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row2-left span{
+	font-size: .12rem;
+	color: #999;
+
+}
+
 
 .main-person-row2-right{
-	border-left: 1px solid #b2b2b2;
+	padding: .15rem 0 .15rem .11rem;
+	border-left: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.main-person-row2-left,.main-person-row2-right{
-	padding: 1rem 0;
+.main-person-row2-right span{
+	font-size: .12rem;
+	color: #999;
 }
 
 
-
-
-
-.star {
-    width: 0;
-    height: 0;
-    border-top: 5px solid red;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-   
-    position: relative;
-    top: 9px;
-    left: 10px;
-   
-}
-.star:before,.star:after {
-    width: 0;
-  	height: 0;
-    border-top: 5px solid red;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-  
-    content: '';
-    display: block;
- 
-    position: absolute;
-    top: -5px;left: -10px;
-  
-}
-.star:before {
-    transform: rotate(70deg);
-}
-.star:after {
-    transform: rotate(-78deg);
+.star{
+	width: .16rem;
+	margin-left: .15rem;
+	vertical-align: middle;
 }
 
 
@@ -361,91 +462,144 @@ a{
 /*------------.main-person-row3 成长周期---------------*/
 
 .main-person-row3{
+	border-bottom: 1px solid #edf1f2;
 
-	font-size: 1rem;
-	color: #b2b2b2;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
 
-	border-bottom: 1px solid #b2b2b2;
+.main-person-row3-left{
+	width: 48%;
+
+	padding: .15rem 0 .15rem .11rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row3-left span{
+	font-size: .12rem;
+	color: #999;
+
+}
+
+.main-person-row3-left .red{
+	margin-left: .1rem;
+	color: #f01400;
+}
+
+.main-person-row3-left .black{
+	color: #333;
 }
 
 .main-person-row3-right{
-	border-left: 1px solid #b2b2b2;
+	padding: .15rem 0 .15rem .11rem;
+	border-left: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.main-person-row3-left,.main-person-row3-right{
-	padding: 1rem 0;
+.main-person-row3-right span{
+	font-size: .12rem;
+	color: #999;
 }
 
-.red{
-	color: red;
+.main-person-row3-right .red{
+	margin-left: .1rem;
+	color: #f01400;
+}
+
+.main-person-row3-right .black{
+	color: #333;
 }
 /*------------.main-person-row4 薪资待遇---------------*/
 
 .main-person-row4{
-	/*padding: 1rem 0;*/
+	border-bottom: 1px solid #edf1f2;
 
-	font-size: 1rem;
-	color: #000;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
 
-	border-bottom: 1px solid #b2b2b2;
+
+.main-person-row4-left{
+	width: 38%;
 
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-
 }
 
-.main-person-row4-left{
-	text-align: center;
-
-	margin-bottom: 0;
+.main-person-row4-left p{
+	font-size: .12rem;
+	color: #999;
 }
+
 
 
 .main-person-row4-right{
-	padding: 0 0 !important;
+	width: 62%;
+	border-left: 1px solid #edf1f2;
 
-	border-left: 1px solid #b2b2b2;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+/*	align-items: center;*/
 
 }
 
 .main-person-row4-right p{
+	padding: .15rem .15rem .15rem .25rem;
 	margin-bottom: 0;
-	padding: 0.5rem 1rem;
 
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content:space-between;
 	align-items: center;	
 
+	font-size: .12rem;
+	color: #333;
+
 }
 
 .salary-year1,.salary-year2{
-	border-bottom: 1px solid #b2b2b2;
+	border-bottom: 1px solid #edf1f2;
 }
 
 
 /*------------.main-person-row5 有286人正在学---------------*/
 
 .main-person-row5{
-	padding: 1rem 0;
+	padding: .11rem 0 .11rem .11rem;
 
-	font-size: 1.5rem;
-	color: #000;
+	font-size: .14rem;
+	color: #333;
 
-	border-bottom: 1px solid #b2b2b2;
+	border-bottom: 1px solid #edf1f2;
 }
 
+.main-person-row5 .red{
+	color: #f01400;
+}
 
 
 /*------------.main-person-row6 提示：在你学习之前---------------*/
 
 .main-person-row6{
-	padding: 1rem 0;
+	padding: .11rem 0 .11rem .11rem;
 
-	font-size: 1rem;
-	color: #b2b2b2;
+	font-size: .12rem;
+	color: #999;
 
 }
 
@@ -454,21 +608,25 @@ a{
 /*------------.showIOS 隐藏---------------*/
 
 .showIOS{
-	font-size: 1.8rem;
+	font-size: .16rem;
 	color: #fff;
-	padding: 0 1.5rem;
+	padding: 0 .42rem;
 
 }
 
 .showIOS-top{
-	font-size: 2rem;
+	font-size: .16rem;
+	color: #fff;
 
 	text-align: center;
-	margin-top: 4rem;
+	margin-top: .87rem;
 }
 .showIOS-content{
-	margin-top: 3rem;
-	padding: 0 1.5rem;
+	font-size: .16rem;
+	color: #fff;
+
+	margin-top: .37rem;
+	padding: 0 .15rem;
 }
 
 
@@ -484,4 +642,154 @@ a{
 }
 .showIOS:hover{
 	opacity: 1;
+}
+
+
+
+
+/*-------------------------footer------------------*/
+footer{
+	background-color: #29b078;
+	padding: .39rem 0 .19rem 0;
+	border-top: 1px solid #32c086;
+}
+
+
+/*.row15{
+	background-color: #29b078;
+	
+}
+
+.row15 p,.row15 a{
+	display: inline-block;
+	font-size: .15rem;
+	color: #fff;
+}*/
+
+	/*------footer-left----*/
+.footer-left{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left-row1 p{
+	font-size: .16rem;
+	color: #fff;
+	/*padding: .15rem;*/
+	
+}
+
+/*.I{	这竖线不用自己做边框
+	border-right: 2px solid #fff;
+}*/
+.footer-left-row2 p{
+	font-size: .14rem;
+	color: #fff;
+	/*margin: .1rem 0;*/
+}
+
+.footer-left-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}
+
+.footer-left-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+.footer-left-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+.footer-left-row3 a p{
+	/*margin: .1rem 0;*/
+}
+	/*------footer-middle----*/
+.footer-middle{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-middle-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+/*.footer-middle-row2,.footer-middle-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}*/
+
+.footer-middle-row2 a,.footer-middle-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+
+	/*display:inline-block; 		这里没用a中放p所以border-bottom会有点距离问题要设置下,但对p又要取消margin-bottom,其实效果又不对，还是这样吧不用padding-bottom*/
+	/*padding-bottom: .1rem;*/
+	border-bottom: 1px solid transparent;
+}
+
+.footer-middle-row2 a:hover,.footer-middle-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+
+.footer-middle-row2 p,.footer-middle-row3 p{
+	/*margin-bottom:  0;*/
+}
+	/*------footer-right----*/
+.footer-right{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-right-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+.footer-right-row2 img{
+	width: .92rem;
+}
+
+
+/*--------- copyright------------ */
+
+.copyright-bcg{
+	background-color: #29b078;	
+}
+
+.copyright{
+/*	max-width: 1200px;
+	margin: 0 auto;*/
+
+	background-color: #29b078;
+	/*max-width: 1200px;*/
+	margin: 0 auto;
+	text-align: center;
+	font-size: .12rem;
+	color: #fff;
+	border-top: 0.01rem solid #32c086
+
+}
+
+.copyright p{
+	margin-bottom: 0;
+	padding: .1rem 0;
 }
