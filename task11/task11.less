@@ -1,3 +1,10 @@
+html{
+
+	font-size: 625%;
+	font-family: "heiti",Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+}
+
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -10,149 +17,140 @@ a{
 	text-decoration: none;
 }
 
-html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
-}
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 611px)			
 {
 	html{
-	font-size: 50%;
+	font-size: 550%;
 	}
-	
-
-		
 }
 
-/*以上初始化*/
+@media screen and (max-width: 540px)			
+{
+	html{
+	font-size: 500%;
+	}
+}
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
 
-/*变量*/
-@hui:#eff0f4;
-@bai:#fff;
-@lan:#5fc0cd;
-
-@base-size:2rem;
-@denglu-size:2.5rem;
-
-.container-fluid{
-	background-color: @hui;		/*白色有点灰*/
 }
 
+@media screen and (max-width: 438px)
+{
+	html{
+	font-size: 400%;
+	}
 
-/*-------------头部↓------------*/
-.header{
-	background-color: @lan;	/*蓝色*/
-	padding: 1rem 0;
+}
 
-	font-size: @base-size;
-	color: @bai;
+@media screen and (max-width: 413px)
+{
+	html{
+	font-size: 300%;
+	}
+
+}
+
+body{
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #eff0f4;
+
+
+}
+
+header{
+	background-color: #5fc0cd;
+	font-size: .32rem;
 
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: center;	
-	
-	.left,.right{
-	text-decoration:none;	
-	color: @bai;
+	align-items: center;
+
+	.left{
+		display: inline-block;
+		float: left;
+		margin: .3rem;
+		text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
+		color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
 	}
-	
+
 	p{
-	font-size: @denglu-size;
-	margin: 0;
+		font-size: .36rem;
+		color: #fff;
+		text-align: center;
+	}
+
+	.right{
+		display: inline-block;
+		margin: .3rem;
+		text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
+		color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
+	}
+}
+
+main{
+	form{
+		padding-bottom: .69rem;
+
+		.username,.password{
+			margin-top: .16rem;
+			padding: .25rem .3rem;
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: #fff;
+			
+			img{
+				display: inline-block;
+				width: .27rem;
+				padding: 0 .46rem 0 .13rem;
+			}
+
+			 input{
+				width: 100%;
+				border: 0;		/*去掉所有的边框*/
+				border-left: 2px solid #eaedee;  /*这是黑色一竖 /*再在左边加上边框*/
+				font-size: .32rem;
+				color: #e1e5e7;
+				
+				padding-left: .33rem;
+
+			}
+		}
+	}
+
+	.container-bottom{
+		background-color: #5fc0cd;
+		text-align: center;
+
+		a{
+			display: block;
+			font-size: .36rem;
+			color: #fff;	
+			text-decoration:none;	
+			
+			padding: .34rem 0;	
+		}
 	}
 
 }
 
 
-
-
-/*-------------头部↑------------*/
-
-/*---------------用户名密码↓------------*/
-
-.container{
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-
-.username,.password{
-	background-color: @bai;
-	padding: 1rem ;
-	margin: 0.5rem 0 0 0;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: center;
-
-	img{
-	width: 2rem;
-	}
-
-	input{
-		margin-left: 2rem;
-		padding-left:2rem;
-
-		border:0;
-		width: 100%;
-		border-left: 2px solid @hui;
-
-		font-size: @base-size;
-	}
-
-}
-
-
-
-/*---------------用户名密码↑------------*/
-.login{
-	background-color: @lan;	/*蓝色*/
-	padding: 1rem 0;
-	margin-top: 3rem;
-
-	font-size: @denglu-size;
-	color: @bai;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-
+footer{
 	a{
-		text-decoration:none;
-		color: @bai;	
+		display: block;
+		float: right;
+		font-size: .32rem;
+		color: #5fc0cd;			
+		text-decoration: none;
+		padding: .2rem .3rem;
 	}
-
-	a:hover{
-		text-decoration:none;
-		color: @bai;
-		cursor: pointer;	
-	}
-
 }
-
-
-
-/*---------------footer  ↓------------*/
-.footer a{
-	background-color: @hui;
-	padding: 1rem 0;
-	font-size: @base-size;
-	color: @lan;
-		
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	align-items: center;
-
-	&:hover{
-		text-decoration:none;
-		color: @lan;
-		cursor: pointer;	
-	}
-
-}
-

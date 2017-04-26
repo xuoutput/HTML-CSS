@@ -1,0 +1,292 @@
+html{
+	font-size: 625%;
+	font-family: 'Hiragino Sans GB', Arial, Helvetica, sans-serif;
+
+}
+
+
+@media screen and (max-width: 611px)			
+{
+	html{
+	font-size: 550%;
+	}
+}
+
+@media screen and (max-width: 540px)			
+{
+	html{
+	font-size: 500%;
+	}
+}
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
+
+}
+
+@media screen and (max-width: 468px)
+{
+	html{
+	font-size: 425%;
+	}
+
+}
+
+@media screen and (max-width: 438px)
+{
+	html{
+	font-size: 400%;
+	}
+
+}
+
+@media screen and (max-width: 413px)
+{
+	html{
+	font-size: 350%;
+	}
+
+}
+
+
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+/*以上初始化*/
+
+body{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	margin:0 auto;
+}
+
+
+header{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+
+	background-color: #29bde0;
+	padding: .4rem 0 .15rem 0;
+	/*margin: 0 .1rem;*/
+
+	display: flex;
+	display: -webkit-flex;
+	flex: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	p{
+		font-size: .34rem;
+		color: #fff;
+	}
+
+	// 这个不是雪碧图
+
+	.img-left{			
+		width: .39rem;
+		padding-left: 3.2%;
+	}
+
+	.img-right{
+		width: .36rem;
+		padding-right: 3.2%;
+	}
+}
+
+
+/*雪碧图*/
+// .img-left{
+// 	background-image:url(images/img.png) ;
+// 	background-repeat: no-repeat;
+// 	height:40px;width:39px;background-position:0 -186px;
+// 	margin-left: .23rem;
+// 	margin-bottom: .14rem;
+// }
+
+// .img-right{
+// 	background:url(images/img.png) no-repeat ;
+// 	height:36px;width:36px;background-position:0 -150px;
+// 	margin-right: .24rem;
+// 	margin-bottom: .15rem;
+// }
+
+/*----------------main------------------*/
+
+main{
+	background-color: #29bde0;
+
+	.main-top{
+		background-color: #b9e9f5;
+
+		/*padding: 3rem 0remrem .2rem;*/
+
+		display: flex;
+		display: -webkit-flex;
+		flex: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+		font-size: 0;
+
+		p{
+			font-size: .26rem;
+			color: #464646;	
+
+			padding: .3rem 0 .28rem 6.52%;
+		}
+
+		img{
+			width: .52rem;
+			padding: .15rem .15rem .15rem 0;
+		}
+
+		audio{
+			display: none;
+		}
+	}
+	 
+	.title{
+		background-color: #29bde0;
+		padding: .26rem 0rem 0rem .72rem;
+
+		font-size: .24rem;
+		color: #fff;
+
+		position: relative;
+
+		.t3{
+			position: absolute;
+			top: -1px;
+			left: .72rem;
+			
+
+			width: 0;height: 0;
+			border-width: .13rem .07rem 0 .07rem;
+			border-style: solid;
+			border-color: #29bde0;
+
+			border-top-color: #b9e9f5;
+			border-bottom-color: #b9e9f5;
+		}
+	}
+
+	.main-content{
+		/*width: 80%*/
+
+		background-color: #29bde0;
+			
+		padding: .44rem 1.5625% 0rem 1.5625%;
+		margin-bottom: 1.7rem;
+
+		.row{
+			overflow: hidden;
+
+			.box{
+			    float: left;
+			    overflow: hidden;
+			    margin: 0 6.25% 0 4.6875%;
+			    width: 22%;
+			    text-align: center;
+
+				.box-top{
+					.name {
+					    padding: 28% 0 24% 0;
+					    /*padding-top: 6.09375%;*/
+					    font-size: .3rem;
+					    color: #565656;
+					    background-color: #f5c97b;
+
+					    border: 4px solid #fff;
+					    border-bottom: none;
+					}
+
+					.number {
+					 /*   margin: 0;*/
+					    padding: 2.2% 0%;
+					    font-size: .2rem;
+					    color: #fff;
+					    background-color: #83b09a;
+					    border: 4px solid #fff;
+					    border-top: none;
+					}
+				}
+
+				.box-bottom{
+					height: 54%;
+
+					display: flex;
+					align-items: center;
+
+					img{ 
+					/*	font-size: 0;*/
+					    /*margin-top: 3.28%;*/
+					    padding: 15% 0;
+					    width: 100%;
+
+					    opacity: 0;
+					}
+				}
+
+			}
+
+			.box:hover img{
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+
+	}
+}
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 2;
+
+	background-color: #29bde0;
+	padding: .42rem 0 .61rem 0;	
+
+	text-align: center;
+	margin: 0 auto;
+
+	font-size: 0;
+	
+	a{
+		font-size: 0;
+
+		button{
+			width: 79%;
+			border:0;
+
+			background-color: #fbb435;
+			padding: .25rem 0;
+			/*margin: 0 1rem;*/
+
+			font-size: .24rem ;
+			color: #fff;
+		}
+	}
+}
+
+
+
+

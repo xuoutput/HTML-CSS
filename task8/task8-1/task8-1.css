@@ -482,8 +482,9 @@ margin-bottom: .53rem;
 }
 
 .stu{
-width: 2.72rem;
-height: 3.72rem;
+/*width: 2.72rem;
+height: 3.72rem;*/
+width: 100%;
 
 padding: 0 .33rem;
 

@@ -4,14 +4,14 @@
    <title>task12-2重写task6</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+   
    <link rel="stylesheet" type="text/css" href="task12-2.css">
 
 </head>
 </head>
 <body>
    <header>
-      <dir></dir>
+      <div></div>
       <div> <button class="button-left">找雇主</button> <button class="button-right">找护工</button> </div>
       <img src="images/header-right.png">
    </header>
@@ -20,7 +20,7 @@
       <div class="main-top">      
 
         <div class="dropdown ">
-          <span class="drop-title">所在地</span>
+          <span class="drop-title border-right">所在地</span>
           <form>
               <select>
                 <option>所在地A</option>
@@ -30,7 +30,7 @@
           </form>
         </div>
         <div class="dropdown">
-          <span class="drop-title">食宿</span>
+          <span class="drop-title border-right">食宿</span>
           <form>
               <select>
                 <option>食宿A</option>
@@ -40,7 +40,7 @@
           </form>
         </div>
         <div class="dropdown">
-          <span class="drop-title">病人情况</span>
+          <span class="drop-title ">病人情况</span>
           <form>
               <select>
                 <option>情况1</option>
@@ -52,13 +52,16 @@
 
       </div>
 
-
-      <div class="main-content">                            <!-- 这里用布局84 -->
+      <div class=" main-content">      
           <div class="main-content-row">
               <div class="main-content-left">
-                <div><img src="images/main-time.png" >&nbsp<span>服务日期</span></div>
+                <div>
+                  <img src="images/main-time.png" ><span>&nbsp服务日期</span>
+                </div>                  
                   <p class="black">2015-7-5至2015-7-12</p>
-                <div><img src="images/main-location.png" >&nbsp<span>北京·通州·果园</span></div> 
+                <div>
+                  <img src="images/main-location.png" ><span>&nbsp北京·通州·果园</span>
+                </div>                  
               </div>    
 
               <div class="main-content-right">
@@ -69,9 +72,29 @@
 
           <div class="main-content-row">
               <div class="main-content-left">
-                <div><img src="images/main-time.png" >&nbsp<span>服务日期</span></div>
+                <div>
+                  <img src="images/main-time.png" ><span>&nbsp服务日期</span>
+                </div>                  
                   <p class="black">2015-7-5至2015-7-12</p>
-                <div><img src="images/main-location.png" >&nbsp<span>北京·通州·果园</span></div> 
+                <div>
+                  <img src="images/main-location.png" ><span>&nbsp北京·通州·果园</span>
+                </div>                  
+              </div>    
+
+              <div class="main-content-right">
+                  <div><p>25元/小时</p></div> 
+                  <div><img src="images/main-right.png"></div>
+              </div>
+          </div>
+          <div class="main-content-row">
+              <div class="main-content-left">
+                <div>
+                  <img src="images/main-time.png" ><span>&nbsp服务日期</span>
+                </div>                  
+                  <p class="black">2015-7-5至2015-7-12</p>
+                <div>
+                  <img src="images/main-location.png" ><span>&nbsp北京·通州·果园</span>
+                </div>                  
               </div>    
 
               <div class="main-content-right">
@@ -82,9 +105,13 @@
 
           <div class="main-content-row">
               <div class="main-content-left">
-                <div><img src="images/main-time.png" >&nbsp<span>服务日期</span></div>
+                <div>
+                  <img src="images/main-time.png" ><span>&nbsp服务日期</span>
+                </div>                  
                   <p class="black">2015-7-5至2015-7-12</p>
-                <div><img src="images/main-location.png" >&nbsp<span>北京·通州·果园</span></div> 
+                <div>
+                  <img src="images/main-location.png" ><span>&nbsp北京·通州·果园</span>
+                </div>                  
               </div>    
 
               <div class="main-content-right">
@@ -95,22 +122,13 @@
 
           <div class="main-content-row">
               <div class="main-content-left">
-                <div><img src="images/main-time.png" >&nbsp<span>服务日期</span></div>
+                <div>
+                  <img src="images/main-time.png" ><span>&nbsp服务日期</span>
+                </div>                  
                   <p class="black">2015-7-5至2015-7-12</p>
-                <div><img src="images/main-location.png" >&nbsp<span>北京·通州·果园</span></div> 
-              </div>    
-
-              <div class="main-content-right">
-                  <div><p>25元/小时</p></div> 
-                  <div><img src="images/main-right.png"></div>
-              </div>
-          </div>
-
-          <div class="main-content-row">
-              <div class="main-content-left">
-                <div><img src="images/main-time.png" >&nbsp<span>服务日期</span></div>
-                  <p class="black">2015-7-5至2015-7-12</p>
-                <div><img src="images/main-location.png" >&nbsp<span>北京·通州·果园</span></div> 
+                <div>
+                  <img src="images/main-location.png" ><span>&nbsp北京·通州·果园</span>
+                </div>                  
               </div>    
 
               <div class="main-content-right">
@@ -123,21 +141,14 @@
 
    </main>  
 
-   <footer>       
-      <div class="footer-left"> 
-        <img src="images/footer-left.png">
-        <p>首页</p> 
-      </div>
-      <div class="footer-middle">
-        <img src="images/footer-middle.png"> 
-      </div>
-      <div class="footer-right">
-        <img src="images/footer-right.png">
-        <p> 我的 </p>
-      </div>
+   <footer>       <!-- 这里就一行就别用bootstrap -->
+      <div class="footer-left"> <img src="images/footer-left.png"><p>首页</p> </div>
+      <div class="footer-middle"><img src="images/footer-middle.png"> </div>
+      <div class="footer-right"> <img src="images/footer-right.png"><p> 我的 </p></div>
    </footer>
 
-
+      <!-- <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
 </body>
 </html>
 

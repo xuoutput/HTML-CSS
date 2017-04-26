@@ -1,35 +1,43 @@
 html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 625%;	
+	font-family: "STHeiti", Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 611px)			
 {
 	html{
-	font-size: 60%;
+	font-size: 550%;
 	}
 }
 
-@media screen and (max-width: 540px)
+@media screen and (max-width: 540px)			
 {
 	html{
-	font-size: 50%;
+	font-size: 500%;
 	}
 }
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
+
+}
+
 @media screen and (max-width: 480px)
 {
 	html{
-	font-size: 40%;
+	font-size: 420%;
 	}
 }
 
-/*@media screen and (max-width: 320px)
+@media screen and (max-width: 380px)
 {
 	html{
-	font-size: 30%;
+	font-size: 400%;
 	}
 
-}*/
+}
 
 html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -42,19 +50,25 @@ ul,li{
 
 /*以上初始化*/
 
+/*--------------------header------------------*/
+body{
+	max-width: 720px;
+	margin: 0 auto;
+}
 
 header{
 	position: fixed;
 	top: 0;
 	
-	min-width: 320px;			
+	min-width: 320px;
+	max-width: 720px;			
   	width: 100%;
 
-  	background-color: rgb(95,192,205);
+  	background-color: #5fc0cd;
 
-  	padding: 1rem 1rem;
+  	padding: .2rem 0;
 
-	// overflow: hidden;
+/*	overflow: hidden;*/
 	z-index: 2;		/*防止main和footer遮住header*/
 
 	display: flex;
@@ -63,36 +77,30 @@ header{
 	justify-content: space-between;
 	align-items: center;
 
-	a{						
-		display: inline-block;	
-		
-		text-decoration: none;
-		text-align: left;
-
-		img{
-			height: 2rem;		
-		}
-	
+	img{
+		width: .23rem;
+		margin-left: .3rem;
+			
 	}
 
 	h2{
 		display: inline-block;
-		text-align: center;
-
-		font-size: 2.5rem;
+		
+		font-size: .36rem;
 		color: #fff;
 	}
 
 	div{
-		// width: 1rem;
-		height: 2rem;
-	}
-
+		width: .1rem;
+		height: .1rem;
+	}	
 }
 
 
-/*--------------中间-----------------*/
 
+
+
+/*--------------------main------------------*/
 
 main{
 	margin: 0 auto;		
@@ -101,66 +109,89 @@ main{
  	background-color: #fff;	
 
  	color: rgb(51,51,51);
+	
 	text-align: left;		/*消除html中的居中*/
 
 	.main-top{			
-		margin-top: 4rem;							
+		margin-top: .8rem;	
+							
 		background: url(images/bcg.png) no-repeat center;
 		background-size: cover;		
-		
-		padding: 3rem 0 3rem 2rem;
-	
+
+		padding: .8rem 0 .8rem .3rem;
+
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+
 		.usr-img{
 			display: inline-block;		/*这里设置为inline-block可以使div的变成一行*/
-			width: 8rem;
-			height: 8rem;
+			width: 1.7rem;
+			height: 1.7rem;
 			
-			border-radius: 50%;		/*圆*/
-			
-			padding: 0  ;	/*不能用padding不然圆形变了*/
-			background: url(images/head.png) no-repeat center;
-			background-size: 80%;
-			vertical-align: middle;
+			border-radius: 50%;			
+			padding: 0  ;	
+			background-color: #fff;		
 
-			background-color: #fff;		/*这个背景色和背景图前后位置要放对，不能放前*/
+			overflow: hidden;
+
+			img{
+				display: block;
+				padding: .18rem .28rem 0 .28rem;
+				width: 1.14rem;
+
+				margin: 0;
+
+			}
+
 		}
 
 		.usr-inf{
 			display: inline-block;
-			padding-left: 5%;
+			padding-left: .4rem;
 			color:#fff;
 			vertical-align: middle;
 
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+
 			.usr-name{
 				display: inline-block;
-			  	font-size: 2.8rem;
-			  	line-height: 2.8rem;
+			  	font-size: .36rem;
+			  	margin-bottom: .24rem;
 
 				.usr-age{
 					display: inline-block;
-				  	font-size: 2.8rem;	
+				  	font-size: .28rem;
+				  	vertical-align: text-bottom;
+				  	
 				}
-
 			}
+
 
 			.usr-location {
-			  	font-size: 2.4rem;
+			  	font-size: .24rem;
 
 				img{
+				  	// vertical-align: text-bottom;
+
 					display: inline-block;
-					height: 1.5rem;
-					// vertical-align: middle;
-				}			  	
+					width: .18rem;
+					/*height: .15rem;*/
+					vertical-align: middle;	  	
+				}
 			}
 
-		}
-		
+		}	
 	}
 
 	.main-content{
 		color: rgb(51,51,51);		/*内容字体设置为黑，靠左对齐*/
 		text-align: left;
-		margin-bottom: 10rem;
+		margin-bottom: 1.2rem;
 
 		ul{
 			list-style-type: none;
@@ -168,58 +199,58 @@ main{
 			li{
 				list-style-type: none;
 				border-bottom: 1px solid rgb(225,229,231);
-				padding:1.5rem 0; 
-				
-				font-size: 2.8rem;
+				padding:.3rem 0 ; 
+				margin-left: .3rem;
+				font-size: .32rem;
 
 				display: flex;
 				flex-flow: row nowrap;
 				align-items: center;
+				
+				.skill{	
+					padding-left: .3rem;
+					border-left: 3px solid #5fc0cd;
 
-
-				.skill{
-					margin-left: 2rem;
-					padding-left: 2rem;
-					border-left: 3px solid rgb(95,192,205);
+					color: #333;
 				}
 
 				.list-left{
-					margin: 0rem 0rem 0rem 2rem;
-					padding-right: 2rem;
+					margin-left: .3rem;
+					padding-right: .28rem;
 					border-right: 1px solid rgb(225,229,231);
 					
-					// display: inline-block;			/*主要是这里还有width*/
+					display: inline-block;			/*主要是这里还有width*/
 					color: #999;
-					
-					span{
-						// word-break:keep-all;           /* 在恰当的断字点进行换行 */
-						white-space:nowrap;          /* 规定段落中的文本不进行换行 */
-					}
+
+					white-space: nowrap;
 
 				}
 
 				.list-right{
-					margin-left: 2rem;
+					margin-left: .28rem;
 				}
 
 				.star{
-					border-right:  0;
-					color: #000;
+					color: #333;
+					margin-left: .24rem;
 
 					img{
-						width: 1.8rem;
-						// height: 1.5rem;
+						width: .24rem;
+
 					}
 				}
 
 				.wage{
-					color: rgb(228,106,108);
+					color: rgb(226,97,99);
 				}
 
 				.self-intro{
 					display: inline-block;
-					// width: 50%;
-					font-size: 2rem;
+					/*width: 50%;*/
+					font-size: .24rem;
+					font-weight: bold;
+
+					padding-right: .89rem;
 
 				}
 
@@ -228,55 +259,54 @@ main{
 		}
 
 	}
-
 }
 
 
-
-/*----------------footer------------------*/
-
+/*-----------------footer--------------------*/
 
 footer{
 	position: fixed;
 	bottom: 0;
 	margin: 0 auto ;
-	
+		
 	min-width: 320px;
+	max-width: 720px;
 	width: 100%;
 	
 	background-color: #fff;
-	text-align: center;
-
 	z-index: 2;
 
-	// padding: 0.5rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-self: center;
 
 	button{
 		display: inline-block;
 		
-		width: 45%;
-		padding: 1rem 0;
-		margin:0 0.5rem;
+		width: 46%;
+	/*	height: 5rem;
+		line-height: 5rem;*/
+		padding:.2rem 0;
+		margin: .13rem;
 
 		border:none;
-		border:2px solid rgb(95,192,205);
+		border:2px solid #5fc0cd;
 		border-radius: 7px;
 
-		font-size: 3rem;
-		font-family:  Arial, Helvetica, sans-serif;
+		font-size: .34rem;
 
-		text-align: center;
 	}
 
 	.message{
-		color: rgb(95,192,205);
+		color: #5fc0cd;
 		background-color: #fff;
 	}
 
 	.tel{
 		color: #fff;
-		background-color: rgb(95,192,205);
+		background-color: #5fc0cd;
 	}
-	
 }
+
 

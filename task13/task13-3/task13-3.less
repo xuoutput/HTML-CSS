@@ -1,0 +1,257 @@
+html{
+	font-size: 625%;
+	font-family: 'Hiragino Sans GB', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 611px)			
+{
+	html{
+	font-size: 550%;
+	}
+}
+
+@media screen and (max-width: 540px)			
+{
+	html{
+	font-size: 500%;
+	}
+}
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
+
+}
+
+@media screen and (max-width: 468px)
+{
+	html{
+	font-size: 425%;
+	}
+
+}
+
+@media screen and (max-width: 438px)
+{
+	html{
+	font-size: 400%;
+	}
+
+}
+
+@media screen and (max-width: 413px)
+{
+	html{
+	font-size: 350%;
+	}
+
+}
+
+@media screen and (max-width: 330px)
+{
+	html{
+	font-size: 340%;
+	}
+
+}
+
+html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+
+
+/*以上初始化*/
+body{
+	min-width: 320px;
+	max-width: 720px;
+	width: 100%;
+	margin:0 auto;
+}
+
+header{
+	min-width: 320px;
+	max-width: 720px;
+	width: 100%;
+
+	background-color: #29bde0;
+	padding: .2rem 0rem;			/*不能在这里设置padding的left和right来调整两边距离，而是在home和help中设置margin来调整，不然就是右边的而距离有问题*/
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	border-bottom: 1px solid #74d4eb;
+	font-size: 0;
+
+	.home{
+		img{
+			width: .51rem;
+			margin-left: .2rem;
+			
+		}	
+	}
+
+	.jieguo{
+		font-size: .34rem;
+		color: #fff;
+		/*align-items: flex-end;*/
+		
+	}
+
+	.help{
+		img{
+			width: .4rem;
+			margin-right: .2rem;
+
+		}
+
+	}
+}
+
+main{
+	margin-bottom: 1.5rem;
+
+
+}
+
+.main-top{
+	background-color: #29bde0;	
+
+	.main-top-header{
+								
+		width: 48%;
+		padding: .24rem ;
+
+		margin: 0 auto;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.main-top-main{
+		font-size: .33rem;
+		color: #ffc865;
+		width: 78%;
+		margin:0 auto;
+		/*padding-bottom: .63rem;*/
+	}
+
+	.main-top-footer{
+		font-size: .26rem;
+		color: #fff;
+		width: 78%;
+		margin:0 auto;
+		padding: .55rem 0 .25rem 0;
+
+		p{
+		/*	margin-top: 0;
+			margin-bottom: 0;*/
+			line-height: .34rem;
+		}
+	}
+}
+	
+.main-content{
+	width: 78%;
+	margin:0 auto;
+
+	li{
+		display: flex;
+		display: -webkit-flex;
+
+		justify-content:space-between;
+		align-items: center;
+
+		.date{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+
+			h3{
+				font-size: .3rem;
+				/*line-height: .35rem;*/
+				color: #515151;
+				padding: .15rem 0;
+			}
+
+			.time{
+				font-size: .22rem;
+				color: #c7c7c7;
+			}
+		}
+
+		p{
+			font-size: .26rem;
+			line-height: .38rem;
+			color: #a6a6a6;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto;
+
+	min-width: 320px;
+	max-width: 720px;
+	width: 100%;
+	
+	padding:.24rem 0;
+	background-color: rgba(153,223,240,0.5);		/*rgba()做一个透明度*/
+
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	button{
+		margin: 0 auto;
+		border:0;
+
+		width: 43%;
+
+		border:none;
+		border-radius: 7px;
+
+		padding: .24rem;
+		margin: 0 3.3%;
+		
+		font-size: .40rem;
+		/*font-family: 黑体;*/
+		color: #fff;
+		text-align: center;
+
+	}
+
+	.again{
+		background-color: #f66f6f;
+
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+
+	.share{
+		background-color: #fbb435;
+	}
+}
+
+

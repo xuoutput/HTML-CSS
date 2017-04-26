@@ -1,18 +1,30 @@
 html {
-  font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 625%;
+  font-family: "STheiti", Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 611px) {
+  html {
+    font-size: 550%;
+  }
 }
 @media screen and (max-width: 540px) {
   html {
-    font-size: 50%;
+    font-size: 500%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 498px) {
   html {
-    font-size: 40%;
+    font-size: 450%;
   }
-  .footer {
-    font-size: 40%;
+}
+@media screen and (max-width: 438px) {
+  html {
+    font-size: 400%;
+  }
+}
+@media screen and (max-width: 413px) {
+  html {
+    font-size: 300%;
   }
 }
 html,
@@ -37,158 +49,190 @@ li {
   list-style-type: none;
 }
 /*以上初始化*/
-/*---------------header----------------*/
+body {
+  max-width: 720px;
+  margin: 0 auto;
+}
 header {
   position: fixed;
   top: 0;
   margin: 0 auto;
   min-width: 320px;
+  max-width: 720px;
   width: 100%;
-  padding: 1rem 0;
-  margin-right: 15px;
+  padding: .1rem 0;
   background-color: #5fc0cd;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 0;
   /*清楚inline-block的空隙*/
   z-index: 2;
 }
-header button {
+header div button {
   border: 0;
-  padding: 1rem ;
-  border-radius: 7px;
-  font-size: 3rem;
+  padding: .18rem;
+  border-radius: 8px;
+  font-size: .34rem;
 }
-header .button-left {
+header div .button-left {
   background-color: #55a8b3;
   color: #fff;
 }
-header .button-right {
+header div .button-right {
   background-color: #fff;
   color: #5fc0cd;
-  margin-left: -0.5rem;
+  margin-left: -0.1rem;
   /*稍微重叠*/
 }
 header img {
-  width: 3rem;
-  text-align: right;
+  width: .43rem;
+  /*text-align: right;*/
+  margin-right: .3rem;
 }
-/*------------------main--------------------------*/
 main {
-  margin: 7rem 0 10rem 0;
-  padding: 0 8px;
+  margin: 1.2rem 0 1rem 0;
+  min-width: 320px;
+  max-width: 720px;
 }
 main .main-top {
-  font-size: 2.5rem;
-  color: #999999;
+  font-size: .28rem;
+  color: #999;
+  border-bottom: 1px solid #e1e5e7;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
 main .main-top .dropdown {
-  width: 32%;
+  width: 30%;
   text-align: center;
   position: relative;
+  margin: 0 1%;
 }
 main .main-top .dropdown .drop-title {
   display: inline-block;
   width: 100%;
-  margin: 1rem 0;
-  border-right: 1px solid #ccc;
-  font-size: 2.5rem;
+  margin-bottom: .2rem;
+  background-color: #fff;
+  font-size: .28rem;
+  color: #999;
   text-align: center;
+}
+main .main-top .dropdown .border-right {
+  border-right: 1px solid #e1e5e7;
 }
 main .main-top .dropdown .drop-title::after {
   content: "▼";
+  font-size: .1rem;
   position: absolute;
-  right: 5px;
+  top: .1rem;
+  right: .10rem;
   color: #ccc;
 }
 main .main-top select {
   width: 100%;
-  font-size: 2.5rem;
+  font-size: .25rem;
   color: #999;
   opacity: 0;
   position: absolute;
-  top: 1rem;
-  left: 0;
+  top: .1rem;
+  left: .03rem;
 }
-main .main-content {
-  padding: 0 4%;
+.main-content {
+  margin-bottom: 1.6rem;
 }
-main .main-content .main-content-row {
+.main-content-row {
   display: flex;
   display: -webkit-flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e1e5e7;
-  padding: 1rem 0;
+  padding: .3rem ;
 }
-main .main-content .main-content-row .main-content-left {
-  font-size: 2.5rem;
-  color: #999999;
+.main-content-row .main-content-left {
+  /*padding-left: .3rem !important;*/
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-main .main-content .main-content-row .main-content-left div {
+.main-content-row .main-content-left div {
+  font-size: 0;
   display: flex;
   display: -webkit-flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
-main .main-content .main-content-row .main-content-left div img {
-  height: 1.7rem;
+.main-content-row .main-content-left div img {
+  display: inline-block;
+  width: .25rem;
 }
-main .main-content .main-content-row .main-content-left .black {
-  padding: 1rem 0 1rem 2.4rem;
-  color: #333333;
+.main-content-row .main-content-left div span {
+  font-size: .28rem;
+  color: #999;
+  margin-left: .15rem;
+  vertical-align: middle;
 }
-main .main-content .main-content-row .main-content-right {
-  font-size: 2.5rem;
-  color: #999999;
+.main-content-row .main-content-left .black {
+  font-size: .28rem;
+  color: #333;
+  padding: .23rem 0 .23rem .5rem;
+}
+.main-content-row .main-content-right {
   display: flex;
   display: -webkit-flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  color: #e63b0e;
 }
-/*------------------footer--------------------------*/
+.main-content-row .main-content-right div {
+  font-size: 0;
+}
+.main-content-row .main-content-right div p {
+  font-size: .3rem;
+  color: #e63b0e;
+  margin-right: .2rem;
+}
+.main-content-row .main-content-right div img {
+  width: .21rem;
+}
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   min-width: 320px;
+  max-width: 720px;
   width: 100%;
   background-color: #f8fafb;
   display: flex;
   display: -webkit-flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  /*再调整两边距离不能用margin 用了不对不知道为什么*/
+  justify-content: space-between;
   align-items: center;
 }
-footer .footer-left,
-footer .footer-right {
-  display: flex;
-  display: -webkit-flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+footer .footer-left {
+  margin-left: 1.6rem;
+  text-align: center;
+  font-size: 0;
 }
 footer .footer-left img {
-  width: 3rem;
+  width: .47rem;
 }
 footer .footer-left p {
-  color: #b5ffe7;
-  padding: 0.5rem 0;
+  font-size: .2rem;
+  color: #5fc0cd;
+  margin-top: .17rem;
 }
 footer .footer-middle {
-  padding: 1.5rem ;
+  width: .98rem;
+  height: .98rem;
   border-radius: 50%;
   background-color: #5fc0cd;
   background-size: 100% 100%;
@@ -199,12 +243,18 @@ footer .footer-middle {
   align-items: center;
 }
 footer .footer-middle img {
-  width: 3rem;
+  width: .42rem;
+}
+footer .footer-right {
+  margin-right: 1.6rem;
+  text-align: center;
+  font-size: 0;
 }
 footer .footer-right img {
-  width: 3rem;
+  width: .47rem;
 }
 footer .footer-right p {
-  color: #979797;
-  padding: 0.5rem 0;
+  font-size: .2rem;
+  color: #999;
+  margin-top: .17rem;
 }

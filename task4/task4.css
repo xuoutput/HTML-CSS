@@ -1,103 +1,145 @@
 *{margin: 0;padding: 0;}
 
+
+
 html{
-/*	font-family: Microsoft YaHei, serif;	
-	font-size: 62.5%;	定义了一个基本字体大小为62.5%（也就是10px。设置这个值主要方便计算，如果没有设置，将是以“16px”为基准 ）		
-	line-height: 4rem;*/
-	font: 62.5%/4rem Microsoft YaHei, Arial, Helvetica, sans-serif;
-	height: 4rem;		/*高度固定上下居中*/
+
+	font-size: 625%;
+	font-family: "heiti",Arial, Helvetica, sans-serif;
     color: #FFF;
-	
 	margin: 0 auto;
-/*    min-width: 320px;*/
-	background-color: rgb(239,240,244);
+}
+
+
+@media screen and (max-width: 611px)			
+{
+	html{
+	font-size: 550%;
+	}
+}
+
+@media screen and (max-width: 540px)			
+{
+	html{
+	font-size: 500%;
+	}
+}
+@media screen and (max-width: 498px)
+{
+	html{
+	font-size: 450%;
+	}
+
+}
+
+@media screen and (max-width: 438px)
+{
+	html{
+	font-size: 400%;
+	}
+
+}
+
+@media screen and (max-width: 413px)
+{
+	html{
+	font-size: 300%;
+	}
+
+}
+
+body{
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #eff0f4;
 }
 
 header{
-	background-color: rgb(95,192,205);
-	font-size: 2rem;
+	background-color: #5fc0cd;
+	font-size: .32rem;
 
-	overflow: hidden;
-
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header .left{
+	display: inline-block;
 	float: left;
-	margin-left: 20px;
+	margin: .3rem;
 	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
 	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
 }
 
 header p{
+	font-size: .36rem;
+	color: #fff;
 	text-align: center;
 }
 
 header .right{
-	float: right;
-	margin-right: 20px;
+	display: inline-block;
+	margin: .3rem;
 	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
 	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
 }
 
 
-.username{
-	margin: 20px 0;
+.container form{
+	padding-bottom: .69rem;
+}
+
+.username,.password{
+	margin-top: .16rem;
+	padding: .25rem .3rem;
+
 	display: flex;
-	flex-direction: row;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 	background-color: #fff;
 	
 }
 
-.username img{
-	order: 0;
-	padding:20px;
+.username img,.password img{
+	display: inline-block;
+	width: .27rem;
+	padding: 0 .46rem 0 .13rem;
 }
 
-.username input{
-	order: 1;
+.username input,.password input{
 	width: 100%;
 	border: 0;		/*去掉所有的边框*/
-	border-left: 2px solid rgb(234,237,238);  /*这是黑色一竖 /*再在左边加上边框*/
-	font-size: 2rem;
-	padding: 0 0 0 20px;	/*在左边空一点*/
-	margin: 20px 0;			/*这个是为了左边一条竖线，用border实现，*/
+	border-left: 2px solid #eaedee;  /*这是黑色一竖 /*再在左边加上边框*/
+	font-size: .32rem;
+	color: #e1e5e7;
+	
+	padding-left: .33rem;
 
 }
 
-.password{
-	margin: 20px 0;
-	display: flex;
-	flex-direction: row;
-	background-color: #fff;
-}
 
-.password img{
-	order: 0;
-	padding:20px;
-}
 
-.password input{
-	order: 1;
-	width: 100%;
-	border: 0;		/*去掉所有的边框*/
-	border-left: 2px solid rgb(234,237,238);	/*再在左边加上边框*/
-	font-size: 2rem;
-	padding: 0 0 0 20px;	/*在左边空一点*/
-	margin: 20px 0;
-}
-
-.container a{
-	display: block;
-	background-color: rgb(95,192,205);
-	font-size: 2rem;
+.container-bottom{
+	background-color: #5fc0cd;
 	text-align: center;
-	text-decoration:none;	/*这里用这个语句去掉超链接的下划线*/
-	color: #fff;			/*这里字体颜色设置为白色，把蓝色的换掉*/
+}
+
+.container-bottom a{
+	display: block;
+	font-size: .36rem;
+	color: #fff;	
+	text-decoration:none;	
+	
+	padding: .34rem 0;	
 }
 
 footer a{
+	display: block;
 	float: right;
-	font-size: 2rem;
-	
-	color: rgb(95,192,205);			
+	font-size: .32rem;
+	color: #5fc0cd;			
+	text-decoration: none;
+	padding: .2rem .3rem;
 }

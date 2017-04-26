@@ -1,3 +1,8 @@
+html {
+  font-size: 625%;
+  font-family: "heiti", Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
 html,
 body,
 div,
@@ -22,106 +27,112 @@ li {
 a {
   text-decoration: none;
 }
-html {
-  font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 611px) {
   html {
-    font-size: 50%;
+    font-size: 550%;
   }
 }
-/*以上初始化*/
-/*变量*/
-.container-fluid {
-  background-color: #eff0f4;
-  /*白色有点灰*/
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 500%;
+  }
 }
-/*-------------头部↓------------*/
-.header {
+@media screen and (max-width: 498px) {
+  html {
+    font-size: 450%;
+  }
+}
+@media screen and (max-width: 438px) {
+  html {
+    font-size: 400%;
+  }
+}
+@media screen and (max-width: 413px) {
+  html {
+    font-size: 300%;
+  }
+}
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #eff0f4;
+}
+header {
   background-color: #5fc0cd;
-  /*蓝色*/
-  padding: 1rem 0;
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: .32rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.header .left,
-.header .right {
+header .left {
+  display: inline-block;
+  float: left;
+  margin: .3rem;
   text-decoration: none;
-  color: #ffffff;
+  /*这里用这个语句去掉超链接的下划线*/
+  color: #fff;
+  /*这里字体颜色设置为白色，把蓝色的换掉*/
 }
-.header p {
-  font-size: 2.5rem;
-  margin: 0;
+header p {
+  font-size: .36rem;
+  color: #fff;
+  text-align: center;
 }
-/*-------------头部↑------------*/
-/*---------------用户名密码↓------------*/
-.container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+header .right {
+  display: inline-block;
+  margin: .3rem;
+  text-decoration: none;
+  /*这里用这个语句去掉超链接的下划线*/
+  color: #fff;
+  /*这里字体颜色设置为白色，把蓝色的换掉*/
 }
-.username,
-.password {
-  background-color: #ffffff;
-  padding: 1rem ;
-  margin: 0.5rem 0 0 0;
+main form {
+  padding-bottom: .69rem;
+}
+main form .username,
+main form .password {
+  margin-top: .16rem;
+  padding: .25rem .3rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  background-color: #fff;
 }
-.username img,
-.password img {
-  width: 2rem;
+main form .username img,
+main form .password img {
+  display: inline-block;
+  width: .27rem;
+  padding: 0 .46rem 0 .13rem;
 }
-.username input,
-.password input {
-  margin-left: 2rem;
-  padding-left: 2rem;
-  border: 0;
+main form .username input,
+main form .password input {
   width: 100%;
-  border-left: 2px solid #eff0f4;
-  font-size: 2rem;
+  border: 0;
+  /*去掉所有的边框*/
+  border-left: 2px solid #eaedee;
+  /*这是黑色一竖 /*再在左边加上边框*/
+  font-size: .32rem;
+  color: #e1e5e7;
+  padding-left: .33rem;
 }
-/*---------------用户名密码↑------------*/
-.login {
+main .container-bottom {
   background-color: #5fc0cd;
-  /*蓝色*/
-  padding: 1rem 0;
-  margin-top: 3rem;
-  font-size: 2.5rem;
-  color: #ffffff;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
-.login a {
+main .container-bottom a {
+  display: block;
+  font-size: .36rem;
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
+  padding: .34rem 0;
 }
-.login a:hover {
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-/*---------------footer  ↓------------*/
-.footer a {
-  background-color: #eff0f4;
-  padding: 1rem 0;
-  font-size: 2rem;
+footer a {
+  display: block;
+  float: right;
+  font-size: .32rem;
   color: #5fc0cd;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-.footer a:hover {
   text-decoration: none;
-  color: #5fc0cd;
-  cursor: pointer;
+  padding: .2rem .3rem;
 }
