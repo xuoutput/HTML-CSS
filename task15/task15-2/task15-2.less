@@ -1,556 +1,414 @@
-html{
-	font-size: 62.5%;
-	font-family:  Arial, Helvetica, sans-serif;
-}
-
-
-html,body,div,span,img,ul,li,p,h1,h2,h3,h4,h5,h6{
-	margin: 0;
-	padding: 0;
-}
-ul,li{
-	list-style-type: none;
-}
-
-a{
-	text-decoration: none;
-}
-/*以上初始化*/
-
-/*-------------------header-------------------*/
-.header-top{
-	background-color: #fff;
-	font-size: 1rem;
-	color: #29b078;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	padding: 1rem 0;
-	margin: 0 15px;
-}
-
-/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
-
-
-.log{
-	display: none;
-}
-
-
-
-/*---------导航栏----------*/
-
-.header-middle{
-	height: 6rem;
-    padding: 0rem 15px;
-    background-color:#29b078;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-	.header-middle-logo{
-	    display: flex;
-	/*    flex-flow: row nowrap;
-	    justify-content: space-between;*/
-	    align-items: center;  
-	}
-
-	ul{
-	    display: flex;
-	    flex-flow: row nowrap;
-	    justify-content: flex-end;
-	    align-items: center;
-
-		li{
-		    padding:0 1rem;
-		    margin: 0 1rem;
-		    font-size:2rem;
-		    line-height: 5.7rem;
-		    border-bottom:4px solid #29b078;		/*这里先是绿的，hover过去才是白色，防止突然变高*/
-
-			a{
-				text-decoration: none;
-			    color:#fff;
-			}
-
-		}
-
-		li:hover{
-		    border-bottom-color:#fff;
-		}
-	}
-	
-	span{
-	    display:none;
-	}
-}
-
-
-
-
-@media screen and (max-width:720px){
-.header-middle{
-	    ul{
-	        display:none;
-	    }
-
-	    span{
-	        display:inline-block;
-	        padding:0.8rem;
-	        border:1px solid #fff;
-	        border-radius: 5px;
-
-			i{
-				display: block;
-				margin:0.3rem;
-				width: 1.5rem;
-				border-bottom:2px solid #fff;
-			}
-    	} 
-
-    }
-	
-
-
-
-}
-.header-bottom{
-    display:none;
-    background-color:#29b078;
-    border-top:1px solid grey;
-
-	ul{
-		display: flex;
-		flex-flow: column nowrap;
-	    justify-content: center;
-	    align-items: center;
-	
-		li{
-		    /*display:block;*/
-		    width:100%;
-		    font-size:2rem;
-		    color:#fff;
-
-		    padding: 1rem 0;
-
-		    border-bottom:3px solid #29b078; 
-
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-
-			a{
-				text-decoration: none;
-				color:#fff;
-			}
-		}
-
-		li:hover{
-	    border-bottom-color:#fff;
-		}
-	}
-}
-
-
-
 
 
 /*--------------------------main 首页-------------------*/
 
 main{
-	padding: 0 15px;
+	margin-bottom:2.3rem; 
 }
 
-.row3{
-	.main-top{
-		padding: 1rem 0;
+.main-top{
+	max-width: 1200px;
+	margin: 0 auto;
 
-		border-bottom:1px solid #b2b2b2;
+	padding: .31rem 0;
+	border-bottom:1px solid #d0d6d9;
 
-		.main-top-left{
-			font-size: 1.5rem;
-			color: #000;
-			text-decoration: none;
-		}
-
-		.main-top-right{
-			font-size: 1.5rem;
-			color: #29b078;
-			text-decoration: none;	
-		}
-
-		a:hover{
-			text-decoration: none;
-			color: #ff8b4a;
-		}
-	}
-
+	font-size: .16rem;
+	color: #333;
+	text-decoration: none;
 }
 
+.main-top-left{
+	/*font-size: .16rem;*/
+	color: #333;
+	text-decoration: none;
+}
 
+.main-top-right{
+	/*font-size: .15rem;*/
+	color: #29b078;
+	text-decoration: none;	
+}
+
+.main-top a:hover{
+	text-decoration: none;
+	color: #ff8b4a;
+}
 
 /*--------------------------main 职业方向-------------------*/
-.row4{
-	.main-major{
-		padding: 1rem 0;
-		
-		font-size: 2rem;
-		border-bottom:1px solid #b2b2b2;
 
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
-		align-items: center;
+.main-major{
+	max-width: 1200px;
+	margin: 0 auto;
 
-		.one{
-			color: #b2b2b2;
-		}
-		.major-bcg{
-			display: inline-block;			/*a标签加宽度要block 或 inline-block*/
-			width: 7rem;
-			text-align: center;
+	padding: .21rem 0;
+	
+	font-size: .14rem;
+	border-bottom:1px solid #edf1f2;
+}
 
-			text-decoration: none;
-			color: #000;
+.one{
+	color: #999;
+}
 
-		}
+.major-bcg{
+	display: inline-block;			/*a标签加宽度要block 或 inline-block*/
+	/*width: .7rem;*/
+	text-align: center;
 
-		.major-bcg:hover{
-			text-decoration: none;
-			color: #fff;
-			background-color: #29b078;
-		}
-	}	
+	text-decoration: none;
+	color: #333;
+	margin-right: .28rem;
+
 }
 
 
 
+.major-bcg:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #29b078;
+}
+
+/*.major-bcg:visited{
+	text-decoration: none;
+	color: #000;
+	background-color: #29b078;	
+}*/
 
 /*--------------------------main 前端方向-------------------*/
 
-.row5 {			/*这里有padding是main-title的*/
-	font-size: 2.5rem;
-	color: #000;
-	padding: 1.5rem 0;
+.main-title {			/*这里有padding是main-title的*/
+	max-width: 1200px;
+	margin: 0 auto;
+
+	font-size: .16rem;
+	color: #333;
+	font-weight: bold;
+	padding: .32rem 0;
 	text-align: left;
 
-	border-bottom: 1px solid #b2b2b2;
+	border-bottom: 1px solid #d0d6d9;
 	margin-bottom: 0;
-
-	.main-title {
-		a,a:hover{
-			text-decoration: none;
-			color: #000;
-		}
-	}
-
 }
 
 
-
+.main-title a,.main-title a:hover{
+	text-decoration: none;
+	color: #000;
+}
 
 /*--------------------------每个人-------------------*/
 
 .row6{
-	padding: 1rem;
-	border-bottom: 1px solid #b2b2b2;
+	max-width: 1200px;
+	margin: 0 auto;
 
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	align-items: center;	
+	align-items: center;
 }
 
 /*------------.main-person-row1 Web前端工程师 ---------------*/
 
 .main-person{
-	margin: 1%;
-	width: 30%
-
-
-}
-
-@media screen and (max-width: 720px){
-		.main-person{
-		margin-bottom: 1rem;
-		width: 100%
-	}
+	margin: 0 .6%;
+	margin-top: .46rem;
 	
+	width: 32%;	
 }
 
-
+@media screen and (max-width: 991px) {
+  .main-person {
+    width: 98%;
+    margin: 2% auto;
+  }
+  .kong{
+  	// max-width: 3.84rem;
+  	width: 100%;
+  }
+}
 
 .kong{		/*用来调整444之间间隙 不能直接对main-person*/
-	border: 1px solid #b2b2b2;
+	
+
+	border: 1px solid #e2e2e2;
+	/*max-width: 3.84rem;*/
+
 	
 	position: relative;  /*定位那个IOS透明色的*/
-
-	.main-person-row1{
-		border-bottom: 1px solid #b2b2b2;
-
-		display: flex;
-		/*flex-flow: row wrap;*/
-		justify-content: flex-start;
-		align-items: center;
-
-		.main-person-row1-left{
-			img{
-				width: 10rem;
-				padding: 1rem;
-			}
-		}
-
-
-		.main-person-row1-right{
-			.main-person-row1-right-top{
-				font-size: 1.5rem;
-				color: #000;
-			}
-
-			.main-person-row1-right-content{
-				font-size: 1rem;
-				color: #000;
-			}	
-		}	
-	}
-
-
-
-
-
-
-	/*------------.main-person-row2 门槛  难易程度---------------*/
-
-	.main-person-row2{
-
-		font-size: 0.7rem;
-		color: #b2b2b2;
-		
-
-		border-bottom: 1px solid #b2b2b2;
-
-		display: flex;
-		/*flex-flow: row wrap;*/
-		justify-content: flex-start;
-		align-items: center;
-
-		.main-person-row2-left,.main-person-row2-right{
-			padding: 1rem ;
-
-			display: flex;
-			/*flex-flow: row wrap;*/
-			justify-content: flex-start;
-			align-items: center;
-
-
-		}
-
-		.main-person-row2-left{
-			width: 50%;
-			white-space: nowrap;
-		}
-
-		.main-person-row2-right{
-			width: 50%;
-			border-left: 1px solid #b2b2b2;
-		}
-
-		.star {
-		    width: 0;
-		    height: 0;
-		    border-top: 5px solid red;
-		    border-right: 10px solid transparent;
-		    border-left: 10px solid transparent;
-		   
-		    position: relative;
-		    top: 0px;
-		    left: 10px;
-		   
-		}
-		.star:before,.star:after {
-		    width: 0;
-		  	height: 0;
-		    border-top: 5px solid red;
-		    border-right: 10px solid transparent;
-		    border-left: 10px solid transparent;
-		  
-		    content: '';
-		    display: block;
-		 
-		    position: absolute;
-		    top: -5px;left: -10px;
-		  
-		}
-		.star:before {
-		    transform: rotate(70deg);
-		}
-		.star:after {
-		    transform: rotate(-78deg);
-		}
-
-	}
-
-
-
-
-
-	/*------------.main-person-row3 成长周期---------------*/
-
-	.main-person-row3{
-
-		font-size: 0.7rem;
-		color: #b2b2b2;
-
-		border-bottom: 1px solid #b2b2b2;
-
-		display: flex;
-		/*flex-flow: row wrap;*/
-		justify-content: flex-start;
-		align-items: center;
-
-		.main-person-row3-left,.main-person-row3-right{
-			padding: 1rem ;
-		}
-
-		.main-person-row3-left{
-			width: 50%;
-			white-space: nowrap;
-
-		}
-			
-		.main-person-row3-right{
-			width: 50%;
-			border-left: 1px solid #b2b2b2;
-		}
-
-		.red{
-			color: red;
-		}
-	}
-
-
-
-	/*------------.main-person-row4 薪资待遇---------------*/
-
-	.main-person-row4{
-		/*padding: 1rem 0;*/
-
-		font-size: 1rem;
-		color: #000;
-
-		border-bottom: 1px solid #b2b2b2;
-
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: center;
-		align-items: center;
-
-		.main-person-row4-left{
-
-			width: 40%;
-			display: flex;
-			/*flex-flow: row nowrap;*/
-			justify-content: center;
-			align-items: center;
-
-			margin-bottom: 0;
-		}
-
-
-		.main-person-row4-right{
-			width: 60%;
-			padding: 0 0 !important;
-
-			border-left: 1px solid #b2b2b2;
-			
-			p{
-				margin-bottom: 0;
-				padding: 0.5rem 1rem;
-
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content:space-between;
-				align-items: center;	
-
-			}
-
-			.salary-year1,.salary-year2{
-				border-bottom: 1px solid #b2b2b2;
-			}
-		}
-	}
-
-
-
-
-	/*------------.main-person-row5 有286人正在学---------------*/
-
-	.main-person-row5{
-		padding: 1rem 15px;
-
-		font-size: 1.5rem;
-		color: #000;
-
-		border-bottom: 1px solid #b2b2b2;
-
-		.red{
-			color: red;
-		}
-	}
-
-
-
-	/*------------.main-person-row6 提示：在你学习之前---------------*/
-
-	.main-person-row6{
-		padding: 1rem 15px;
-
-		font-size: 1rem;
-		color: #b2b2b2;
-
-	}
-
-
-
-	/*------------.showIOS 隐藏---------------*/
-
-	.showIOS{
-		font-size: 1.8rem;
-		color: #fff;
-		padding: 0 1.5rem;
-
-		.showIOS-top{
-			font-size: 2rem;
-
-			text-align: center;
-			margin-top: 4rem;
-		}
-		.showIOS-content{
-			margin-top: 3rem;
-			padding: 0 1.5rem;
-		}
-	}
-
-
-	.showIOS{
-		background-color: rgba(0, 0, 0, 0.7);
-		height: 100%;
-		opacity: 0;
-		z-index: 3;
-		position: absolute;
-		top: 0;
-		left: 0;
-
-	}
-	.showIOS:hover{
-		opacity: 1;
-	}
+}
+
+.main-person-row1{
+	border-bottom: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.main-person-row1-left img{
+	width: 1.39rem;
+	margin: .21rem .1rem .16rem .11rem;
+}
+
+.main-person-row1-right{
+	margin-right: .11rem;
+}
+.main-person-row1-right-top{
+	font-size: .16rem;
+	color: #333;
+	font-weight: bold;
+}
+
+.main-person-row1-right-content{
+	font-size: .14rem;
+	color: #333;
+}
+
+
+/*------------.main-person-row2 门槛  难易程度---------------*/
+
+.main-person-row2{
+	border-bottom: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row2-left{
+	width: 48%;
+
+	padding: .15rem 0 .15rem .11rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row2-left span{
+	font-size: .12rem;
+	color: #999;
 
 }
+
+
+.main-person-row2-right{
+	padding: .15rem 0 .15rem .11rem;
+	border-left: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row2-right span{
+	font-size: .12rem;
+	color: #999;
+}
+
+
+.star{
+	width: .16rem;
+	margin-left: .15rem;
+	vertical-align: middle;
+}
+
+
+
+
+/*------------.main-person-row3 成长周期---------------*/
+
+.main-person-row3{
+	border-bottom: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row3-left{
+	width: 48%;
+
+	padding: .15rem 0 .15rem .11rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row3-left span{
+	font-size: .12rem;
+	color: #999;
+
+}
+
+.main-person-row3-left .red{
+	margin-left: .1rem;
+	color: #f01400;
+}
+
+.main-person-row3-left .black{
+	color: #333;
+}
+
+.main-person-row3-right{
+	padding: .15rem 0 .15rem .11rem;
+	border-left: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-person-row3-right span{
+	font-size: .12rem;
+	color: #999;
+}
+
+.main-person-row3-right .red{
+	margin-left: .1rem;
+	color: #f01400;
+}
+
+.main-person-row3-right .black{
+	color: #333;
+}
+/*------------.main-person-row4 薪资待遇---------------*/
+
+.main-person-row4{
+	border-bottom: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.main-person-row4-left{
+	width: 38%;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-person-row4-left p{
+	font-size: .12rem;
+	color: #999;
+}
+
+
+
+.main-person-row4-right{
+	width: 62%;
+	border-left: 1px solid #edf1f2;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+/*	align-items: center;*/
+
+}
+
+.main-person-row4-right p{
+	padding: .15rem .15rem .15rem .25rem;
+	margin-bottom: 0;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+	align-items: center;	
+
+	font-size: .12rem;
+	color: #333;
+
+}
+
+.salary-year1,.salary-year2{
+	border-bottom: 1px solid #edf1f2;
+}
+
+
+/*------------.main-person-row5 有286人正在学---------------*/
+
+.main-person-row5{
+	padding: .11rem 0 .11rem .11rem;
+
+	font-size: .14rem;
+	color: #333;
+
+	border-bottom: 1px solid #edf1f2;
+}
+
+.main-person-row5 .red{
+	color: #f01400;
+}
+
+
+/*------------.main-person-row6 提示：在你学习之前---------------*/
+
+.main-person-row6{
+	padding: .11rem 0 .11rem .11rem;
+
+	font-size: .12rem;
+	color: #999;
+
+}
+
+
+
+/*------------.showIOS 隐藏---------------*/
+
+.showIOS{
+	font-size: .16rem;
+	color: #fff;
+	padding: 0 .42rem;
+
+}
+
+.showIOS-top{
+	font-size: .16rem;
+	color: #fff;
+
+	text-align: center;
+	margin-top: .87rem;
+}
+.showIOS-content{
+	font-size: .16rem;
+	color: #fff;
+
+	margin-top: .37rem;
+	padding: 0 .15rem;
+}
+
+
+.showIOS{
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	opacity: 0;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.showIOS:hover{
+	opacity: 1;
+}
+
 
 
 

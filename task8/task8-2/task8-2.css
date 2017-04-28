@@ -370,7 +370,7 @@ main{
 
 .kong{		/*用来调整444之间间隙 不能直接对main-person*/
 	border: 1px solid #e2e2e2;
-	max-width: 3.84rem;
+	/*max-width: 3.84rem;*/
 	
 	position: relative;  /*定位那个IOS透明色的*/
 }

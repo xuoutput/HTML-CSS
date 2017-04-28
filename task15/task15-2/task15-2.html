@@ -5,1443 +5,1653 @@
 	<meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
           
+	<link rel="stylesheet" type="text/css" href="init.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="task15-2.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="copyright.css">
 
-	<title>task15-2职业列表</title>
+	<title>task15-2重写task8-2职业列表</title>
 </head>
 <body>
-	<div class="row row1">
-		<div class="  header-top">
-			<div class="tel">
-				<span>客服热线010-594-78643</span>
-			</div>
-			<div class="login">
-				<a href="#" class="wechat" ><img src="images/wechat.png" alt=""></a>
-				<a href="#" class="qq"><img src="images/qq.png" alt=""></a>
-				<a href="#" class="weibo"><img src="images/weibo.png" alt=""></a>
-			</div>
+<header>
+	<div class="bcg-white">
+		<div class="">
+			<!-- <div class="row"> -->				
+				<div class=" header-top">
+					<div class="tel">
+						<p>客服热线010-594-78643</p>
+					</div>
+					<div class="login">
+						<a href="#" class="wechat" ><img src="images/wechat.png" alt=""></a>
+						<a href="#" class="qq"><img src="images/qq.png" alt=""></a>
+						<a href="#" class="weibo"><img src="images/weibo.png" alt=""></a>
+					</div>
+
+					<div class="log">
+						<a href="#" class="log-in">登录</a>
+						<a href="#" class="sign-up">注册</a>
+					</div>		
+				</div>
+			<!-- </div> -->
 		</div>
-			<div class="log">
-				<a href="#" class="log-in">登录</a>
-				<a href="#" class="sign-up">注册</a>
-			</div>		
 	</div>
 
-	<!--导航栏-->
-	<div class="row row2">
-		             
-		<div class="header-middle">
-			<div class="header-middle-logo">
-				<img src="images/jnshu.png">
-			</div>
-			<ul>
-				<li><a href="../task15-1/task15-1.html">首页</a></li>
-				<li><a href="../task15-2/task15-2.html">职业</a></li>
-				<li><a href="../task15-3/task15-3.html">推荐</a></li>
-				<li><a href="#">关于</a></li>
-			</ul>
-				<span onclick="mychat()">
-				<i></i>
-				<i></i>
-				<i></i>
-				</span>
-		</div>
-		<!--缩小后垂直导航栏-->
-		<div class="header-bottom" id="con">
-			<ul>
-				<li><a href="../task15-1/task15-1.html">首页</a></li>
-				<li><a href="../task15-2/task15-2.html">职业</a></li>
-				<li><a href="../task15-3/task15-3.html">推荐</a></li>
-				<li><a>关于</a></li>
-			</ul>
-		</div>
-		<script type="text/javascript">
-		function mychat() {
-			var oBtn = document.getElementById('con');
-			if (oBtn.style.display == "block") {
-			oBtn.style.display = "none";
-			} else {
-			oBtn.style.display = "block";
-			}
-		}
-		</script>
 
+	<!-- 导航栏 JS-->
+	<div class="bcg-green">
+		<div class="">
+			<div class=" bcg-green">
+				             
+				<div class="header-middle">
+					<div class="header-middle-logo">
+						<img src="images/jnshu.png">
+					</div>
+					<ul>
+						<li><a href="../task15-1/task15-1.html">首&nbsp页</a></li>
+						<li><a href="../task15-2/task15-2.html">职&nbsp业</a></li>
+						<li><a href="../task15-3/task15-3.html">推&nbsp荐</a></li>
+						<li><a href="#">关&nbsp于</a></li>
+					</ul>
+					<span onclick="mychat()">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
+				</div>
+				<!-- 缩小后垂直导航栏 -->
+				<div class="header-bottom" id="con">
+					<ul>
+						<li><a href="../task8-1/task8-1.html">首页</a></li>
+						<li><a href="../task8-2/task8-2.html">职业</a></li>
+						<li><a href="../task8-3/task8-3.html">推荐</a></li>
+						<li><a>关于</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+				function mychat() {
+					var oBtn = document.getElementById('con');
+					if (oBtn.style.display == "block") {
+					oBtn.style.display = "none";
+					} else {
+					oBtn.style.display = "block";
+					}
+				}
+				</script>
+
+			</div>	
+		</div>	
+		
 	</div>
+	</div>
+</header>
+
 <main>
 	<!-- main -->
-	<div class="row row3">
-		<div class=" main-top">
-				<a href="task8-1.html" class="main-top-left">首页</a>
-				>
-				<a href="#" class="main-top-right">职业</a>
-		</div>	
-	</div>
-	
-	<div class="row row4">
-		<div class=" main-major">
-			<div class="major">
-				<span class="one">方向：</span>
-				<a href="#" class="major-bcg"><span >全部</span></a>
-				<a href="#front-end" class="major-bcg"><span >前端开发</span></a>
-				<a href="#back-end" class="major-bcg"><span >后端开发</span></a>
-				<a href="#moble" class="major-bcg"><span >移动开发</span></a>
-				<a href="#whole" class="major-bcg"><span >整站开发</span></a>
-				<a href="#PM" class="major-bcg"><span >运营维护</span></a>
-			</div>
-		</div>	
+	<div class="">
+		<div class=" row3">
+			<div class=" main-top">
+					<a href="task8-1.html" class="main-top-left">首页</a>
+					>
+					<a href="#" class="main-top-right">职业</a>
+			</div>	
+		</div>
+		
+		<div class=" row4">
+			<div class=" main-major">
+				<div class="major">
+					<span class="one">方向：</span>
+					<a href="#" class="major-bcg"><span >全部</span></a>
+					<a href="#front-end" class="major-bcg"><span >前端开发</span></a>
+					<a href="#back-end" class="major-bcg"><span >后端开发</span></a>
+					<a href="#mobile" class="major-bcg"><span >移动开发</span></a>
+					<a href="#whole" class="major-bcg"><span >整站开发</span></a>
+					<a href="#PM" class="major-bcg"><span >运营维护</span></a>
+				</div>
+			</div>	
+		</div>
 	</div>
 
 	<!-- 前端 -->
-	<div class="row row5">
-		<div class=" main-title">
-			<a name="front-end"><p class="title" name="front-end">前端开发方向</p></a>	
-		</div>	
+	<div class="container">
+		
+		<div class=" row5">
+			<div class=" main-title">
+				<a name="front-end"><p class="title" name="front-end">前端开发方向</p></a>	
+			</div>	
+		</div>
+
+		<div class=" row6">
+			<!--     一个人      -->	
+			<div class=" main-person">
+				<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class=" main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class=" main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class=" main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class=" main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class=" main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>		
+
+		</div>
+
 	</div>
 
-	<div class="row row6">
-		<!--     一个人      -->	
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class="main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class="main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-	</div>
 
 	<!-- 后端 -->
-
-	<div class="row row5">
-		<div class=" main-title">
-			<a name="back-end"><p class="title" >后端开发方向</p></a>
-		</div>	
-	</div>
-
-	<div class="row row6">
-		<!--     一个人      -->	
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
+	<div class="container">
+		
+		<div class=" row5">
+			<div class=" main-title">
+				<a name="back-end"><p class="title" name="back-end">后端开发方向</p></a>	
+			</div>	
 		</div>
 
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
+		<div class="row row6">
+			<!--     一个人      -->	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
 
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
 					</div>	
-				</div>
 
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
 					</div>	
-				</div>
+				</div>		
+			</div>
 
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
 			</div>		
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>	
 		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
+		
 	</div>
 
 	
 	<!-- 移动 -->
-	<div class="row row5">
-		<div class=" main-title">
-			<a name="moble"><p class="title" name="moble">移动开发方向</p>
-		</div></a>		
-	</div>
-
-	<div class="row row6">
-		<!--     一个人      -->	
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
+	<div class="container">
+		
+		<div class=" row5">
+			<div class=" main-title">
+				<a name="mobile"><p class="title" name="mobile">移动开发方向</p></a>	
+			</div>	
 		</div>
 
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
+		<div class="row row6">
+			<!--     一个人      -->	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
 
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
 					</div>	
-				</div>
 
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
 					</div>	
-				</div>
+				</div>		
+			</div>
 
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
 			</div>		
+
 		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
-		</div>
-
+		
 	</div>
 
 
 	<!-- 整站 -->
-	<div class="row row5">
-		<div class=" main-title">
-			<a name="whole"><p class="title" name="whole">整站开发方向</p>
-		</div></a>		
-	</div>
-
-	<div class="row row6">
-		<!--     一个人      -->	
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
+	<div class="container">
+		
+		<div class=" row5">
+			<div class=" main-title">
+				<a name="whole"><p class="title" name="whole">整站开发方向</p></a>	
+			</div>	
 		</div>
 
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
+		<div class="row row6">
+			<!--     一个人      -->	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
 
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
 					</div>	
-				</div>
 
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
 					</div>	
-				</div>
+				</div>		
+			</div>
 
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
 			</div>		
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
+
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>
 		</div>
-
-
+		
 	</div>
 
 	<!-- 运维 -->
 
-	<div class="row row5">
-		<div class=" main-title">
-			<a name="PM"><p class="title" name="PM">运维开发方向</p>
-		</div></a>		
-	</div>
-
-	<div class="row row6">
-		<!--     一个人      -->	
-		<div class=" main-person">
-			<div class=" kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
-				<!-- Web前端工程师 -->
-				<div class="row main-person-row1">
-					<div class=" main-person-row1-left">
-						<img src="images/user.png">
-					</div>
-					<div class=" main-person-row1-right">
-						<p class="main-person-row1-right-top">Web前端工程师</p>
-						<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
-					</div>
-				</div>					
-			
-				<!-- 门槛  难易程度 -->
-				<div class="row main-person-row2">
-					<div class=" main-person-row2-left">
-						<span >门槛</span>
-						<span class="star"></span>	
-					</div>
-					<div class=" main-person-row2-right">
-						<span>难易程度</span>
-						<span class="star"></span>
-						<span class="star"></span>
-					</div>
-				</div>							
-
-				<!-- 成长周期 -->
-				<div class="row main-person-row3">
-					<div class=" main-person-row3-left">
-						<span >成长周期</span>
-						<span class="red">1-3</span><span >年</span>
-					</div>
-					<div class=" main-person-row3-right">
-						<span>稀缺程度</span>
-						<span class="red">345</span><span >家公司需要</span>
-						
-					</div>
-				</div>	
-
-				<!-- 薪资待遇 -->
-				<div class="row main-person-row4">
-					<div class=" main-person-row4-left">
-						<p>薪资待遇</p>
-					</div>
-					<div class=" main-person-row4-right">
-						<p class="salary-year1">
-							<span>0-1年</span>
-							<span>5k-10k/月</span>
-						</p>
-						<p class="salary-year2">
-							<span>1-3年</span>
-							<span>10k-20k/月</span>
-						</p>
-						<p class="salary-year3">
-							<span>3-5年</span>
-							<span>20k-50k/月</span>
-						</p>
-					</div>
-				</div>
-
-				<!-- 有286人正在学 -->
-				<div class="row main-person-row5">
-					<div class=" ">
-						<p>有<span class="red">286</span>人正在学</p>
-					</div>	
-				</div>
-
-				<!-- 提示：在你学习之前 -->
-				<div class="row main-person-row6">
-					<div class=" ">
-						<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
-					</div>	
-				</div>
-
-				<!-- 添加一个浮动的半透明说明 -->	
-				<div class="showIOS">
-						<p class="showIOS-top">ios工程师</p>
-						<p class="showIOS-content">
-                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
-                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
-                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
-                    </p>
-				</div>	
-			</div>		
+	<div class="container">
+		
+		<div class=" row5">
+			<div class=" main-title">
+				<a name="PM"><p class="title" name="PM">运维开发方向</p></a>	
+			</div>	
 		</div>
 
+		<div class="row row6">
+			<!--     一个人      -->	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-person">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 kong">  <!-- 这里加上一个wrap用于调整444之间空隙，不能直接444之后调整 12121212要加的 -->
+					<!-- Web前端工程师 -->
+					<div class="row main-person-row1">
+						<div class=" main-person-row1-left">
+							<img src="images/user.png">
+						</div>
+						<div class=" main-person-row1-right">
+							<p class="main-person-row1-right-top">Web前端工程师</p>
+							<p class="main-person-row1-right-content">Web前端工程师，主要职责是利用(X)HTML / CSS / JavaScript / flash等各种Web技术进行产品的开发。</p>
+						</div>
+					</div>					
+				
+					<!-- 门槛  难易程度 -->
+					<div class="row main-person-row2">
+						<div class="main-person-row2-left">
+							<span >门槛</span>
+							<img src="images/star.png" class="star">	
+						</div>
+						<div class=" main-person-row2-right">
+							<span>难易程度</span>
+							<img src="images/star.png" class="star">
+							<img src="images/star.png" class="star">
+						</div>
+					</div>							
 
+					<!-- 成长周期 -->
+					<div class="row main-person-row3">
+						<div class=" main-person-row3-left">
+							<span >成长周期</span>
+							<span class="red">1-3</span>
+							<span class="black">年</span>
+						</div>
+						<div class="main-person-row3-right">
+							<span>稀缺程度</span>
+							<span class="red">345</span>
+							<span class="black">家公司需要</span>
+							
+						</div>
+					</div>	
+
+					<!-- 薪资待遇 -->
+					<div class="row main-person-row4">
+						<div class=" main-person-row4-left">
+							<p>薪资待遇</p>
+						</div>
+						<div class=" main-person-row4-right">
+							<p class="salary-year1">
+								<span>0-1年</span>
+								<span>5k-10k/月</span>
+							</p>
+							<p class="salary-year2">
+								<span>1-3年</span>
+								<span>10k-20k/月</span>
+							</p>
+							<p class="salary-year3">
+								<span>3-5年</span>
+								<span>20k-50k/月</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 有286人正在学 -->
+					<div class="row main-person-row5">
+						<div class=" ">
+							<p>有<span class="red">286</span>人正在学</p>
+						</div>	
+					</div>
+
+					<!-- 提示：在你学习之前 -->
+					<div class="row main-person-row6">
+						<div class=" ">
+							<p>提示：在你学习之前你应该已经掌握XXXX、XXXX、XXX等语言基础</p>
+						</div>	
+					</div>
+
+					<!-- 添加一个浮动的半透明说明 -->	
+					<div class="showIOS">
+							<p class="showIOS-top">ios工程师</p>
+							<p class="showIOS-content">
+	                        iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以
+	                        Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，
+	                        人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+	                    </p>
+					</div>	
+				</div>		
+			</div>	
+
+		</div>
+		
 	</div>
 
+		
+
 </main>
+
+<footer>
+	<!-- footer -->
+	<div class="">		
+		<div class=" row15">
+			<div class=" footer-left">
+				<div class="footer-left-row1">
+					<p >技能树—改变你我</p>
+				</div>
+				<div class="footer-left-row2">
+					<p>&nbsp</p>
+				</div>
+				<div class="footer-left-row3">	<!-- 这里可以p里放a更好，在一排，就不用flex了 -->
+					<a href="#" class="I"><p>关于我们&nbsp|</p></a>
+					<a href="#" class="I"><p>&nbsp联系我们&nbsp|</p></a> 
+					<a href="#"><p>&nbsp合作企业</p></a> 
+				</div>
+			</div>
+		
+			<div class=" footer-middle">
+				<div class="footer-middle-row1">
+					<p>旗下网站</p>
+				</div>
+				<div class="footer-middle-row2">
+					<p><a href="#">草船云孵化器</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">最强IT特训营</a></p>
+				</div>
+				<div class="footer-middle-row3">
+					<p><a href="#">葡萄藤轻游戏</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">桌游精灵</a></p>
+				</div>
+			</div>
+			
+			<div class=" footer-right">
+				<div class="footer-right-row1">
+					<p>微信公众平台</p>
+				</div>
+				<div class="footer-right-row2">
+					<img src="images/qr-code.png" alt="">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<!-- copyright -->
+<div class="copyright-bcg">	
+	<div class="">		
+		<div class="copyright">
+			<p>Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</p>
+		</div>
+	</div>
+</div>
 
 
 </body>
