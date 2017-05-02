@@ -1,0 +1,19 @@
+/*--------- copyright------------ */
+.copyright-bcg {
+  background-color: #29b078;
+}
+.copyright {
+  /*	max-width: 1200px;
+	margin: 0 auto;*/
+  background-color: #29b078;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  text-align: center;
+  font-size: .12rem;
+  color: #fff;
+  border-top: 0.01rem solid #32c086;
+}
+.copyright p {
+  margin-bottom: 0;
+  padding: .1rem 0;
+}

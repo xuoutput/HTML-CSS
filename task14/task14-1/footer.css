@@ -1,0 +1,121 @@
+/*-------------------------footer------------------*/
+footer{
+	background-color: #29b078;
+	padding: .39rem 0 .19rem 0;
+	border-top: 1px solid #32c086;
+}
+
+
+/*.row15{
+	background-color: #29b078;
+	
+}
+
+.row15 p,.row15 a{
+	display: inline-block;
+	font-size: .15rem;
+	color: #fff;
+}*/
+
+	/*------footer-left----*/
+.footer-left{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left-row1 p{
+	font-size: .16rem;
+	color: #fff;
+	/*padding: .15rem;*/
+	
+}
+
+/*.I{	这竖线不用自己做边框
+	border-right: 2px solid #fff;
+}*/
+.footer-left-row2 p{
+	font-size: .14rem;
+	color: #fff;
+	/*margin: .1rem 0;*/
+}
+
+.footer-left-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}
+
+.footer-left-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+.footer-left-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+.footer-left-row3 a p{
+	/*margin: .1rem 0;*/
+}
+	/*------footer-middle----*/
+.footer-middle{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-middle-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+/*.footer-middle-row2,.footer-middle-row3{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+}*/
+
+.footer-middle-row2 a,.footer-middle-row3 a{
+	text-decoration: none;
+	font-size: .14rem;
+	color: #fff;
+
+	/*display:inline-block; 		这里没用a中放p所以border-bottom会有点距离问题要设置下,但对p又要取消margin-bottom,其实效果又不对，还是这样吧不用padding-bottom*/
+	/*padding-bottom: .1rem;*/
+	border-bottom: 1px solid transparent;
+}
+
+.footer-middle-row2 a:hover,.footer-middle-row3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	border-bottom-color: #fff;
+}
+
+.footer-middle-row2 p,.footer-middle-row3 p{
+	/*margin-bottom:  0;*/
+}
+	/*------footer-right----*/
+.footer-right{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-right-row1 p{
+	font-size: .16rem;
+	color: #fff;
+}
+
+.footer-right-row2 img{
+	width: .92rem;
+}
+

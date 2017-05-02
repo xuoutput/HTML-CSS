@@ -1,0 +1,189 @@
+/*header{	
+	margin: 0 auto;
+	text-align: center;
+}*/
+.bcg-white {
+  background-color: #fff;
+}
+.header-top {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*对header-top居中*/
+  display: flex;
+  /*对里面的两端对齐*/
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel p {
+  font-size: .14rem;
+  color: #29b078;
+  /*line-height: .39rem;*/
+  margin: .12rem 0 .12rem 0;
+}
+.login {
+  display: block;
+  font-size: 0;
+  /*清除图片之间的空隙*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.login a img {
+  display: block;
+  width: .25rem;
+  margin: 0 .04rem;
+  /*height: .24rem;*/
+}
+/*---------屏幕缩小时候 hidden visible登录 注册-----------*/
+.log {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .tel,
+  .login {
+    /*这就是tel和login*/
+    display: none;
+  }
+  .header-top {
+    /*是在这里设置，不是在log中设置float: right;还是别用，会对下面导航栏出问题。*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .log {
+    display: block;
+    visibility: visible;
+    /*float: right;*/
+    font-size: .14rem;
+    color: #000;
+    margin: .12rem 0;
+  }
+  .log a {
+    color: #000;
+  }
+  .log a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  .log-in {
+    margin-right: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #29b078;
+  }
+  .sign-up {
+    margin-right: 15px;
+  }
+}
+/*---------导航栏----------*/
+.bcg-green {
+  background-color: #29b078;
+}
+.header-middle {
+  background-color: #29b078;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 1rem;
+  /*总高度*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-middle-logo img {
+  display: block;
+  width: 1.07rem;
+  margin: .27rem 0 .24rem 0;
+}
+.header-middle ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header-middle ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: .16rem;
+  color: #fff;
+  padding: 0 .31rem;
+  /*margin: 0 .1rem;*/
+  line-height: .96rem;
+  border-bottom: 4px solid transparent;
+  /*vertical-align: text-bottom;*/
+  /*这里先是透明的，hover过去才是白色，防止突然变高*/
+}
+/*.header-middle ul li a {
+
+}*/
+.header-middle ul li a:hover {
+  border-bottom-color: #fff;
+}
+.header-middle span {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .header-middle {
+    height: .54rem;
+  }
+  .header-middle-logo img {
+    display: block;
+    width: .53rem;
+    /*margin: .27rem 0 .24rem 0;*/
+  }
+  .header-middle ul {
+    display: none;
+  }
+  .header-middle span {
+    display: inline-block;
+    padding: 0.08rem;
+    /*border: 1px solid #fff;*/
+    border-radius: 5px;
+    margin: .1rem;
+  }
+  .header-middle span i {
+    display: block;
+    margin: 0.05rem 0;
+    width: .2rem;
+    border-bottom: 3px solid #1e7953;
+  }
+}
+.header-bottom {
+  display: none;
+  background-color: #29b078;
+  border-top: 1px solid grey;
+}
+.header-bottom ul {
+  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header-bottom ul li {
+  /*display:block;*/
+  width: 100%;
+  font-size: .2rem;
+  color: #fff;
+  padding: .1rem 0;
+  border-bottom: 3px solid #29b078;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-bottom ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-bottom ul li:hover {
+  border-bottom-color: #fff;
+}
+@media screen and (min-width: 721px) {
+  .header-bottom {
+    display: none!important;
+  }
+}

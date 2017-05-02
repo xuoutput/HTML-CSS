@@ -1,0 +1,450 @@
+
+
+
+/*--------------------------main 首页-------------------*/
+
+
+
+
+		/*--------------------------轮播图-------------------*/
+
+.lunbo{
+	padding: 0 !important;
+}
+
+/*div.item img{					这里可以不用
+    width:100%;
+ }
+div#carousel-example-generic{
+    width:100%;
+    margin:0 auto;
+}*/
+
+/*---------------------------------------------*/
+
+
+	/* main-top */
+
+.row4{
+	/*padding-top: .3rem ;*/
+}
+
+.main-top{
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 1.6rem;
+    /*margin-bottom: .81rem;*/
+ 
+}
+
+.main-top-img{
+	width: 100%;
+	height: .67rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-top-img img{
+	width: .43rem;
+}
+
+.main-top-h3{
+	width: 100%;
+	height: .83rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;	
+}
+
+.main-top-h3 h3{
+	font-size: .18rem;
+	color: #333;
+
+	font-weight: bold;
+
+	/*padding: 0.05rem 0;*/
+}
+
+.main-top-p{
+	width: 100%;
+	height: 1.17rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;	
+}
+
+.main-top-p p{
+	font-size: .16rem;
+	color: #999;
+
+	/*padding: 0.05rem 0;*/
+
+}
+
+
+/*-----------main-top-right----------------*/
+
+.main-top-top{
+	margin-top: .67rem;
+}
+
+.dashed{
+	padding-top: 0;margin-top: 1.6rem;
+	border-left: 1px dashed #dedede;
+}
+
+.main-top-right{
+	width: 100%;
+	height: .8rem;
+}
+
+.main-top-right div{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.main-top-right div img{
+	width: .13rem;
+}
+
+.main-top-right div span{
+	font-size: .18rem;
+	color: #26a265;
+}
+
+.main-top-right+p{
+	font-size: .18rem;
+	color: #999
+}
+
+
+
+
+	/* 如何学习  */
+
+.yuan{
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+.howstudy h3{
+margin-top: .81rem;
+margin-bottom: .53rem;
+
+	font-size: .18rem;
+	color: #333;
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.study{
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin:0.5rem 0;	
+}
+
+.study-h3{		/*这有问题*/
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+	width: .72rem;
+	height: .72rem;
+
+	/*border: 1px solid #999;*/
+	border-radius: 50%;
+	box-shadow: 0 0 3px #999;	
+}
+
+.study-h3 h3{
+	font-size: .18rem;
+	color: #29b078;
+
+	margin:0;
+	
+	/*padding: .1rem .13rem;*/
+
+}
+
+.study-p{
+	
+}
+
+.study-p p{
+	width: 1.5rem;
+	font-size: .14rem;
+	color: #999;
+
+	margin:0;
+	padding: 0 .35rem 0 .16rem;
+
+}
+
+.study-img{
+	
+}
+
+.study img{
+	width: .29rem;
+
+}
+
+/*.change-img{
+	display: none;
+}
+
+@media screen and (max-width: 1199px){
+	.change-img{
+
+	}
+
+}*/
+
+
+	/* 优秀学员展示 */
+
+
+.stu-title{
+	text-align: center;
+
+	padding: .2rem;
+	margin: .4rem 0 0 0;
+}
+
+.stu-title p{
+	font-size: .18rem;
+	color: #333;
+	font-weight: bold;
+}
+
+.stu{
+/*width: 2.72rem;
+height: 3.72rem;*/
+width: 100%;
+
+padding: 0 .33rem;
+
+margin: 0 auto;
+margin-top: .4rem;
+
+	display: flex;
+	flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+    /*border: 1px solid #b2b2b2;*/
+	box-shadow: 0px 0px 3px #aaa;
+	
+/*    padding: .1rem;
+    margin:15px;*/
+}
+
+.stu-img{
+	margin: .2rem 0 .15rem 0;
+}
+
+.stu-img img{
+	width: 1.08rem;
+
+}
+
+.stu-h3{
+
+}
+.stu-h3 h3{
+	font-size: .18rem;
+	color: #999;
+
+	/*margin:0;*/
+}
+
+.stu-p{
+	margin: .15rem 0 0 0;
+}
+.stu-p p{
+	font-size: .16rem;
+	color: #999;
+	line-height: .26rem;
+
+}
+
+
+
+		/*四个点*/
+.dot{
+	text-align: center;
+
+	padding: .2rem 0 .52rem 0;
+}
+
+.circus{
+	display: inline-block;
+	width: .13rem;height: .13rem;
+	border-radius: 50%;
+
+	box-shadow: 2px 2px 3px #e4e4e4;
+	/*background-color: #f0f0f0;*/
+}
+
+
+.circus:hover{
+	background-color: #29b078 !important;
+	cursor: pointer;
+}
+
+
+	/* 战略合作企业 */
+
+.row12{
+	box-shadow: 2px 2px 3px #f6f6f6;
+}
+
+.company-title p{
+	font-size: .18rem;
+	color: #333;
+	font-weight: bold;
+
+	text-align: center;
+
+	padding: .79rem 0 .4rem 0;
+}
+
+.company{
+	display: flex;
+	flex-flow: row wrap;
+    /*justify-content: space-around;*/
+    align-items: center;	
+
+   /* padding: 1rem 0;*/
+}
+
+
+
+
+.company-border{
+padding: .62rem .62rem .59rem .40rem;
+margin-bottom: .26rem;
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+/*.company-border img{
+	height: .35rem;
+	
+}*/
+
+.company-border:hover{
+	box-shadow: 0px 0px 3px #aaa;
+}
+
+
+.alibaba{
+	width: 1.44rem;
+}
+
+.jinshanyun{
+	width: .53rem;
+}
+
+.huanxin{
+	width: 1.34rem;
+}
+
+.ronlian{
+	width: 1.69rem;
+}
+
+.qiniu{
+	width: 1.24rem;
+}
+
+
+
+	/* 友情链接 */
+
+
+.link-title p{
+	font-size: .18rem;
+	color: #333;
+	font-weight: bold;
+
+	text-align: center;
+
+	padding: .8rem 0 .18rem 0;
+}
+
+.links ul{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;	
+
+    /*padding: 0 .2rem ;*/
+	
+}
+
+.link li{
+	list-style-type:disc !important;
+	color: #999;
+	width: 1.1rem;
+/*	padding-left: .2rem;
+	margin-left: -0.2rem;*/
+/*	margin: auto 0.05rem;
+	margin-top: .1rem;
+	width: .6rem;*/
+}
+
+.link li a{
+
+	text-decoration: none;
+
+	font-size: .14rem;
+	color: #999;
+	line-height: .3rem;
+	border-bottom: 1px solid transparent;
+
+	padding-left: .1rem;
+	margin-left: -0.16rem;
+}
+
+.link li a:hover{
+	text-decoration: none;
+
+	font-size: .14rem;
+	color: #999;
+
+	border-bottom-color: #29b078;
+}
+/*
+.link li:hover{
+border-bottom: 1px solid #29b078;	
+}*/
+
+
+
+
+
+
+
