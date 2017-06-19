@@ -1,0 +1,8 @@
+.img{background:url(../images/img.png) no-repeat ;}
+.main-location{height:23px;width:19px;background-position:0 0;}
+.main-right{height:33px;width:19px;background-position:0 -23px;}
+.main-time{height:24px;width:24px;background-position:0 -56px;}
+.header-right{height:44px;width:42px;background-position:0 -80px;}
+.footer-right{height:41px;width:42px;background-position:0 -124px;}
+.footer-middle{height:44px;width:45px;background-position:0 -165px;}
+.footer-left{height:40px;width:46px;background-position:0 -209px;}
